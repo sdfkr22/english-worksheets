@@ -12,18 +12,19 @@ assets/engine.js                    aktivite motoru (sürükle-bırak, kontrol, 
 units/am-is-are-a1.html             interaktif ünite · A1 (17 aktivite)
 units/am-is-are-a2.html             interaktif ünite · A2 (17 aktivite, there is/there are + was/were)
 units/reading-school-life-a1.html   interaktif ünite · A1 okuma (7 aktivite)
-am-is-are-worksheet.html            yazdırılabilir çalışma kağıtları (A4 + cevap anahtarı)
-am-is-are-worksheet-a2.html
-reading-school-life-a1.html
+worksheets/                         yazdırılabilir A4 kağıtları (hepsi cevap anahtarlı)
+  am-is-are-worksheet.html
+  am-is-are-worksheet-a2.html
+  reading-school-life-a1.html
 ```
 
 Her yazdırılabilir kağıdın bir interaktif eşi var; ikisi de aynı alıştırmaları içerir:
 
 | yazdırılabilir | interaktif |
 |---|---|
-| `am-is-are-worksheet.html` | `units/am-is-are-a1.html` |
-| `am-is-are-worksheet-a2.html` | `units/am-is-are-a2.html` |
-| `reading-school-life-a1.html` | `units/reading-school-life-a1.html` |
+| `worksheets/am-is-are-worksheet.html` | `units/am-is-are-a1.html` |
+| `worksheets/am-is-are-worksheet-a2.html` | `units/am-is-are-a2.html` |
+| `worksheets/reading-school-life-a1.html` | `units/reading-school-life-a1.html` |
 
 Çalışma kağıtlarının üstündeki ince şerit (ana sayfa · interaktif sürüm · tema düğmesi)
 yalnızca ekranda görünür, yazdırmada çıkmaz.
