@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reading: My School Day (Level A1) · English Worksheets</title>
+<style>
+  :root {
+    --paper: #ffffff;
+    --ground: #e7ecea;
+    --ink: #16222e;
+    --ink-soft: #5e7275;
+    --rule: #c9d4d2;
+    --rule-soft: #dfe7e5;
+    --teal: #0e6e6b;
+    --teal-tint: #eef6f5;
+    --orange: #d2552b;
+    --orange-tint: #fcf0ea;
+    --shadow: 0 2px 10px rgba(22, 34, 46, .13);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #151c21;
+      --ground: #0d1215;
+      --ink: #e6edea;
+      --ink-soft: #9aaeb0;
+      --rule: #38474b;
+      --rule-soft: #263137;
+      --teal: #5ac8bd;
+      --teal-tint: #19282a;
+      --orange: #f0906a;
+      --orange-tint: #2a1f1a;
+      --shadow: 0 2px 10px rgba(0, 0, 0, .5);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #151c21;
+    --ground: #0d1215;
+    --ink: #e6edea;
+    --ink-soft: #9aaeb0;
+    --rule: #38474b;
+    --rule-soft: #263137;
+    --teal: #5ac8bd;
+    --teal-tint: #19282a;
+    --orange: #f0906a;
+    --orange-tint: #2a1f1a;
+    --shadow: 0 2px 10px rgba(0, 0, 0, .5);
+  }
+  :root[data-theme="light"] {
+    --paper: #ffffff;
+    --ground: #e7ecea;
+    --ink: #16222e;
+    --ink-soft: #5e7275;
+    --rule: #c9d4d2;
+    --rule-soft: #dfe7e5;
+    --teal: #0e6e6b;
+    --teal-tint: #eef6f5;
+    --orange: #d2552b;
+    --orange-tint: #fcf0ea;
+    --shadow: 0 2px 10px rgba(22, 34, 46, .13);
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Segoe UI", -apple-system, system-ui, sans-serif;
+    font-size: 11.5pt;
+    line-height: 1.5;
+    margin: 0;
+    padding: 18px 12px 48px;
+  }
+
+  .toolbar {
+    max-width: 210mm;
+    margin: 0 auto 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 10px 16px;
+  }
+  .toolbar p { margin: 0; color: var(--ink-soft); font-size: 10pt; flex: 1 1 240px; }
+  .print-btn {
+    font: inherit;
+    font-weight: 600;
+    color: #fff;
+    background: var(--teal);
+    border: 0;
+    border-radius: 3px;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+  .print-btn:hover { filter: brightness(1.1); }
+  .print-btn:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+
+  .page {
+    background: var(--paper);
+    box-shadow: var(--shadow);
+    width: 210mm;
+    min-height: 297mm;
+    box-sizing: border-box;
+    padding: 15mm 16mm 12mm;
+    margin: 0 auto 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 7mm;
+  }
+
+  .masthead { border-bottom: 2.5px solid var(--teal); padding-bottom: 4mm; }
+  .eyebrow {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 8.5pt;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin: 0 0 2mm;
+    display: flex;
+    gap: 3mm;
+    align-items: center;
+  }
+  .level { border: 1.2px solid var(--teal); border-radius: 2px; padding: .3mm 1.8mm; letter-spacing: .1em; }
+  h1 {
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    font-size: 25pt;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    text-wrap: balance;
+    margin: 0;
+  }
+  h1 em { font-style: normal; color: var(--orange); }
+  .sub { margin: 2mm 0 0; color: var(--ink-soft); font-size: 10.5pt; }
+  .idline { display: flex; gap: 6mm; margin-top: 4mm; font-size: 10pt; color: var(--ink-soft); }
+  .idline span { flex: 1; border-bottom: 1px dotted var(--rule); padding-bottom: 1mm; }
+
+  .runhead {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 2mm;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 8.5pt;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .runhead b { color: var(--teal); letter-spacing: .14em; }
+
+  /* ---------- reading text ---------- */
+  .text {
+    border-left: 3px solid var(--teal);
+    background: var(--teal-tint);
+    padding: 5mm 6mm;
+  }
+  .text h2 {
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    font-size: 15pt;
+    margin: 0 0 1mm;
+    color: var(--teal);
+  }
+  .byline {
+    font-size: 9.5pt;
+    color: var(--ink-soft);
+    font-style: italic;
+    margin: 0 0 4mm;
+  }
+  .text p {
+    margin: 0 0 3.5mm;
+    line-height: 1.75;
+    font-size: 12pt;
+  }
+  .text p:last-child { margin-bottom: 0; }
+  .text b { font-weight: 600; }
+
+  .glossary {
+    border: 1.5px dashed var(--rule);
+    padding: 3mm 4mm;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5mm 6mm;
+    font-size: 10pt;
+  }
+  .glossary .gl-head {
+    grid-column: 1 / -1;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 8.5pt;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .glossary b { color: var(--teal); font-weight: 600; }
+
+  /* ---------- exercises ---------- */
+  .ex { display: flow-root; }
+  .ex h2 {
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    font-size: 13pt;
+    font-weight: 700;
+    margin: 0 0 1mm;
+    display: flex;
+    align-items: baseline;
+    gap: 2.5mm;
+  }
+  .tag {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 10pt;
+    font-weight: 700;
+    color: var(--orange);
+    background: var(--orange-tint);
+    border: 1.2px solid var(--orange);
+    border-radius: 2px;
+    padding: .4mm 1.8mm;
+    flex: none;
+  }
+  .tr {
+    display: block;
+    font-size: 9.5pt;
+    font-style: italic;
+    color: var(--ink-soft);
+    margin: 0 0 3mm;
+  }
+
+  ol.items { margin: 0; padding-left: 7mm; display: grid; gap: 2.6mm 8mm; }
+  ol.items.two { grid-template-columns: 1fr 1fr; }
+  ol.items.roomy { gap: 6mm 8mm; }
+  ol.items li { padding-left: 1mm; }
+
+  .blank { display: inline-block; min-width: 22mm; border-bottom: 1px dotted var(--ink-soft); }
+  .blank.sm { min-width: 13mm; }
+  .blank.md { min-width: 30mm; }
+  .blank.lg { min-width: 40mm; }
+  .line { display: block; border-bottom: 1px dotted var(--rule); height: 6.5mm; }
+  .pick { font-family: Consolas, "Courier New", monospace; color: var(--teal); white-space: nowrap; }
+  .arrow { color: var(--orange); font-weight: 700; }
+
+  /* matching */
+  .match { display: grid; grid-template-columns: 1fr 1fr; gap: 0 10mm; }
+  .match ol { margin: 0; padding-left: 7mm; display: grid; gap: 2.8mm; }
+  .match ol.letters { list-style: lower-alpha; }
+  .match .box {
+    display: inline-block;
+    width: 7mm;
+    height: 5mm;
+    border: 1px solid var(--rule);
+    vertical-align: middle;
+    margin-left: 2mm;
+  }
+
+  .starters { display: grid; gap: 4mm; }
+  .starters p { margin: 0; }
+
+  .selfcheck { margin-top: auto; border-top: 1px solid var(--rule); padding-top: 3mm; font-size: 10pt; color: var(--ink-soft); }
+  .selfcheck ul { list-style: none; margin: 2mm 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5mm 8mm; }
+  .selfcheck li::before { content: "☐  "; color: var(--teal); }
+
+  /* answer key */
+  .key h1 { color: var(--teal); }
+  .keygrid { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm 8mm; }
+  .keyblock h3 {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 9pt;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--orange);
+    border-bottom: 1px solid var(--rule-soft);
+    padding-bottom: 1mm;
+    margin: 0 0 2mm;
+  }
+  .keyblock ol {
+    margin: 0;
+    padding-left: 6mm;
+    font-size: 9.5pt;
+    line-height: 1.45;
+    font-variant-numeric: tabular-nums;
+  }
+  .keyblock ol.inline { padding-left: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 0 4mm; }
+  .keyblock ol.inline li { font-family: Consolas, "Courier New", monospace; counter-increment: list-item; }
+  .keyblock ol.inline li::before { content: counter(list-item) ". "; color: var(--ink-soft); }
+  .keyblock b { color: var(--teal); }
+
+  .footer {
+    font-size: 9pt;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--rule-soft);
+    padding-top: 2mm;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 230mm) {
+    .page { width: 100%; min-height: 0; padding: 7mm 6mm; }
+    ol.items.two, .keygrid, .selfcheck ul, .match { grid-template-columns: 1fr; }
+    .glossary { grid-template-columns: 1fr 1fr; }
+  }
+
+  /* ---------- site bar (screen only) ---------- */
+  .ws-bar {
+    max-width: 210mm;
+    margin: 0 auto 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 16px;
+    font-size: 10pt;
+    color: var(--ink-soft);
+  }
+  .ws-bar a { color: var(--teal); font-weight: 600; text-decoration: none; }
+  .ws-bar a:hover { text-decoration: underline; }
+  .ws-bar .home { font-family: "Trebuchet MS", "Segoe UI", sans-serif; font-size: 12pt; }
+  .ws-bar .sep { color: var(--rule); }
+  .ws-bar .grow { flex: 1 1 auto; }
+  .theme-btn {
+    font: inherit;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 1.2px solid var(--rule);
+    border-radius: 3px;
+    padding: 3px 10px;
+    cursor: pointer;
+  }
+  .theme-btn:hover { color: var(--teal); border-color: var(--teal); }
+  .theme-btn:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+
+  @media print {
+    @page { size: A4; margin: 12mm 13mm; }
+    :root,
+    :root[data-theme="dark"],
+    :root[data-theme="light"] {
+      --paper: #ffffff; --ground: #ffffff; --ink: #16222e; --ink-soft: #5e7275;
+      --rule: #c9d4d2; --rule-soft: #dfe7e5; --teal: #0e6e6b; --teal-tint: #eef6f5;
+      --orange: #d2552b; --orange-tint: #fcf0ea; --shadow: none;
+    }
+    body { background: #fff; padding: 0; font-size: 11pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .toolbar, .ws-bar { display: none; }
+    .page { width: auto; min-height: 0; box-shadow: none; margin: 0; padding: 0; break-after: page; }
+    .page:last-child { break-after: auto; }
+    .ex, .text, .glossary { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div class="ws-bar">
+  <a class="home" href="index.html">← English Worksheets</a>
+  <span class="sep">·</span>
+  <a href="units/reading-school-life-a1.html">İnteraktif sürüm (A1)</a>
+  <span class="sep">·</span>
+  <a href="am-is-are-worksheet.html">am / is / are çalışma kağıdı</a>
+  <span class="grow"></span>
+  <button class="theme-btn" type="button" title="Açık / koyu tema" aria-label="Temayı değiştir">☾</button>
+</div>
+
+<div class="toolbar">
+  <p>A1 okuma kağıdı · 2 sayfa alıştırma + 1 sayfa cevap anahtarı. “Am / Is / Are” kağıdının devamı olarak kullanılabilir.</p>
+  <button class="print-btn" onclick="window.print()">Yazdır</button>
+</div>
+
+<!-- ============ PAGE 1 ============ -->
+<section class="page">
+  <header class="masthead">
+    <p class="eyebrow"><span class="level">CEFR A1</span><span>English · Reading</span></p>
+    <h1>Reading: <em>My School Day</em></h1>
+    <p class="sub">School life · classroom · subjects · teachers &amp; friends — with <i>am / is / are</i></p>
+    <div class="idline"><span>Name:</span><span>Class:</span><span>Date:</span></div>
+  </header>
+
+  <article class="text">
+    <h2>My School Day</h2>
+    <p class="byline">by Zeynep, 4-B</p>
+    <p>Hello! My name is Zeynep and I am ten years old. I am a student at Atatürk Primary School in Eskişehir.</p>
+    <p>My school is big and old. There are twenty-four classrooms, a library and a small garden. My classroom is on the first floor. It is bright and clean. There are twelve desks and a big board in it. My class is 4-B. We are twenty-two students.</p>
+    <p>My favourite subject is science because it is fun. Maths is difficult for me, but my teacher is very patient. Her name is Mrs Aydın. She is young and friendly.</p>
+    <p>School starts at eight o'clock. We have a long break at eleven. At break time my best friend Melis and I are always in the garden. We are happy at school!</p>
+  </article>
+
+  <div class="glossary">
+    <span class="gl-head">new words · yeni kelimeler</span>
+    <span><b>bright</b> — aydınlık</span>
+    <span><b>clean</b> — temiz</span>
+    <span><b>desk</b> — sıra</span>
+    <span><b>board</b> — tahta</span>
+    <span><b>floor</b> — kat</span>
+    <span><b>subject</b> — ders</span>
+    <span><b>break</b> — teneffüs</span>
+    <span><b>patient</b> — sabırlı</span>
+    <span><b>friendly</b> — cana yakın</span>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">A</span> True or False? Circle the correct answer.</h2>
+    <span class="tr">Doğru mu, yanlış mı? Doğru olanı yuvarlak içine al.</span>
+    <ol class="items two">
+      <li>Zeynep is eleven years old. <span class="pick">True / False</span></li>
+      <li>Her school is in Eskişehir. <span class="pick">True / False</span></li>
+      <li>There is a library at her school. <span class="pick">True / False</span></li>
+      <li>Her classroom is on the first floor. <span class="pick">True / False</span></li>
+      <li>There are thirty students in her class. <span class="pick">True / False</span></li>
+      <li>Maths is her favourite subject. <span class="pick">True / False</span></li>
+      <li>Mrs Aydın is young and friendly. <span class="pick">True / False</span></li>
+      <li>School starts at nine o'clock. <span class="pick">True / False</span></li>
+    </ol>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">B</span> Answer the questions about the text.</h2>
+    <span class="tr">Metinle ilgili soruları cevapla. Tam cümle yaz.</span>
+    <ol class="items roomy">
+      <li>How old is Zeynep? <span class="line"></span></li>
+      <li>What is the name of her school? <span class="line"></span></li>
+      <li>How many classrooms are there in her school? <span class="line"></span></li>
+      <li>Where is her classroom? <span class="line"></span></li>
+      <li>Who is her teacher? <span class="line"></span></li>
+      <li>Where are Zeynep and Melis at break time? <span class="line"></span></li>
+    </ol>
+  </div>
+
+  <div class="footer"><span>Reading: My School Day · A1</span><span>Page 1 of 2</span></div>
+</section>
+
+<!-- ============ PAGE 2 ============ -->
+<section class="page">
+  <div class="runhead"><span>Reading: My School Day · A1</span><b>Exercises C–G</b></div>
+
+  <div class="ex">
+    <h2><span class="tag">C</span> Complete the sentences about the text with <i>am</i>, <i>is</i> or <i>are</i>.</h2>
+    <span class="tr">Metne göre boşlukları am, is ya da are ile doldur.</span>
+    <ol class="items two">
+      <li>Zeynep <span class="blank sm"></span> ten years old.</li>
+      <li>Her school <span class="blank sm"></span> big and old.</li>
+      <li>There <span class="blank sm"></span> twenty-four classrooms.</li>
+      <li>The classroom <span class="blank sm"></span> bright and clean.</li>
+      <li>There <span class="blank sm"></span> a big board in the classroom.</li>
+      <li>Science <span class="blank sm"></span> her favourite subject.</li>
+      <li>Maths <span class="blank sm"></span> difficult for Zeynep.</li>
+      <li>Mrs Aydın <span class="blank sm"></span> young and friendly.</li>
+      <li>Melis and Zeynep <span class="blank sm"></span> best friends.</li>
+      <li>I <span class="blank sm"></span> a student, too.</li>
+    </ol>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">D</span> Match the two halves of the sentences.</h2>
+    <span class="tr">Cümlelerin yarılarını eşleştir. Harfi kutuya yaz.</span>
+    <div class="match">
+      <ol class="items">
+        <li>My name <span class="box"></span></li>
+        <li>There are <span class="box"></span></li>
+        <li>My classroom <span class="box"></span></li>
+        <li>My favourite subject <span class="box"></span></li>
+        <li>School <span class="box"></span></li>
+        <li>We have a long break <span class="box"></span></li>
+      </ol>
+      <ol class="letters">
+        <li>is on the first floor.</li>
+        <li>is science.</li>
+        <li>is Zeynep.</li>
+        <li>twenty-four classrooms.</li>
+        <li>starts at eight o'clock.</li>
+        <li>at eleven o'clock.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">E</span> Find a word in the text with the opposite meaning.</h2>
+    <span class="tr">Metinde zıt anlamlı kelimeyi bul ve yaz.</span>
+    <ol class="items two">
+      <li>small <span class="arrow">↔</span> <span class="blank"></span></li>
+      <li>new <span class="arrow">↔</span> <span class="blank"></span></li>
+      <li>easy <span class="arrow">↔</span> <span class="blank"></span></li>
+      <li>sad <span class="arrow">↔</span> <span class="blank"></span></li>
+      <li>dark <span class="arrow">↔</span> <span class="blank"></span></li>
+      <li>old (a person) <span class="arrow">↔</span> <span class="blank"></span></li>
+    </ol>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">F</span> Write <i>Is</i> or <i>Are</i> to ask Zeynep questions.</h2>
+    <span class="tr">Zeynep'e sormak için boşluklara Is ya da Are yaz. Sonra kısa cevabı da yaz.</span>
+    <ol class="items two">
+      <li><span class="blank sm"></span> you ten years old? — Yes, <span class="blank sm"></span>.</li>
+      <li><span class="blank sm"></span> your school new? — No, <span class="blank sm"></span>.</li>
+      <li><span class="blank sm"></span> there a library at your school? — Yes, <span class="blank sm"></span>.</li>
+      <li><span class="blank sm"></span> maths easy for you? — No, <span class="blank sm"></span>.</li>
+      <li><span class="blank sm"></span> your classmates friendly? — Yes, <span class="blank sm"></span>.</li>
+      <li><span class="blank sm"></span> you happy at school? — Yes, <span class="blank sm"></span>.</li>
+    </ol>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">G</span> Now write about YOUR school.</h2>
+    <span class="tr">Şimdi kendi okulun hakkında yaz. Cümleleri tamamla.</span>
+    <div class="starters">
+      <p>My name is <span class="blank lg"></span> and I am <span class="blank sm"></span> years old.</p>
+      <p>I am a student at <span class="blank lg"></span>.</p>
+      <p>My school is <span class="blank lg"></span>.</p>
+      <p>There are <span class="blank lg"></span> in my school.</p>
+      <p>My classroom is <span class="blank lg"></span>.</p>
+      <p>My favourite subject is <span class="blank md"></span> because <span class="blank lg"></span>.</p>
+      <p>My teacher is <span class="blank md"></span>. She / He is <span class="blank lg"></span>.</p>
+      <p>My best friend is <span class="blank md"></span>. We are <span class="blank lg"></span>.</p>
+    </div>
+  </div>
+
+  <div class="selfcheck">
+    <b>Self-check — I can …</b>
+    <ul>
+      <li>understand a short text about school</li>
+      <li>answer True / False and <i>wh-</i> questions</li>
+      <li>use <i>am / is / are</i> in my own sentences</li>
+      <li>write 8 sentences about my school</li>
+    </ul>
+  </div>
+
+  <div class="footer"><span>Reading: My School Day · A1</span><span>Page 2 of 2</span></div>
+</section>
+
+<!-- ============ ANSWER KEY ============ -->
+<section class="page key">
+  <header class="masthead">
+    <p class="eyebrow"><span class="level">CEFR A1</span><span>For the teacher</span></p>
+    <h1>Answer <em>Key</em></h1>
+    <p class="sub">Exercise G has free answers — check the <i>be</i> forms, capital letters and full stops.</p>
+  </header>
+
+  <div class="keygrid">
+    <div class="keyblock">
+      <h3>A — true / false</h3>
+      <ol><li>False — she is ten.</li><li>True</li><li>True</li><li>True</li><li>False — there are twenty-two students.</li><li>False — science is.</li><li>True</li><li>False — it starts at eight o'clock.</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>B — questions</h3>
+      <ol><li>She is ten years old.</li><li>It is Atatürk Primary School.</li><li>There are twenty-four classrooms.</li><li>It is on the first floor.</li><li>Her teacher is Mrs Aydın.</li><li>They are in the garden.</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>C — am / is / are</h3>
+      <ol class="inline"><li>is</li><li>is</li><li>are</li><li>is</li><li>is</li><li>is</li><li>is</li><li>is</li><li>are</li><li>am</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>D — matching</h3>
+      <ol class="inline"><li>c</li><li>d</li><li>a</li><li>b</li><li>e</li><li>f</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>E — opposites</h3>
+      <ol class="inline"><li>big</li><li>old</li><li>difficult</li><li>happy</li><li>bright</li><li>young</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>F — Is / Are + short answers</h3>
+      <ol><li>Are … Yes, I am.</li><li>Is … No, it isn't.</li><li>Is … Yes, there is.</li><li>Is … No, it isn't.</li><li>Are … Yes, they are.</li><li>Are … Yes, I am.</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>G — free writing</h3>
+      <ol><li>Students' own answers. Check: <b>am</b> with “I”, <b>is</b> for one person/thing, <b>are</b> for plurals and <i>there are</i>.</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>Teaching notes</h3>
+      <ol><li>Read the text aloud once, then let students read it silently before Exercise A.</li><li>Exercise E can be done orally as a quick game.</li><li>Fast finishers: let them ask a partner the questions in F and note the answers.</li></ol>
+    </div>
+  </div>
+
+  <div class="footer"><span>Reading: My School Day — Answer Key · A1</span><span>Page 3</span></div>
+</section>
+
+<script src="assets/engine.js"></script>
+</body>
+</html>

@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Am / Is / Are — Worksheet (Level A2) · English Worksheets</title>
+<style>
+  :root {
+    --paper: #ffffff;
+    --ground: #e9e8ef;
+    --ink: #1a1c28;
+    --ink-soft: #6c6f80;
+    --rule: #cbcad8;
+    --rule-soft: #e3e2ec;
+    --violet: #4b4a8f;
+    --violet-tint: #eeeef7;
+    --amber: #a8700f;
+    --amber-tint: #faf3e6;
+    --shadow: 0 2px 10px rgba(26, 28, 40, .14);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #171822;
+      --ground: #0e0f16;
+      --ink: #e8e8f0;
+      --ink-soft: #a0a1b4;
+      --rule: #3c3d52;
+      --rule-soft: #272833;
+      --violet: #a3a1e8;
+      --violet-tint: #20203a;
+      --amber: #e0a94a;
+      --amber-tint: #2a2318;
+      --shadow: 0 2px 10px rgba(0, 0, 0, .55);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #171822;
+    --ground: #0e0f16;
+    --ink: #e8e8f0;
+    --ink-soft: #a0a1b4;
+    --rule: #3c3d52;
+    --rule-soft: #272833;
+    --violet: #a3a1e8;
+    --violet-tint: #20203a;
+    --amber: #e0a94a;
+    --amber-tint: #2a2318;
+    --shadow: 0 2px 10px rgba(0, 0, 0, .55);
+  }
+  :root[data-theme="light"] {
+    --paper: #ffffff;
+    --ground: #e9e8ef;
+    --ink: #1a1c28;
+    --ink-soft: #6c6f80;
+    --rule: #cbcad8;
+    --rule-soft: #e3e2ec;
+    --violet: #4b4a8f;
+    --violet-tint: #eeeef7;
+    --amber: #a8700f;
+    --amber-tint: #faf3e6;
+    --shadow: 0 2px 10px rgba(26, 28, 40, .14);
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Segoe UI", -apple-system, system-ui, sans-serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    margin: 0;
+    padding: 18px 12px 48px;
+  }
+
+  /* ---------- toolbar (screen only) ---------- */
+  .toolbar {
+    max-width: 210mm;
+    margin: 0 auto 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 10px 16px;
+  }
+  .toolbar p { margin: 0; color: var(--ink-soft); font-size: 10pt; flex: 1 1 240px; }
+  .print-btn {
+    font: inherit;
+    font-weight: 600;
+    color: #fff;
+    background: var(--violet);
+    border: 0;
+    border-radius: 3px;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+  .print-btn:hover { filter: brightness(1.12); }
+  .print-btn:focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
+
+  /* ---------- page shell ---------- */
+  .page {
+    background: var(--paper);
+    box-shadow: var(--shadow);
+    width: 210mm;
+    min-height: 297mm;
+    box-sizing: border-box;
+    padding: 15mm 16mm 12mm;
+    margin: 0 auto 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6.5mm;
+  }
+
+  /* ---------- masthead ---------- */
+  .masthead { border-bottom: 2.5px solid var(--violet); padding-bottom: 4mm; }
+  .eyebrow {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 8.5pt;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--violet);
+    margin: 0 0 2mm;
+    display: flex;
+    gap: 3mm;
+    align-items: center;
+  }
+  .level {
+    border: 1.2px solid var(--violet);
+    border-radius: 2px;
+    padding: .3mm 1.8mm;
+    letter-spacing: .1em;
+  }
+  h1 {
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    font-size: 25pt;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    text-wrap: balance;
+    margin: 0;
+  }
+  h1 em { font-style: normal; color: var(--amber); }
+  .sub { margin: 2mm 0 0; color: var(--ink-soft); font-size: 10.5pt; }
+  .idline { display: flex; gap: 6mm; margin-top: 4mm; font-size: 10pt; color: var(--ink-soft); }
+  .idline span { flex: 1; border-bottom: 1px dotted var(--rule); padding-bottom: 1mm; }
+
+  .runhead {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 2mm;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 8.5pt;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .runhead b { color: var(--violet); letter-spacing: .14em; }
+
+  /* ---------- rule box ---------- */
+  .rulebox {
+    border-left: 3px solid var(--violet);
+    background: var(--violet-tint);
+    padding: 4mm 5mm;
+  }
+  .rulebox h3 {
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    font-size: 12.5pt;
+    margin: 0 0 3mm;
+    color: var(--violet);
+  }
+  .rulebox p { margin: 0 0 2mm; }
+  .rulebox p:last-child { margin-bottom: 0; }
+  .tip { font-size: 10pt; color: var(--ink-soft); }
+  .tip b { color: var(--amber); }
+  .cols2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2mm 7mm; }
+
+  table { border-collapse: collapse; width: 100%; font-size: 10.5pt; }
+  .grammar th, .grammar td {
+    text-align: left;
+    padding: 1.5mm 3mm 1.5mm 0;
+    border-bottom: 1px solid var(--rule-soft);
+    vertical-align: baseline;
+  }
+  .grammar th {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 8.5pt;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    font-weight: 400;
+  }
+  .grammar td.be { font-weight: 700; color: var(--amber); white-space: nowrap; }
+  .grammar td.short { font-family: Consolas, "Courier New", monospace; white-space: nowrap; }
+  .grammar td.ex { color: var(--ink-soft); font-style: italic; }
+  .scroller { overflow-x: auto; }
+
+  /* ---------- exercises ---------- */
+  .ex { display: flow-root; }
+  .ex h2 {
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    font-size: 12.5pt;
+    font-weight: 700;
+    margin: 0 0 1mm;
+    display: flex;
+    align-items: baseline;
+    gap: 2.5mm;
+  }
+  .tag {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 10pt;
+    font-weight: 700;
+    color: var(--amber);
+    background: var(--amber-tint);
+    border: 1.2px solid var(--amber);
+    border-radius: 2px;
+    padding: .4mm 1.8mm;
+    flex: none;
+  }
+  .tr {
+    display: block;
+    font-size: 9.5pt;
+    font-style: italic;
+    color: var(--ink-soft);
+    margin: 0 0 3mm;
+  }
+
+  ol.items { margin: 0; padding-left: 7mm; display: grid; gap: 2.4mm 8mm; }
+  ol.items.two { grid-template-columns: 1fr 1fr; }
+  ol.items li { padding-left: 1mm; }
+  ol.items.roomy { gap: 5.5mm 8mm; }
+
+  .blank { display: inline-block; min-width: 22mm; border-bottom: 1px dotted var(--ink-soft); }
+  .blank.sm { min-width: 13mm; }
+  .blank.md { min-width: 30mm; }
+  .blank.lg { min-width: 40mm; }
+  .line { display: block; border-bottom: 1px dotted var(--rule); height: 6.5mm; }
+  .arrow { color: var(--amber); font-weight: 700; }
+  .scram { font-family: Consolas, "Courier New", monospace; font-size: 10pt; }
+  .u { border-bottom: 1.6px solid var(--amber); font-weight: 600; }
+
+  .wordbank {
+    border: 1.5px dashed var(--rule);
+    padding: 3mm 4mm;
+    margin: 0 0 4mm;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2mm 5mm;
+    align-items: baseline;
+  }
+  .wordbank b {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 8.5pt;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    font-weight: 400;
+  }
+  .wordbank span { font-weight: 600; color: var(--violet); }
+
+  .dialogue { display: grid; grid-template-columns: auto 1fr; gap: 2.2mm 3mm; margin: 0; line-height: 1.9; }
+  .dialogue dt {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: var(--violet);
+    white-space: nowrap;
+  }
+  .dialogue dd { margin: 0; }
+
+  .reading {
+    background: var(--violet-tint);
+    padding: 4mm 5mm;
+    line-height: 2.15;
+    font-size: 11pt;
+  }
+  .reading p { margin: 0 0 2.5mm; }
+  .reading p:last-child { margin-bottom: 0; }
+  .reading .blank { border-bottom-color: var(--violet); }
+  .n {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 8.5pt;
+    color: var(--amber);
+    vertical-align: super;
+  }
+
+  .bonus { border: 2px solid var(--amber); background: var(--amber-tint); padding: 4mm 5mm; }
+  .bonus h2 { color: var(--amber); }
+  .bonus .tag { color: var(--violet); border-color: var(--violet); background: var(--violet-tint); }
+
+  .selfcheck { margin-top: auto; border-top: 1px solid var(--rule); padding-top: 3mm; font-size: 10pt; color: var(--ink-soft); }
+  .selfcheck ul { list-style: none; margin: 2mm 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5mm 8mm; }
+  .selfcheck li::before { content: "☐  "; color: var(--violet); }
+
+  /* ---------- answer key ---------- */
+  .key h1 { color: var(--violet); }
+  .keygrid { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm 8mm; }
+  .keyblock h3 {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 9pt;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--amber);
+    border-bottom: 1px solid var(--rule-soft);
+    padding-bottom: 1mm;
+    margin: 0 0 2mm;
+  }
+  .keyblock ol {
+    margin: 0;
+    padding-left: 6mm;
+    font-size: 9.5pt;
+    line-height: 1.45;
+    font-variant-numeric: tabular-nums;
+  }
+  .keyblock ol.inline { padding-left: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 0 4mm; }
+  .keyblock ol.inline li { font-family: Consolas, "Courier New", monospace; counter-increment: list-item; }
+  .keyblock ol.inline li::before { content: counter(list-item) ". "; color: var(--ink-soft); }
+  .keyblock b { color: var(--violet); }
+  .keyblock p.tip { margin: 1.5mm 0 0; }
+
+  .footer {
+    font-size: 9pt;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--rule-soft);
+    padding-top: 2mm;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 230mm) {
+    .page { width: 100%; min-height: 0; padding: 7mm 6mm; }
+    ol.items.two, .keygrid, .selfcheck ul, .cols2 { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- site bar (screen only) ---------- */
+  .ws-bar {
+    max-width: 210mm;
+    margin: 0 auto 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 16px;
+    font-size: 10pt;
+    color: var(--ink-soft);
+  }
+  .ws-bar a { color: var(--violet); font-weight: 600; text-decoration: none; }
+  .ws-bar a:hover { text-decoration: underline; }
+  .ws-bar .home { font-family: "Trebuchet MS", "Segoe UI", sans-serif; font-size: 12pt; }
+  .ws-bar .sep { color: var(--rule); }
+  .ws-bar .grow { flex: 1 1 auto; }
+  .theme-btn {
+    font: inherit;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 1.2px solid var(--rule);
+    border-radius: 3px;
+    padding: 3px 10px;
+    cursor: pointer;
+  }
+  .theme-btn:hover { color: var(--violet); border-color: var(--violet); }
+  .theme-btn:focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
+
+  @media print {
+    @page { size: A4; margin: 12mm 13mm; }
+    :root,
+    :root[data-theme="dark"],
+    :root[data-theme="light"] {
+      --paper: #ffffff; --ground: #ffffff; --ink: #1a1c28; --ink-soft: #6c6f80;
+      --rule: #cbcad8; --rule-soft: #e3e2ec; --violet: #4b4a8f; --violet-tint: #eeeef7;
+      --amber: #a8700f; --amber-tint: #faf3e6; --shadow: none;
+    }
+    body { background: #fff; padding: 0; font-size: 10.5pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .toolbar, .ws-bar { display: none; }
+    .page { width: auto; min-height: 0; box-shadow: none; margin: 0; padding: 0; break-after: page; }
+    .page:last-child { break-after: auto; }
+    .ex, .rulebox, .reading, .bonus { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div class="ws-bar">
+  <a class="home" href="index.html">← English Worksheets</a>
+  <span class="sep">·</span>
+  <a href="units/am-is-are-a2.html">İnteraktif sürüm (A2)</a>
+  <span class="sep">·</span>
+  <a href="am-is-are-worksheet.html">A1 çalışma kağıdı</a>
+  <span class="grow"></span>
+  <button class="theme-btn" type="button" title="Açık / koyu tema" aria-label="Temayı değiştir">☾</button>
+</div>
+
+<div class="toolbar">
+  <p>A2 seviyesi · 5 sayfa çalışma kağıdı + 1 sayfa cevap anahtarı. A4, dikey. Baskı her zaman beyaz zemin + koyu mürekkep çıkar.</p>
+  <button class="print-btn" onclick="window.print()">Yazdır</button>
+</div>
+
+<!-- ============ PAGE 1 ============ -->
+<section class="page">
+  <header class="masthead">
+    <p class="eyebrow"><span class="level">CEFR A2</span><span>English · Grammar</span></p>
+    <h1>The Verb <em>“to be”</em>: am / is / are &amp; there is / there are</h1>
+    <p class="sub">Singular or plural? · expressions with <i>be</i> · negatives · questions · describing places</p>
+    <div class="idline"><span>Name:</span><span>Class:</span><span>Date:</span></div>
+  </header>
+
+  <div class="rulebox">
+    <h3>Watch out! Singular or plural? (Dikkat: tekil mi, çoğul mu?)</h3>
+    <div class="cols2">
+      <p><b>+ is</b> &nbsp;news, maths, money, hair, information, advice, water, bread, <i>everybody</i>, <i>nobody</i>, <i>everything</i></p>
+      <p><b>+ are</b> &nbsp;trousers, jeans, glasses, scissors, clothes, <i>people</i>, <i>children</i>, <i>men</i>, <i>women</i></p>
+    </div>
+    <p class="tip">These words look plural but take <b>is</b>: <i>The news is on at seven.</i> · These words look singular but take <b>are</b>: <i>The people are friendly.</i><br>
+    <i>Türkçede tek kelime olanlar İngilizcede çoğul olabilir (trousers = pantolon → are), çoğul görünenler tekil olabilir (news → is).</i></p>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">A</span> Complete with <i>is</i> or <i>are</i>.</h2>
+    <span class="tr">Boşlukları is ya da are ile tamamla. Dikkat: hepsi kolay değil!</span>
+    <ol class="items two">
+      <li>My new trousers <span class="blank sm"></span> too long.</li>
+      <li>The news <span class="blank sm"></span> on TV at seven o'clock.</li>
+      <li>Everybody in my class <span class="blank sm"></span> excited about the trip.</li>
+      <li>Maths <span class="blank sm"></span> my favourite subject.</li>
+      <li>These scissors <span class="blank sm"></span> very sharp. Be careful!</li>
+      <li>A lot of people <span class="blank sm"></span> in the park today.</li>
+      <li>My cousin's children <span class="blank sm"></span> at primary school.</li>
+      <li>The weather in İzmir <span class="blank sm"></span> usually hot in August.</li>
+      <li>Where <span class="blank sm"></span> your glasses?</li>
+      <li>My hair <span class="blank sm"></span> short and curly.</li>
+      <li>Nobody <span class="blank sm"></span> at home in the afternoon.</li>
+      <li>Physics and chemistry <span class="blank sm"></span> difficult for me.</li>
+    </ol>
+  </div>
+
+  <div class="rulebox">
+    <h3>there is / there are (bir şeyin var olduğunu söylerken)</h3>
+    <div class="scroller">
+      <table class="grammar">
+        <tr><th></th><th>singular</th><th>plural</th></tr>
+        <tr><td class="be">+</td><td>There is (There's) a park.</td><td>There are two parks.</td></tr>
+        <tr><td class="be">−</td><td>There isn't a park. / … any milk.</td><td>There aren't any parks.</td></tr>
+        <tr><td class="be">?</td><td>Is there a park? — Yes, there is.</td><td>Are there any parks? — No, there aren't.</td></tr>
+      </table>
+    </div>
+    <p class="tip">Use <b>any</b> in negatives and questions: <i>There aren't any shops. Are there any shops?</i></p>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">B</span> Complete with a form of <i>there is / there are</i>.</h2>
+    <span class="tr">there is / there are / there isn't / there aren't / Is there / Are there kalıplarından uygun olanı yaz.</span>
+    <ol class="items two">
+      <li><span class="blank md"></span> a big park near our house.</li>
+      <li><span class="blank md"></span> two cinemas in my town.</li>
+      <li><span class="blank md"></span> any sugar in my tea. I don't like it.</li>
+      <li><span class="blank md"></span> any students in the corridor. They're all in class.</li>
+      <li><span class="blank md"></span> a problem with my bike.</li>
+      <li><span class="blank md"></span> a swimming pool at your school? — Yes, there is.</li>
+      <li><span class="blank md"></span> many tourists in Antalya in winter? — No, there aren't.</li>
+      <li><span class="blank md"></span> 28 days in February.</li>
+      <li><span class="blank md"></span> a lot of homework today. Only one exercise!</li>
+      <li><span class="blank md"></span> some beautiful photos on the wall.</li>
+    </ol>
+  </div>
+
+  <div class="footer"><span>Am / Is / Are — Worksheet · A2</span><span>Page 1 of 5</span></div>
+</section>
+
+<!-- ============ PAGE 2 ============ -->
+<section class="page">
+  <div class="runhead"><span>Am / Is / Are · A2</span><b>Dialogue · forms · expressions</b></div>
+
+  <div class="ex">
+    <h2><span class="tag">C</span> Complete the dialogue with <i>am</i>, <i>is</i>, <i>are</i>, <i>isn't</i> or <i>Is / Are</i>.</h2>
+    <span class="tr">Diyaloğu uygun biçimle tamamla. Soru cümlelerinde büyük harfle başla.</span>
+    <dl class="dialogue">
+      <dt>Lara:</dt><dd>Hi! My name <span class="n">1</span><span class="blank sm"></span> Lara.</dd>
+      <dt>Mert:</dt><dd>Hello, I <span class="n">2</span><span class="blank sm"></span> Mert. I <span class="n">3</span><span class="blank sm"></span> new here.</dd>
+      <dt>Lara:</dt><dd>Where <span class="n">4</span><span class="blank sm"></span> you from?</dd>
+      <dt>Mert:</dt><dd>I <span class="n">5</span><span class="blank sm"></span> from Trabzon, but my parents <span class="n">6</span><span class="blank sm"></span> from Sinop.</dd>
+      <dt>Lara:</dt><dd><span class="n">7</span><span class="blank sm"></span> your sister in this school, too?</dd>
+      <dt>Mert:</dt><dd>No, she <span class="n">8</span><span class="blank sm"></span>. She <span class="n">9</span><span class="blank sm"></span> only four years old.</dd>
+      <dt>Lara:</dt><dd><span class="n">10</span><span class="blank sm"></span> you good at football? There <span class="n">11</span><span class="blank sm"></span> a match on Friday.</dd>
+      <dt>Mert:</dt><dd>Yes, I <span class="n">12</span><span class="blank sm"></span>! But my football shoes <span class="n">13</span><span class="blank sm"></span> at home.</dd>
+    </dl>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">D</span> Write the other form (long <span class="arrow">↔</span> short).</h2>
+    <span class="tr">Uzun biçimi kısa, kısa biçimi uzun yaz. Örnek: she is not → she isn't</span>
+    <ol class="items two">
+      <li>he is not <span class="arrow">→</span> <span class="blank"></span></li>
+      <li>they aren't <span class="arrow">→</span> <span class="blank"></span></li>
+      <li>we are not <span class="arrow">→</span> <span class="blank"></span> / <span class="blank"></span></li>
+      <li>it isn't <span class="arrow">→</span> <span class="blank"></span></li>
+      <li>I'm not <span class="arrow">→</span> <span class="blank"></span></li>
+      <li>that is <span class="arrow">→</span> <span class="blank"></span></li>
+      <li>you are not <span class="arrow">→</span> <span class="blank"></span></li>
+      <li>there is not <span class="arrow">→</span> <span class="blank"></span></li>
+    </ol>
+  </div>
+
+  <div class="rulebox">
+    <h3>Expressions with <i>be</i> (be ile kullanılan kalıplar)</h3>
+    <div class="cols2">
+      <p>be <b>hungry / thirsty / tired / cold</b> &nbsp;·&nbsp; be <b>late (for)</b> &nbsp;·&nbsp; be <b>ready</b></p>
+      <p>be <b>good at</b> &nbsp;·&nbsp; be <b>afraid of</b> &nbsp;·&nbsp; be <b>interested in</b> &nbsp;·&nbsp; be <b>full of</b> &nbsp;·&nbsp; be <b>right / wrong</b></p>
+    </div>
+    <p class="tip">In English we say <b>I am 12 years old</b> — never “I have 12 years”. <i>(Yaş söylerken be kullanılır.)</i></p>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">E</span> Complete with the correct form of <i>be</i> + a word or phrase from the box.</h2>
+    <span class="tr">Doğru be biçimi + kutudan uygun kelime/kalıp ile tamamla.</span>
+    <div class="wordbank">
+      <b>word box</b>
+      <span>late</span><span>afraid of</span><span>good at</span><span>right</span><span>the same</span><span>hungry</span><span>ready</span><span>full of</span><span>interested in</span><span>wrong</span>
+    </div>
+    <ol class="items two roomy">
+      <li>Hurry up! We <span class="blank md"></span> for the bus.</li>
+      <li>My little brother <span class="blank md"></span> spiders.</li>
+      <li>I <span class="blank md"></span> drawing, but I can't sing.</li>
+      <li>Your answer <span class="blank md"></span>. Well done!</li>
+      <li>These two bags <span class="blank md"></span>.</li>
+      <li>I <span class="blank md"></span>! Is there any food?</li>
+      <li><span class="blank sm"></span> you <span class="blank sm"></span>? The bus is leaving!</li>
+      <li>The old box <span class="blank md"></span> photos.</li>
+      <li>My sister <span class="blank md"></span> science.</li>
+      <li>Sorry, I <span class="blank md"></span>. The answer is 24, not 42.</li>
+    </ol>
+  </div>
+
+  <div class="footer"><span>Am / Is / Are — Worksheet · A2</span><span>Page 2 of 5</span></div>
+</section>
+
+<!-- ============ PAGE 3 ============ -->
+<section class="page">
+  <div class="runhead"><span>Am / Is / Are · A2</span><b>Negative sentences</b></div>
+
+  <div class="rulebox">
+    <h3>Negatives (Olumsuz cümleler)</h3>
+    <div class="scroller">
+      <table class="grammar">
+        <tr><th>Long form</th><th>Short form(s)</th><th>Example</th></tr>
+        <tr><td>I am not</td><td class="short">I'm not</td><td class="ex">I'm not interested in cars.</td></tr>
+        <tr><td>he / she / it is not</td><td class="short">isn't · he's not</td><td class="ex">The shop isn't open on Sundays.</td></tr>
+        <tr><td>you / we / they are not</td><td class="short">aren't · we're not</td><td class="ex">We aren't ready yet.</td></tr>
+        <tr><td>there is / are not</td><td class="short">there isn't · there aren't</td><td class="ex">There aren't any eggs.</td></tr>
+      </table>
+    </div>
+    <p class="tip">There is no “amn't”. One negative is enough: <b>There isn't any bread</b>, not “There isn't no bread”.</p>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">F</span> Rewrite the sentences in the negative. Use short forms.</h2>
+    <span class="tr">Cümleleri kısa biçim kullanarak olumsuz yap.</span>
+    <ol class="items roomy">
+      <li>My grandparents are at home in the evening. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>This exercise is very difficult. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>I am good at remembering names. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>There are a lot of shops in our street. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>The twins are in the same class. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>We are ready for the test. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>Her house is near the station. <span class="arrow">→</span> <span class="blank lg"></span></li>
+    </ol>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">G</span> Complete the text with <i>'m not</i>, <i>isn't</i> or <i>aren't</i>.</h2>
+    <span class="tr">Metni olumsuz biçimlerle tamamla.</span>
+    <p class="reading">
+      It's Sunday morning and I <span class="n">1</span><span class="blank"></span> very happy. My best friend Ece
+      <span class="n">2</span><span class="blank"></span> in town this weekend — she's at her grandmother's house. My brothers
+      <span class="n">3</span><span class="blank"></span> interested in my games, and my parents <span class="n">4</span><span class="blank"></span>
+      at home either; they're at the market. The weather <span class="n">5</span><span class="blank"></span> good, so the park
+      <span class="n">6</span><span class="blank"></span> a good idea. There <span class="n">7</span><span class="blank"></span> any interesting
+      films on TV and my tablet <span class="n">8</span><span class="blank"></span> charged. What a boring day!
+    </p>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">H</span> These sentences are false. Write a negative sentence and then the true one.</h2>
+    <span class="tr">Yanlış bilgileri düzelt: önce olumsuz cümle, sonra doğrusu.<br>Örnek: Istanbul is the capital of Turkey. → Istanbul isn't the capital of Turkey. Ankara is.</span>
+    <ol class="items roomy">
+      <li>Elephants are the fastest animals in the world. <span class="line"></span></li>
+      <li>The Nile is in South America. <span class="line"></span></li>
+      <li>February and March are the hottest months in Turkey. <span class="line"></span></li>
+      <li>Penguins are from the North Pole. <span class="line"></span></li>
+      <li>English and Spanish are the same language. <span class="line"></span></li>
+    </ol>
+  </div>
+
+  <div class="footer"><span>Am / Is / Are — Worksheet · A2</span><span>Page 3 of 5</span></div>
+</section>
+
+<!-- ============ PAGE 4 ============ -->
+<section class="page">
+  <div class="runhead"><span>Am / Is / Are · A2</span><b>Questions &amp; answers</b></div>
+
+  <div class="rulebox">
+    <h3>Questions with <i>be</i> (be ile soru)</h3>
+    <p><b>be + subject?</b> &nbsp; <i>Are your parents at work? · Is there a bank near here?</i></p>
+    <p><b>question word + be + subject?</b> &nbsp; <i>Why aren't you at school? · How many students are there in your class? · What is your new school like?</i></p>
+    <div class="scroller">
+      <table class="grammar">
+        <tr><th>Question word</th><th>You ask about …</th><th>Example answer</th></tr>
+        <tr><td class="short">Where</td><td>a place</td><td class="ex">In the library.</td></tr>
+        <tr><td class="short">How old</td><td>age</td><td class="ex">She's thirteen.</td></tr>
+        <tr><td class="short">How much</td><td>price</td><td class="ex">Ten liras.</td></tr>
+        <tr><td class="short">What … like</td><td>a description</td><td class="ex">He's friendly and funny.</td></tr>
+        <tr><td class="short">Why</td><td>a reason</td><td class="ex">Because she's ill.</td></tr>
+      </table>
+    </div>
+    <p class="tip">Short answers: <b>Yes, I am. / No, I'm not.</b> We never shorten the <i>yes</i> answer (“Yes, I'm.” ✗).</p>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">I</span> Write a question for the <span class="u">underlined</span> part.</h2>
+    <span class="tr">Altı çizili bölümü sormak için soru yaz. Kutudaki soru kelimelerini kullan.</span>
+    <div class="wordbank">
+      <b>word box</b><span>How old</span><span>Where</span><span>How much</span><span>What colour</span><span>Who</span><span>Why</span><span>When</span><span>What … like</span>
+    </div>
+    <ol class="items roomy">
+      <li>She's <span class="u">thirteen</span> years old. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>They're <span class="u">in the library</span>. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>The tickets are <span class="u">ten liras</span>. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>My new bag is <span class="u">dark blue</span>. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>The boy at the door is <span class="u">my cousin</span>. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>Selin is at home <span class="u">because she's ill</span>. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>The school party is <span class="u">on Saturday</span>. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>My new teacher is <span class="u">very friendly</span>. <span class="arrow">→</span> <span class="blank lg"></span></li>
+    </ol>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">J</span> Put the words in the correct order to make questions.</h2>
+    <span class="tr">Kelimeleri doğru sıraya koyarak soru cümlesi yaz.</span>
+    <ol class="items roomy">
+      <li><span class="scram">aren't / why / you / class / in / ?</span> <span class="line"></span></li>
+      <li><span class="scram">near / is / a / here / chemist / there / ?</span> <span class="line"></span></li>
+      <li><span class="scram">the / are / how much / trainers / ?</span> <span class="line"></span></li>
+      <li><span class="scram">your / is / like / what / new / school / ?</span> <span class="line"></span></li>
+      <li><span class="scram">in / students / are / there / how many / class / your / ?</span> <span class="line"></span></li>
+      <li><span class="scram">the / isn't / why / open / museum / ?</span> <span class="line"></span></li>
+    </ol>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">K</span> Answer about yourself: a short answer + one more piece of information.</h2>
+    <span class="tr">Kendin hakkında cevap ver: kısa cevap + bir bilgi daha.<br>Örnek: Are you from a big city? → No, I'm not. I'm from a small town near Konya.</span>
+    <ol class="items roomy">
+      <li>Are you good at maths? <span class="line"></span></li>
+      <li>Is your school far from your house? <span class="line"></span></li>
+      <li>Are there any shops in your street? <span class="line"></span></li>
+      <li>Are you afraid of the dark? <span class="line"></span></li>
+    </ol>
+  </div>
+
+  <div class="footer"><span>Am / Is / Are — Worksheet · A2</span><span>Page 4 of 5</span></div>
+</section>
+
+<!-- ============ PAGE 5 ============ -->
+<section class="page">
+  <div class="runhead"><span>Am / Is / Are · A2</span><b>Mixed practice · reading · writing</b></div>
+
+  <div class="ex">
+    <h2><span class="tag">L</span> Put the words in the correct order.</h2>
+    <span class="tr">Karışık kelimeleri doğru sıraya koy. Noktalama işaretlerini de yaz.</span>
+    <ol class="items roomy">
+      <li><span class="scram">good / I / at / am / not / swimming</span> <span class="line"></span></li>
+      <li><span class="scram">there / in / are / my / two / bathrooms / house</span> <span class="line"></span></li>
+      <li><span class="scram">is / the / full / box / of / toys / old</span> <span class="line"></span></li>
+      <li><span class="scram">aren't / brothers / my / interested / football / in</span> <span class="line"></span></li>
+      <li><span class="scram">isn't / there / milk / any / fridge / the / in</span> <span class="line"></span></li>
+      <li><span class="scram">late / sorry / I'm / for / lesson / the</span> <span class="line"></span></li>
+      <li><span class="scram">afraid / are / of / you / dogs / ?</span> <span class="line"></span></li>
+      <li><span class="scram">my / are / where / glasses / ?</span> <span class="line"></span></li>
+    </ol>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">M</span> There is one mistake in each sentence. Write it correctly.</h2>
+    <span class="tr">Her cümlede bir hata var. Doğru biçimini yaz.</span>
+    <ol class="items two roomy">
+      <li>My trousers is new. <span class="line"></span></li>
+      <li>There is three people in the room. <span class="line"></span></li>
+      <li>I have 12 years old. <span class="line"></span></li>
+      <li>Where is your cousins? <span class="line"></span></li>
+      <li>There aren't no bread. <span class="line"></span></li>
+      <li>Everybody are happy today. <span class="line"></span></li>
+      <li>Why you are sad? <span class="line"></span></li>
+      <li>The news are very interesting. <span class="line"></span></li>
+      <li>Is your sister at home? — Yes, she's. <span class="line"></span></li>
+      <li>My hairs are very long. <span class="line"></span></li>
+    </ol>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">N</span> Read and complete with <i>am, is, are, isn't, aren't, There is</i> or <i>There are</i>.</h2>
+    <span class="tr">Metni uygun biçimlerle tamamla.</span>
+    <p class="reading">
+      My name <span class="n">1</span><span class="blank"></span> Kerem and I <span class="n">2</span><span class="blank"></span> from Safranbolu,
+      a small town in the north of Turkey. It <span class="n">3</span><span class="blank"></span> a big city, but it
+      <span class="n">4</span><span class="blank"></span> famous all over the world because of its old houses.
+      <span class="n">5</span><span class="blank md"></span> a lot of tourists here in summer.
+      In the town centre <span class="n">6</span><span class="blank"></span> an old bazaar. The streets
+      <span class="n">7</span><span class="blank"></span> narrow and the shops <span class="n">8</span><span class="blank"></span> full of sweets,
+      scarves and copper pots. My uncle's shop <span class="n">9</span><span class="blank"></span> there, too.
+      <span class="n">10</span><span class="blank md"></span> any big shopping malls in the centre, so people usually walk.
+      My school <span class="n">11</span><span class="blank"></span> near the bazaar. <span class="n">12</span><span class="blank md"></span>
+      28 students in my class and we <span class="n">13</span><span class="blank"></span> all good friends. The teachers
+      <span class="n">14</span><span class="blank"></span> strict, but they're fair. I love my town!
+    </p>
+    <ol class="items roomy">
+      <li>Where is Safranbolu? <span class="line"></span></li>
+      <li>Why is the town famous? <span class="line"></span></li>
+      <li>Are there any shopping malls in the centre? <span class="line"></span></li>
+      <li>How many students are there in Kerem's class? <span class="line"></span></li>
+    </ol>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">O</span> Write about your town or your street (6–8 sentences).</h2>
+    <span class="tr">Kendi şehrin ya da sokağın hakkında 6–8 cümle yaz. Şunları kullan: en az iki <i>there is / there are</i>, bir olumsuz cümle ve okuyucuya bir soru.</span>
+    <span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span>
+  </div>
+
+  <div class="ex bonus">
+    <h2><span class="tag">P</span> Bonus: the past of <i>be</i> — <i>was / were</i></h2>
+    <span class="tr">Ek alıştırma: geçmiş zamanda was / were. (I, he, she, it → was · you, we, they → were)</span>
+    <ol class="items two">
+      <li>Yesterday I <span class="blank sm"></span> at home all day.</li>
+      <li>My friends <span class="blank sm"></span> at the cinema.</li>
+      <li>The film <span class="blank sm"></span> really exciting.</li>
+      <li>We <span class="blank sm"></span> very tired last night.</li>
+      <li><span class="blank sm"></span> you at school yesterday?</li>
+      <li>It <span class="blank sm"></span> not cold, so we played outside.</li>
+    </ol>
+  </div>
+
+  <div class="selfcheck">
+    <b>Self-check — I can …</b>
+    <ul>
+      <li>choose <i>is</i> or <i>are</i> with tricky nouns (news, trousers, people)</li>
+      <li>use <i>there is / there are</i> with <i>a</i> and <i>any</i></li>
+      <li>use expressions like <i>be good at</i>, <i>be afraid of</i>, <i>be late</i></li>
+      <li>ask questions with <i>Where, Why, How much, What … like</i></li>
+    </ul>
+  </div>
+
+  <div class="footer"><span>Am / Is / Are — Worksheet · A2</span><span>Page 5 of 5</span></div>
+</section>
+
+<!-- ============ ANSWER KEY ============ -->
+<section class="page key">
+  <header class="masthead">
+    <p class="eyebrow"><span class="level">CEFR A2</span><span>For the teacher</span></p>
+    <h1>Answer <em>Key</em></h1>
+    <p class="sub">Other correct answers are possible in F, H, I, K, O and in all free-writing tasks.</p>
+  </header>
+
+  <div class="keygrid">
+    <div class="keyblock">
+      <h3>A — is / are</h3>
+      <ol class="inline"><li>are</li><li>is</li><li>is</li><li>is</li><li>are</li><li>are</li><li>are</li><li>is</li><li>are</li><li>is</li><li>is</li><li>are</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>B — there is / there are</h3>
+      <ol><li>There's / There is</li><li>There are</li><li>There isn't</li><li>There aren't</li><li>There's</li><li>Is there</li><li>Are there</li><li>There are</li><li>There isn't</li><li>There are</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>C — dialogue</h3>
+      <ol class="inline"><li>is</li><li>am</li><li>am</li><li>are</li><li>am</li><li>are</li><li>Is</li><li>isn't</li><li>is</li><li>Are</li><li>is</li><li>am</li><li>are</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>D — long ↔ short</h3>
+      <ol><li>he isn't / he's not</li><li>they are not</li><li>we aren't / we're not</li><li>it is not</li><li>I am not</li><li>that's</li><li>you aren't / you're not</li><li>there isn't</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>E — expressions with be</h3>
+      <ol><li>are late</li><li>is afraid of</li><li>am good at</li><li>is right</li><li>are the same</li><li>am hungry</li><li>Are … ready</li><li>is full of</li><li>is interested in</li><li>am wrong</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>F — negatives</h3>
+      <ol><li>My grandparents aren't at home in the evening.</li><li>This exercise isn't very difficult.</li><li>I'm not good at remembering names.</li><li>There aren't a lot of / many shops in our street.</li><li>The twins aren't in the same class.</li><li>We aren't ready for the test.</li><li>Her house isn't near the station.</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>G — negative text</h3>
+      <ol class="inline"><li>'m not</li><li>isn't</li><li>aren't</li><li>aren't</li><li>isn't</li><li>isn't</li><li>aren't</li><li>isn't</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>H — correct the facts</h3>
+      <ol><li>Elephants aren't the fastest animals. Cheetahs are.</li><li>The Nile isn't in South America. It's in Africa.</li><li>February and March aren't the hottest months. July and August are.</li><li>Penguins aren't from the North Pole. They're from Antarctica / the South Pole.</li><li>English and Spanish aren't the same language. They're different.</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>I — write the question</h3>
+      <ol><li>How old is she?</li><li>Where are they?</li><li>How much are the tickets?</li><li>What colour is your new bag?</li><li>Who is the boy at the door?</li><li>Why is Selin at home?</li><li>When is the school party?</li><li>What is your new teacher like?</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>J — question order</h3>
+      <ol><li>Why aren't you in class?</li><li>Is there a chemist near here?</li><li>How much are the trainers?</li><li>What is your new school like?</li><li>How many students are there in your class?</li><li>Why isn't the museum open?</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>K — free answers</h3>
+      <ol><li>Yes, I am. / No, I'm not. + extra information. Check the short answer form and that the second sentence uses <b>be</b> correctly.</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>L — word order</h3>
+      <ol><li>I am not good at swimming.</li><li>There are two bathrooms in my house.</li><li>The old box is full of toys.</li><li>My brothers aren't interested in football.</li><li>There isn't any milk in the fridge.</li><li>Sorry, I'm late for the lesson.</li><li>Are you afraid of dogs?</li><li>Where are my glasses?</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>M — correct the mistake</h3>
+      <ol><li>My trousers <b>are</b> new.</li><li>There <b>are</b> three people in the room.</li><li>I <b>am</b> 12 years old.</li><li>Where <b>are</b> your cousins?</li><li>There <b>isn't any</b> bread.</li><li>Everybody <b>is</b> happy today.</li><li>Why <b>are you</b> sad?</li><li>The news <b>is</b> very interesting.</li><li>Yes, <b>she is</b>.</li><li>My <b>hair is</b> very long.</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>N — reading</h3>
+      <ol class="inline"><li>is</li><li>am</li><li>isn't</li><li>is</li><li>There are</li><li>there is</li><li>are</li><li>are</li><li>is</li><li>There aren't</li><li>is</li><li>There are</li><li>are</li><li>are</li></ol>
+      <p class="tip">1 It's in the north of Turkey. · 2 Because of its old houses. · 3 No, there aren't. · 4 There are 28 students.</p>
+    </div>
+    <div class="keyblock">
+      <h3>O — writing</h3>
+      <ol><li>Own answers. Check: 2× <i>there is/there are</i>, one negative, one question, correct <b>be</b> forms, capital letters and full stops.</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>P — bonus: was / were</h3>
+      <ol class="inline"><li>was</li><li>were</li><li>was</li><li>were</li><li>Were</li><li>was</li></ol>
+    </div>
+  </div>
+
+  <div class="footer"><span>Am / Is / Are — Answer Key · A2</span><span>Page 6</span></div>
+</section>
+
+<script src="assets/engine.js"></script>
+</body>
+</html>

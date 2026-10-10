@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Am / Is / Are — Worksheet (Age 10) · English Worksheets</title>
+<style>
+  :root {
+    --paper: #ffffff;
+    --ground: #e7ecea;
+    --ink: #16222e;
+    --ink-soft: #5e7275;
+    --rule: #c9d4d2;
+    --rule-soft: #dfe7e5;
+    --teal: #0e6e6b;
+    --teal-tint: #eef6f5;
+    --orange: #d2552b;
+    --orange-tint: #fcf0ea;
+    --shadow: 0 2px 10px rgba(22, 34, 46, .13);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #151c21;
+      --ground: #0d1215;
+      --ink: #e6edea;
+      --ink-soft: #9aaeb0;
+      --rule: #38474b;
+      --rule-soft: #263137;
+      --teal: #5ac8bd;
+      --teal-tint: #19282a;
+      --orange: #f0906a;
+      --orange-tint: #2a1f1a;
+      --shadow: 0 2px 10px rgba(0, 0, 0, .5);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #151c21;
+    --ground: #0d1215;
+    --ink: #e6edea;
+    --ink-soft: #9aaeb0;
+    --rule: #38474b;
+    --rule-soft: #263137;
+    --teal: #5ac8bd;
+    --teal-tint: #19282a;
+    --orange: #f0906a;
+    --orange-tint: #2a1f1a;
+    --shadow: 0 2px 10px rgba(0, 0, 0, .5);
+  }
+  :root[data-theme="light"] {
+    --paper: #ffffff;
+    --ground: #e7ecea;
+    --ink: #16222e;
+    --ink-soft: #5e7275;
+    --rule: #c9d4d2;
+    --rule-soft: #dfe7e5;
+    --teal: #0e6e6b;
+    --teal-tint: #eef6f5;
+    --orange: #d2552b;
+    --orange-tint: #fcf0ea;
+    --shadow: 0 2px 10px rgba(22, 34, 46, .13);
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Segoe UI", -apple-system, system-ui, sans-serif;
+    font-size: 11.5pt;
+    line-height: 1.5;
+    margin: 0;
+    padding: 18px 12px 48px;
+  }
+
+  /* ---------- toolbar (screen only) ---------- */
+  .toolbar {
+    max-width: 210mm;
+    margin: 0 auto 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 10px 16px;
+  }
+  .toolbar p {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 10pt;
+    flex: 1 1 240px;
+  }
+  .print-btn {
+    font: inherit;
+    font-weight: 600;
+    color: var(--paper);
+    background: var(--teal);
+    border: 0;
+    border-radius: 3px;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+  .print-btn:hover { filter: brightness(1.1); }
+  .print-btn:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+
+  /* ---------- page shell ---------- */
+  .page {
+    background: var(--paper);
+    box-shadow: var(--shadow);
+    width: 210mm;
+    min-height: 297mm;
+    box-sizing: border-box;
+    padding: 15mm 16mm 12mm;
+    margin: 0 auto 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 7mm;
+  }
+
+  /* ---------- masthead ---------- */
+  .masthead { border-bottom: 2.5px solid var(--teal); padding-bottom: 4mm; }
+  .eyebrow {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 8.5pt;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin: 0 0 2mm;
+  }
+  h1 {
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    font-size: 25pt;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    text-wrap: balance;
+    margin: 0;
+  }
+  h1 em { font-style: normal; color: var(--orange); }
+  .sub { margin: 2mm 0 0; color: var(--ink-soft); font-size: 10.5pt; }
+  .idline {
+    display: flex;
+    gap: 6mm;
+    margin-top: 4mm;
+    font-size: 10pt;
+    color: var(--ink-soft);
+  }
+  .idline span { flex: 1; border-bottom: 1px dotted var(--rule); padding-bottom: 1mm; }
+
+  .runhead {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 2mm;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 8.5pt;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .runhead b { color: var(--teal); letter-spacing: .14em; }
+
+  /* ---------- rule box ---------- */
+  .ruleboxes { display: flex; flex-direction: column; gap: 5mm; }
+  .rulebox {
+    border-left: 3px solid var(--teal);
+    background: var(--teal-tint);
+    padding: 4mm 5mm;
+  }
+  .rulebox h3 {
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    font-size: 12.5pt;
+    margin: 0 0 3mm;
+    color: var(--teal);
+  }
+  .rulebox p { margin: 0 0 2mm; }
+  .rulebox p:last-child { margin-bottom: 0; }
+  .tip {
+    font-size: 10pt;
+    color: var(--ink-soft);
+  }
+  .tip b { color: var(--orange); }
+
+  table { border-collapse: collapse; width: 100%; font-size: 11pt; }
+  .grammar th, .grammar td {
+    text-align: left;
+    padding: 1.6mm 3mm 1.6mm 0;
+    border-bottom: 1px solid var(--rule-soft);
+    vertical-align: baseline;
+  }
+  .grammar th {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 8.5pt;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    font-weight: 400;
+  }
+  .grammar td.be { font-weight: 700; color: var(--orange); white-space: nowrap; }
+  .grammar td.short { font-family: Consolas, "Courier New", monospace; white-space: nowrap; }
+  .grammar td.ex { color: var(--ink-soft); font-style: italic; }
+  .scroller { overflow-x: auto; }
+
+  /* ---------- exercises ---------- */
+  .ex { display: flow-root; }
+  .ex h2 {
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    font-size: 13pt;
+    font-weight: 700;
+    margin: 0 0 1mm;
+    display: flex;
+    align-items: baseline;
+    gap: 2.5mm;
+  }
+  .tag {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 10pt;
+    font-weight: 700;
+    color: var(--orange);
+    background: var(--orange-tint);
+    border: 1.2px solid var(--orange);
+    border-radius: 2px;
+    padding: .4mm 1.8mm;
+    flex: none;
+  }
+  .tr {
+    display: block;
+    font-size: 9.5pt;
+    font-style: italic;
+    color: var(--ink-soft);
+    margin: 0 0 3mm;
+  }
+
+  ol.items {
+    margin: 0;
+    padding-left: 7mm;
+    display: grid;
+    gap: 2.6mm 8mm;
+  }
+  ol.items.two { grid-template-columns: 1fr 1fr; }
+  ol.items.three { grid-template-columns: 1fr 1fr 1fr; }
+  ol.items li { padding-left: 1mm; }
+  ol.items.roomy { gap: 6mm 8mm; }
+
+  .blank {
+    display: inline-block;
+    min-width: 22mm;
+    border-bottom: 1px dotted var(--ink-soft);
+  }
+  .blank.sm { min-width: 14mm; }
+  .blank.lg { min-width: 38mm; }
+  .line {
+    display: block;
+    border-bottom: 1px dotted var(--rule);
+    height: 6.5mm;
+  }
+  .opt { font-weight: 600; color: var(--teal); white-space: nowrap; }
+  .arrow { color: var(--orange); font-weight: 700; }
+  .scram {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 10.5pt;
+  }
+
+  .wordbank {
+    border: 1.5px dashed var(--rule);
+    padding: 3mm 4mm;
+    margin: 0 0 4mm;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2mm 6mm;
+    align-items: baseline;
+  }
+  .wordbank b {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 8.5pt;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    font-weight: 400;
+  }
+  .wordbank span { font-weight: 600; color: var(--teal); }
+
+  .reading {
+    background: var(--teal-tint);
+    padding: 4mm 5mm;
+    line-height: 2.2;
+    font-size: 11.5pt;
+  }
+  .reading .blank { min-width: 18mm; border-bottom-color: var(--teal); }
+  .n {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 8.5pt;
+    color: var(--orange);
+    vertical-align: super;
+  }
+
+  .tf { display: grid; grid-template-columns: 1fr 1fr; gap: 2.6mm 8mm; margin: 3mm 0 0; padding-left: 7mm; }
+  .tf li::marker { color: var(--ink-soft); }
+  .pick { font-family: Consolas, "Courier New", monospace; color: var(--teal); white-space: nowrap; }
+
+  .challenge {
+    border: 2px solid var(--orange);
+    background: var(--orange-tint);
+    padding: 4mm 5mm;
+  }
+  .challenge h2 { color: var(--orange); }
+
+  .selfcheck {
+    margin-top: auto;
+    border-top: 1px solid var(--rule);
+    padding-top: 3mm;
+    font-size: 10pt;
+    color: var(--ink-soft);
+  }
+  .selfcheck ul { list-style: none; margin: 2mm 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5mm 8mm; }
+  .selfcheck li::before { content: "☐  "; color: var(--teal); }
+
+  /* ---------- answer key ---------- */
+  .key { background: var(--paper); }
+  .key h1 { color: var(--teal); }
+  .keygrid { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm 8mm; }
+  .keyblock h3 {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 9pt;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--orange);
+    border-bottom: 1px solid var(--rule-soft);
+    padding-bottom: 1mm;
+    margin: 0 0 2mm;
+  }
+  .keyblock ol {
+    margin: 0;
+    padding-left: 6mm;
+    font-size: 9.5pt;
+    line-height: 1.45;
+    font-variant-numeric: tabular-nums;
+  }
+  .keyblock ol.inline { padding-left: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 0 4mm; }
+  .keyblock ol.inline li { font-family: Consolas, "Courier New", monospace; }
+  .keyblock ol.inline li::before { content: counter(list-item) ". "; color: var(--ink-soft); }
+  .keyblock ol.inline li { counter-increment: list-item; }
+  .keyblock b { color: var(--teal); }
+
+  .footer {
+    font-size: 9pt;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--rule-soft);
+    padding-top: 2mm;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 230mm) {
+    .page { width: 100%; min-height: 0; padding: 7mm 6mm; }
+    ol.items.two, ol.items.three, .keygrid, .tf, .selfcheck ul { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- site bar (screen only) ---------- */
+  .ws-bar {
+    max-width: 210mm;
+    margin: 0 auto 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 16px;
+    font-size: 10pt;
+    color: var(--ink-soft);
+  }
+  .ws-bar a { color: var(--teal); font-weight: 600; text-decoration: none; }
+  .ws-bar a:hover { text-decoration: underline; }
+  .ws-bar .home { font-family: "Trebuchet MS", "Segoe UI", sans-serif; font-size: 12pt; }
+  .ws-bar .sep { color: var(--rule); }
+  .ws-bar .grow { flex: 1 1 auto; }
+  .theme-btn {
+    font: inherit;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 1.2px solid var(--rule);
+    border-radius: 3px;
+    padding: 3px 10px;
+    cursor: pointer;
+  }
+  .theme-btn:hover { color: var(--teal); border-color: var(--teal); }
+  .theme-btn:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+
+  @media print {
+    @page { size: A4; margin: 12mm 13mm; }
+    :root,
+    :root[data-theme="dark"],
+    :root[data-theme="light"] {
+      --paper: #ffffff; --ground: #ffffff; --ink: #16222e; --ink-soft: #5e7275;
+      --rule: #c9d4d2; --rule-soft: #dfe7e5; --teal: #0e6e6b; --teal-tint: #eef6f5;
+      --orange: #d2552b; --orange-tint: #fcf0ea; --shadow: none;
+    }
+    body { background: #fff; padding: 0; font-size: 11pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .toolbar, .ws-bar { display: none; }
+    .page { width: auto; min-height: 0; box-shadow: none; margin: 0; padding: 0; break-after: page; }
+    .page:last-child { break-after: auto; }
+    .ex, .rulebox, .reading, .challenge { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div class="ws-bar">
+  <a class="home" href="index.html">← English Worksheets</a>
+  <span class="sep">·</span>
+  <a href="units/am-is-are-a1.html">İnteraktif sürüm (A1)</a>
+  <span class="sep">·</span>
+  <a href="am-is-are-worksheet-a2.html">A2 çalışma kağıdı</a>
+  <span class="grow"></span>
+  <button class="theme-btn" type="button" title="Açık / koyu tema" aria-label="Temayı değiştir">☾</button>
+</div>
+
+<div class="toolbar">
+  <p>5 sayfa çalışma kağıdı + 1 sayfa cevap anahtarı. A4, dikey. Yazdırma her zaman beyaz zemin + siyah mürekkep olarak çıkar; kural kutularının açık renkli zemini için “Arka plan grafikleri” seçeneğini açık bırakabilirsiniz (kapalıyken de her şey okunur).</p>
+  <button class="print-btn" onclick="window.print()">Yazdır</button>
+</div>
+
+<!-- ============ PAGE 1 ============ -->
+<section class="page">
+  <header class="masthead">
+    <p class="eyebrow">English · Grammar · Unit 1</p>
+    <h1>The Verb <em>“to be”</em>: am / is / are</h1>
+    <p class="sub">Name &amp; age · family · school · feelings — Level: A1 (10 years old)</p>
+    <div class="idline"><span>Name:</span><span>Class:</span><span>Date:</span></div>
+  </header>
+
+  <div class="ruleboxes">
+    <div class="rulebox">
+      <h3>Remember! (Hatırla!)</h3>
+      <div class="scroller">
+        <table class="grammar">
+          <tr><th>Subject</th><th>to be</th><th>Short form</th><th>Example</th></tr>
+          <tr><td>I</td><td class="be">am</td><td class="short">I'm</td><td class="ex">I am ten years old.</td></tr>
+          <tr><td>he / she / it</td><td class="be">is</td><td class="short">he's / she's / it's</td><td class="ex">She is my sister.</td></tr>
+          <tr><td>you / we / they</td><td class="be">are</td><td class="short">you're / we're / they're</td><td class="ex">They are in the garden.</td></tr>
+        </table>
+      </div>
+      <p class="tip">One person or thing <b>→ is</b> &nbsp;·&nbsp; two or more <b>→ are</b> &nbsp;·&nbsp; only “I” takes <b>am</b>.<br>
+      <i>Tek kişi/şey → is, birden fazla → are, sadece “I” ile → am.</i></p>
+    </div>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">A</span> Write <i>am</i>, <i>is</i> or <i>are</i>.</h2>
+    <span class="tr">Boşluklara am, is ya da are yaz.</span>
+    <ol class="items three">
+      <li>I <span class="blank sm"></span></li>
+      <li>She <span class="blank sm"></span></li>
+      <li>They <span class="blank sm"></span></li>
+      <li>He <span class="blank sm"></span></li>
+      <li>We <span class="blank sm"></span></li>
+      <li>It <span class="blank sm"></span></li>
+      <li>You <span class="blank sm"></span></li>
+      <li>Tom <span class="blank sm"></span></li>
+      <li>My friends <span class="blank sm"></span></li>
+      <li>The cat <span class="blank sm"></span></li>
+      <li>Ayşe and I <span class="blank sm"></span></li>
+      <li>The books <span class="blank sm"></span></li>
+    </ol>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">B</span> Write the short forms.</h2>
+    <span class="tr">Kısa yazılışlarını yaz. Örnek: I am → I'm</span>
+    <ol class="items three">
+      <li>he is <span class="arrow">→</span> <span class="blank"></span></li>
+      <li>she is <span class="arrow">→</span> <span class="blank"></span></li>
+      <li>it is <span class="arrow">→</span> <span class="blank"></span></li>
+      <li>we are <span class="arrow">→</span> <span class="blank"></span></li>
+      <li>you are <span class="arrow">→</span> <span class="blank"></span></li>
+      <li>they are <span class="arrow">→</span> <span class="blank"></span></li>
+    </ol>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">C</span> Circle the correct word.</h2>
+    <span class="tr">Doğru kelimeyi yuvarlak içine al.</span>
+    <ol class="items two">
+      <li>My brother <span class="opt">is / are</span> seven.</li>
+      <li>The pencils <span class="opt">is / are</span> in my bag.</li>
+      <li>I <span class="opt">am / is</span> ready!</li>
+      <li>Lemons <span class="opt">is / are</span> yellow.</li>
+      <li>It <span class="opt">am / is</span> very cold today.</li>
+      <li>We <span class="opt">is / are</span> in the garden.</li>
+      <li>My cousins <span class="opt">is / are</span> funny.</li>
+      <li>Ali <span class="opt">am / is</span> my best friend.</li>
+    </ol>
+  </div>
+
+  <div class="footer"><span>Am / Is / Are — Worksheet</span><span>Page 1 of 5</span></div>
+</section>
+
+<!-- ============ PAGE 2 ============ -->
+<section class="page">
+  <div class="runhead"><span>Am / Is / Are</span><b>Positive sentences</b></div>
+
+  <div class="ex">
+    <h2><span class="tag">D</span> Complete the sentences with <i>am</i>, <i>is</i> or <i>are</i>.</h2>
+    <span class="tr">Cümleleri am, is ya da are ile tamamla.</span>
+    <ol class="items two">
+      <li>My name <span class="blank sm"></span> Elif.</li>
+      <li>I <span class="blank sm"></span> ten years old.</li>
+      <li>This <span class="blank sm"></span> my new bike.</li>
+      <li>My parents <span class="blank sm"></span> at work.</li>
+      <li>We <span class="blank sm"></span> in the same class.</li>
+      <li>The dog <span class="blank sm"></span> under the table.</li>
+      <li>Berk and Can <span class="blank sm"></span> brothers.</li>
+      <li>You <span class="blank sm"></span> a very good student.</li>
+      <li>It <span class="blank sm"></span> Monday today.</li>
+      <li>These shoes <span class="blank sm"></span> too big for me.</li>
+      <li>My teacher <span class="blank sm"></span> from İzmir.</li>
+      <li>I <span class="blank sm"></span> hungry and thirsty.</li>
+      <li>Those birds <span class="blank sm"></span> in the tree.</li>
+      <li>Her favourite colour <span class="blank sm"></span> purple.</li>
+      <li>How <span class="blank sm"></span> you today?</li>
+      <li>My sister and I <span class="blank sm"></span> at home.</li>
+    </ol>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">E</span> Rewrite the sentences with short forms.</h2>
+    <span class="tr">Cümleleri kısa yazılışla tekrar yaz. Örnek: I am a student. → I'm a student.</span>
+    <ol class="items roomy">
+      <li>She is my sister. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>It is a big dog. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>We are happy. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>They are in the park. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>He is eleven. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>You are late. <span class="arrow">→</span> <span class="blank lg"></span></li>
+    </ol>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">F</span> Choose a word from the box and write a true sentence.</h2>
+    <span class="tr">Kutudan bir kelime seç ve doğru bir cümle yaz.</span>
+    <div class="wordbank">
+      <b>word box</b>
+      <span>a student</span><span>ten</span><span>tall</span><span>my teacher</span><span>in the classroom</span><span>friends</span>
+    </div>
+    <ol class="items roomy">
+      <li>I <span class="blank lg"></span></li>
+      <li>My best friend <span class="blank lg"></span></li>
+      <li>Mrs Yılmaz <span class="blank lg"></span></li>
+      <li>My classmates and I <span class="blank lg"></span></li>
+    </ol>
+  </div>
+
+  <div class="footer"><span>Am / Is / Are — Worksheet</span><span>Page 2 of 5</span></div>
+</section>
+
+<!-- ============ PAGE 3 ============ -->
+<section class="page">
+  <div class="runhead"><span>Am / Is / Are</span><b>Negative sentences</b></div>
+
+  <div class="rulebox">
+    <h3>Negative: add <i>not</i> (Olumsuz: not ekle)</h3>
+    <div class="scroller">
+      <table class="grammar">
+        <tr><th>Long form</th><th>Short form</th><th>Example</th></tr>
+        <tr><td>I am not</td><td class="short">I'm not</td><td class="ex">I'm not tired.</td></tr>
+        <tr><td>he / she / it is not</td><td class="short">isn't</td><td class="ex">She isn't at school.</td></tr>
+        <tr><td>you / we / they are not</td><td class="short">aren't</td><td class="ex">They aren't my friends.</td></tr>
+      </table>
+    </div>
+    <p class="tip">Careful! There is no “amn't”. We always say <b>I'm not</b>.<br><i>Dikkat: “amn't” yoktur, her zaman I'm not deriz.</i></p>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">G</span> Make the sentences negative.</h2>
+    <span class="tr">Cümleleri olumsuz yap. Örnek: She is happy. → She isn't happy.</span>
+    <ol class="items roomy">
+      <li>I am tired. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>She is at school. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>They are my friends. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>It is cold today. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>We are hungry. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>He is a doctor. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>My room is tidy. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>The cats are on the sofa. <span class="arrow">→</span> <span class="blank lg"></span></li>
+    </ol>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">H</span> Write <i>'m not</i>, <i>isn't</i> or <i>aren't</i>.</h2>
+    <span class="tr">Boşluklara 'm not, isn't ya da aren't yaz.</span>
+    <ol class="items two">
+      <li>I <span class="blank"></span> at school. It's Sunday.</li>
+      <li>The milk <span class="blank"></span> in the fridge.</li>
+      <li>These apples <span class="blank"></span> red. They're green.</li>
+      <li>My father <span class="blank"></span> a teacher. He's a driver.</li>
+      <li>We <span class="blank"></span> late. We're early!</li>
+      <li>It <span class="blank"></span> my birthday today.</li>
+      <li>You <span class="blank"></span> alone. I'm here!</li>
+      <li>Lions <span class="blank"></span> small animals.</li>
+    </ol>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">I</span> These sentences are wrong! Write a negative sentence and then a true one.</h2>
+    <span class="tr">Bu cümleler yanlış. Önce olumsuz, sonra doğru cümleyi yaz. Örnek: Snow is hot. → Snow isn't hot. It is cold.</span>
+    <ol class="items roomy">
+      <li>Elephants are small. <span class="line"></span></li>
+      <li>The sun is blue. <span class="line"></span></li>
+      <li>Fish are in the sky. <span class="line"></span></li>
+      <li>A banana is square. <span class="line"></span></li>
+    </ol>
+  </div>
+
+  <div class="footer"><span>Am / Is / Are — Worksheet</span><span>Page 3 of 5</span></div>
+</section>
+
+<!-- ============ PAGE 4 ============ -->
+<section class="page">
+  <div class="runhead"><span>Am / Is / Are</span><b>Questions &amp; short answers</b></div>
+
+  <div class="rulebox">
+    <h3>Questions: change the order (Soru: sırayı değiştir)</h3>
+    <p>He <b>is</b> your brother. <span class="arrow">→</span> <b>Is</b> he your brother?</p>
+    <p>You <b>are</b> ready. <span class="arrow">→</span> <b>Are</b> you ready?</p>
+    <div class="scroller">
+      <table class="grammar">
+        <tr><th>Question</th><th>Yes …</th><th>No …</th></tr>
+        <tr><td>Am I late?</td><td class="short">Yes, you are.</td><td class="short">No, you aren't.</td></tr>
+        <tr><td>Is she your sister?</td><td class="short">Yes, she is.</td><td class="short">No, she isn't.</td></tr>
+        <tr><td>Are they at home?</td><td class="short">Yes, they are.</td><td class="short">No, they aren't.</td></tr>
+      </table>
+    </div>
+    <p class="tip">In short answers we never say “Yes, I'm.” — we say <b>Yes, I am.</b><br><i>Kısa cevaplarda olumlu cevabı kısaltmayız.</i></p>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">J</span> Make questions.</h2>
+    <span class="tr">Cümleleri soru yap. Örnek: You are from Turkey. → Are you from Turkey?</span>
+    <ol class="items roomy">
+      <li>She is your teacher. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>They are in the kitchen. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>He is eleven years old. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>It is a good film. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>The shop is open. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>Your shoes are new. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>I am right. <span class="arrow">→</span> <span class="blank lg"></span></li>
+      <li>Deniz is at home. <span class="arrow">→</span> <span class="blank lg"></span></li>
+    </ol>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">K</span> Write the short answers.</h2>
+    <span class="tr">Kısa cevapları yaz.</span>
+    <ol class="items two">
+      <li>Are you a student? — Yes, <span class="blank"></span>.</li>
+      <li>Is your mother a nurse? — No, <span class="blank"></span>.</li>
+      <li>Are the children in the garden? — Yes, <span class="blank"></span>.</li>
+      <li>Is it cold outside? — No, <span class="blank"></span>.</li>
+      <li>Am I in your team? — Yes, <span class="blank"></span>.</li>
+      <li>Are we ready? — No, <span class="blank"></span>.</li>
+      <li>Is Murat your brother? — Yes, <span class="blank"></span>.</li>
+      <li>Are these your books? — No, <span class="blank"></span>.</li>
+    </ol>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">L</span> Complete with a question word from the box.</h2>
+    <span class="tr">Kutudaki soru kelimeleriyle tamamla. (Bazı kelimeler iki kez kullanılabilir.)</span>
+    <div class="wordbank"><b>word box</b><span>What</span><span>Where</span><span>Who</span><span>How</span></div>
+    <ol class="items two">
+      <li><span class="blank"></span> is your name? — My name is Zeynep.</li>
+      <li><span class="blank"></span> are you from? — I'm from Ankara.</li>
+      <li><span class="blank"></span> old is your sister? — She's six.</li>
+      <li><span class="blank"></span> is that boy? — He's my cousin.</li>
+      <li><span class="blank"></span> are my keys? — They're on the table.</li>
+      <li><span class="blank"></span> is your favourite animal? — A dolphin!</li>
+    </ol>
+  </div>
+
+  <div class="footer"><span>Am / Is / Are — Worksheet</span><span>Page 4 of 5</span></div>
+</section>
+
+<!-- ============ PAGE 5 ============ -->
+<section class="page">
+  <div class="runhead"><span>Am / Is / Are</span><b>Mixed practice</b></div>
+
+  <div class="ex">
+    <h2><span class="tag">M</span> Put the words in the correct order.</h2>
+    <span class="tr">Karışık kelimeleri doğru sıraya koy. Noktalama işaretini de yaz!</span>
+    <ol class="items roomy">
+      <li><span class="scram">am / I / student / a</span> <span class="line"></span></li>
+      <li><span class="scram">is / sister / my / nine</span> <span class="line"></span></li>
+      <li><span class="scram">are / they / garden / the / in</span> <span class="line"></span></li>
+      <li><span class="scram">not / is / cold / it / today</span> <span class="line"></span></li>
+      <li><span class="scram">you / are / tired / ?</span> <span class="line"></span></li>
+      <li><span class="scram">aren't / we / late</span> <span class="line"></span></li>
+      <li><span class="scram">is / where / cat / the / ?</span> <span class="line"></span></li>
+      <li><span class="scram">teacher / is / your / from / İzmir / ?</span> <span class="line"></span></li>
+      <li><span class="scram">and / Ali / friends / are / I</span> <span class="line"></span></li>
+      <li><span class="scram">isn't / brother / my / home / at</span> <span class="line"></span></li>
+    </ol>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">N</span> There is one mistake in each sentence. Correct it.</h2>
+    <span class="tr">Her cümlede bir hata var. Doğrusunu yaz.</span>
+    <ol class="items two roomy">
+      <li>I is ten years old. <span class="line"></span></li>
+      <li>We is in the same class. <span class="line"></span></li>
+      <li>My cats is black. <span class="line"></span></li>
+      <li>You is my best friend. <span class="line"></span></li>
+      <li>He amn't at school. <span class="line"></span></li>
+      <li>Are she your sister? <span class="line"></span></li>
+      <li>Is they happy? <span class="line"></span></li>
+      <li>Are you hungry? — Yes, I'm. <span class="line"></span></li>
+    </ol>
+  </div>
+
+  <div class="ex">
+    <h2><span class="tag">O</span> Read and complete with <i>am</i>, <i>is</i> or <i>are</i>.</h2>
+    <span class="tr">Metni am, is ya da are ile tamamla.</span>
+    <p class="reading">
+      Hello! My name <span class="n">1</span><span class="blank"></span> Defne. I <span class="n">2</span><span class="blank"></span> ten years old
+      and I <span class="n">3</span><span class="blank"></span> from Bursa. My family <span class="n">4</span><span class="blank"></span> big.
+      My parents <span class="n">5</span><span class="blank"></span> teachers and my little brother <span class="n">6</span><span class="blank"></span> a baby.
+      He <span class="n">7</span><span class="blank"></span> two. Our cat <span class="n">8</span><span class="blank"></span> Pamuk.
+      She <span class="n">9</span><span class="blank"></span> white and very lazy! Today <span class="n">10</span><span class="blank"></span> Saturday,
+      so we <span class="n">11</span><span class="blank"></span> not at school. My cousins <span class="n">12</span><span class="blank"></span> here, too.
+      We <span class="n">13</span><span class="blank"></span> all in the garden and we <span class="n">14</span><span class="blank"></span> very happy.
+    </p>
+    <ol class="tf">
+      <li>Defne is from Ankara. <span class="pick">True / False</span></li>
+      <li>Her brother is two. <span class="pick">True / False</span></li>
+      <li>Pamuk is a dog. <span class="pick">True / False</span></li>
+      <li>They are at school today. <span class="pick">True / False</span></li>
+    </ol>
+  </div>
+
+  <div class="ex challenge">
+    <h2><span class="tag">P</span> Now write about YOU! (Şimdi kendin hakkında yaz!)</h2>
+    <span class="tr">5 cümle yaz: adın, yaşın, şehrin, ailen ve bugün nasıl olduğun. En az bir olumsuz cümle ve bir soru ekle.</span>
+    <span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span>
+  </div>
+
+  <div class="selfcheck">
+    <b>Self-check — I can …</b>
+    <ul>
+      <li>use <i>am / is / are</i> with the right subject</li>
+      <li>write short forms (I'm, she's, they're)</li>
+      <li>make negative sentences (isn't / aren't)</li>
+      <li>ask questions and give short answers</li>
+    </ul>
+  </div>
+
+  <div class="footer"><span>Am / Is / Are — Worksheet</span><span>Page 5 of 5</span></div>
+</section>
+
+<!-- ============ ANSWER KEY ============ -->
+<section class="page key">
+  <header class="masthead">
+    <p class="eyebrow">For the teacher</p>
+    <h1>Answer <em>Key</em></h1>
+    <p class="sub">Alternative correct answers are also possible in E, G, I, M and P.</p>
+  </header>
+
+  <div class="keygrid">
+    <div class="keyblock">
+      <h3>A — am / is / are</h3>
+      <ol class="inline"><li>am</li><li>is</li><li>are</li><li>is</li><li>are</li><li>is</li><li>are</li><li>is</li><li>are</li><li>is</li><li>are</li><li>are</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>B — short forms</h3>
+      <ol class="inline"><li>he's</li><li>she's</li><li>it's</li><li>we're</li><li>you're</li><li>they're</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>C — circle</h3>
+      <ol class="inline"><li>is</li><li>are</li><li>am</li><li>are</li><li>is</li><li>are</li><li>are</li><li>is</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>D — complete</h3>
+      <ol class="inline"><li>is</li><li>am</li><li>is</li><li>are</li><li>are</li><li>is</li><li>are</li><li>are</li><li>is</li><li>are</li><li>is</li><li>am</li><li>are</li><li>is</li><li>are</li><li>are</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>E — short forms</h3>
+      <ol><li>She's my sister.</li><li>It's a big dog.</li><li>We're happy.</li><li>They're in the park.</li><li>He's eleven.</li><li>You're late.</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>F — free answers</h3>
+      <ol><li>I am a student. / I'm ten.</li><li>My best friend is tall.</li><li>Mrs Yılmaz is my teacher.</li><li>My classmates and I are friends. / … are in the classroom.</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>G — negatives</h3>
+      <ol><li>I'm not tired.</li><li>She isn't at school.</li><li>They aren't my friends.</li><li>It isn't cold today.</li><li>We aren't hungry.</li><li>He isn't a doctor.</li><li>My room isn't tidy.</li><li>The cats aren't on the sofa.</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>H — 'm not / isn't / aren't</h3>
+      <ol class="inline"><li>'m not</li><li>isn't</li><li>aren't</li><li>isn't</li><li>aren't</li><li>isn't</li><li>aren't</li><li>aren't</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>I — correct the facts</h3>
+      <ol><li>Elephants aren't small. They are big.</li><li>The sun isn't blue. It is yellow.</li><li>Fish aren't in the sky. They are in the water.</li><li>A banana isn't square. It is long.</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>J — questions</h3>
+      <ol><li>Is she your teacher?</li><li>Are they in the kitchen?</li><li>Is he eleven years old?</li><li>Is it a good film?</li><li>Is the shop open?</li><li>Are your shoes new?</li><li>Am I right?</li><li>Is Deniz at home?</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>K — short answers</h3>
+      <ol class="inline"><li>I am</li><li>she isn't</li><li>they are</li><li>it isn't</li><li>you are</li><li>we aren't</li><li>he is</li><li>they aren't</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>L — question words</h3>
+      <ol class="inline"><li>What</li><li>Where</li><li>How</li><li>Who</li><li>Where</li><li>What</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>M — word order</h3>
+      <ol><li>I am a student.</li><li>My sister is nine.</li><li>They are in the garden.</li><li>It is not cold today.</li><li>Are you tired?</li><li>We aren't late.</li><li>Where is the cat?</li><li>Is your teacher from İzmir?</li><li>Ali and I are friends.</li><li>My brother isn't at home.</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>N — correct the mistake</h3>
+      <ol><li>I <b>am</b> ten years old.</li><li>We <b>are</b> in the same class.</li><li>My cats <b>are</b> black.</li><li>You <b>are</b> my best friend.</li><li>He <b>isn't</b> at school.</li><li><b>Is</b> she your sister?</li><li><b>Are</b> they happy?</li><li>Yes, <b>I am</b>.</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>O — reading</h3>
+      <ol class="inline"><li>is</li><li>am</li><li>am</li><li>is</li><li>are</li><li>is</li><li>is</li><li>is</li><li>is</li><li>is</li><li>are</li><li>are</li><li>are</li><li>are</li></ol>
+      <p class="tip">True / False: 1 False · 2 True · 3 False · 4 False</p>
+    </div>
+    <div class="keyblock">
+      <h3>P — free writing</h3>
+      <ol><li>Student's own answers. Check: am with “I”, is with one person/thing, are with plurals; one negative and one question included.</li></ol>
+    </div>
+  </div>
+
+  <div class="footer"><span>Am / Is / Are — Answer Key</span><span>Page 6</span></div>
+</section>
+
+<script src="assets/engine.js"></script>
+</body>
+</html>

@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>am / is / are — İnteraktif Ünite (A1) · English Worksheets</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../index.html">English <em>Worksheets</em></a>
+    <nav class="site-nav">
+      <a href="../index.html">Ana sayfa</a>
+      <a href="am-is-are-a1.html" aria-current="page">am / is / are</a>
+      <a href="am-is-are-a2.html">A2 ünitesi</a>
+      <a href="../am-is-are-worksheet.html">Yazdırılabilir</a>
+    </nav>
+    <button class="theme-btn" type="button" title="Açık / koyu tema" aria-label="Temayı değiştir">☾</button>
+  </div>
+</header>
+
+<div class="unit-head">
+  <div class="wrap">
+    <p class="eyebrow">English · Grammar · Unit 1 · A1</p>
+    <h1>The Verb <em>“to be”</em>: am / is / are</h1>
+    <p class="lede">Name &amp; age · family · school · feelings — 10 yaş. 17 aktivite, hepsi anında kontrol edilir.</p>
+    <div class="howto">
+      <b>Nasıl oynanır?</b>
+      Mavi blokları (<b>am</b> / <b>is</b> / <b>are</b> gibi) boşluklara <b>sürükle</b> — bu bloklar <b>bitmez</b>, istediğin kadar kullan.
+      Sürüklemek istemiyorsan: bloğa tıkla, sonra boşluğa tıkla. Yerleştirdiğin bloğu <b>silmek</b> için üstüne tıkla.
+      Cümle sıralamada kelime kutularını <b>taşı</b> ya da iki kutuya sırayla tıklayarak <b>yerlerini değiştir</b>.
+    </div>
+  </div>
+</div>
+
+<div class="progress-bar">
+  <div class="wrap">
+    <span class="count">Doğru: <b>0</b> / 0</span>
+    <span class="track"><i></i></span>
+    <button class="btn sm" type="button" data-act="check-all">Hepsini kontrol et</button>
+    <button class="btn ghost sm" type="button" data-act="reset-all">Sıfırla</button>
+  </div>
+</div>
+
+<main class="wrap" id="activities"></main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>English Worksheets · am / is / are (A1)</span>
+    <span>Cevaplarınız yalnızca bu tarayıcıya kaydedilir.</span>
+  </div>
+</footer>
+
+<script src="../assets/engine.js"></script>
+<script>
+UZ.mount({
+  unit: 'am-is-are-a1',
+  container: '#activities',
+  activities: [
+
+  /* ---------------- kural ---------------- */
+  {
+    type: 'rule',
+    title: 'Remember! (Hatırla!)',
+    html: `
+      <div class="scroller">
+        <table class="grammar">
+          <tr><th>Subject</th><th>to be</th><th>Short form</th><th>Example</th></tr>
+          <tr><td>I</td><td class="be">am</td><td class="short">I'm</td><td class="ex">I am ten years old.</td></tr>
+          <tr><td>he / she / it</td><td class="be">is</td><td class="short">he's / she's / it's</td><td class="ex">She is my sister.</td></tr>
+          <tr><td>you / we / they</td><td class="be">are</td><td class="short">you're / we're / they're</td><td class="ex">They are in the garden.</td></tr>
+        </table>
+      </div>
+      <p class="tip">One person or thing <b>→ is</b> &nbsp;·&nbsp; two or more <b>→ are</b> &nbsp;·&nbsp; only “I” takes <b>am</b>.<br>
+      <i>Tek kişi/şey → is, birden fazla → are, sadece “I” ile → am.</i></p>`
+  },
+
+  /* ---------------- A: blok sürükleme ---------------- */
+  {
+    type: 'drag', tag: 'A',
+    title: 'Drag <i>am</i>, <i>is</i> or <i>are</i> into the gaps.',
+    tr: 'am, is ya da are bloklarını boşluklara sürükle. Bloklar bitmez!',
+    bank: ['am', 'is', 'are'],
+    cols: 3,
+    items: [
+      { q: 'I ___',          a: 'am'  },
+      { q: 'She ___',        a: 'is'  },
+      { q: 'They ___',       a: 'are' },
+      { q: 'He ___',         a: 'is'  },
+      { q: 'We ___',         a: 'are' },
+      { q: 'It ___',         a: 'is'  },
+      { q: 'You ___',        a: 'are' },
+      { q: 'Tom ___',        a: 'is'  },
+      { q: 'My friends ___', a: 'are' },
+      { q: 'The cat ___',    a: 'is'  },
+      { q: 'Ayşe and I ___', a: 'are' },
+      { q: 'The books ___',  a: 'are' }
+    ]
+  },
+
+  /* ---------------- B: yazma ---------------- */
+  {
+    type: 'type', tag: 'B',
+    title: 'Write the short forms.',
+    tr: 'Kısa yazılışlarını yaz. Örnek: I am → I\'m',
+    cols: 3, size: '', placeholder: '…',
+    items: [
+      { q: 'he is',   a: ["he's"]   },
+      { q: 'she is',  a: ["she's"]  },
+      { q: 'it is',   a: ["it's"]   },
+      { q: 'we are',  a: ["we're"]  },
+      { q: 'you are', a: ["you're"] },
+      { q: 'they are',a: ["they're"]}
+    ]
+  },
+
+  /* ---------------- C: seçenek ---------------- */
+  {
+    type: 'choice', tag: 'C',
+    title: 'Choose the correct word.',
+    tr: 'Doğru kelimeye tıkla.',
+    cols: 2,
+    items: [
+      { q: 'My brother ___ seven.',    opts: ['is', 'are'], a: 'is'  },
+      { q: 'The pencils ___ in my bag.', opts: ['is', 'are'], a: 'are' },
+      { q: 'I ___ ready!',             opts: ['am', 'is'],  a: 'am'  },
+      { q: 'Lemons ___ yellow.',       opts: ['is', 'are'], a: 'are' },
+      { q: 'It ___ very cold today.',  opts: ['am', 'is'],  a: 'is'  },
+      { q: 'We ___ in the garden.',    opts: ['is', 'are'], a: 'are' },
+      { q: 'My cousins ___ funny.',    opts: ['is', 'are'], a: 'are' },
+      { q: 'Ali ___ my best friend.',  opts: ['am', 'is'],  a: 'is'  }
+    ]
+  },
+
+  /* ---------------- D: blok sürükleme (cümleler) ---------------- */
+  {
+    type: 'drag', tag: 'D',
+    title: 'Complete the sentences with <i>am</i>, <i>is</i> or <i>are</i>.',
+    tr: 'Cümleleri am, is ya da are bloklarıyla tamamla.',
+    bank: ['am', 'is', 'are'],
+    cols: 2,
+    items: [
+      { q: 'My name ___ Elif.',              a: 'is'  },
+      { q: 'I ___ ten years old.',           a: 'am'  },
+      { q: 'This ___ my new bike.',          a: 'is'  },
+      { q: 'My parents ___ at work.',        a: 'are' },
+      { q: 'We ___ in the same class.',      a: 'are' },
+      { q: 'The dog ___ under the table.',   a: 'is'  },
+      { q: 'Berk and Can ___ brothers.',     a: 'are' },
+      { q: 'You ___ a very good student.',   a: 'are' },
+      { q: 'It ___ Monday today.',           a: 'is'  },
+      { q: 'These shoes ___ too big for me.',a: 'are' },
+      { q: 'My teacher ___ from İzmir.',     a: 'is'  },
+      { q: 'I ___ hungry and thirsty.',      a: 'am'  },
+      { q: 'Those birds ___ in the tree.',   a: 'are' },
+      { q: 'Her favourite colour ___ purple.',a: 'is' },
+      { q: 'How ___ you today?',             a: 'are' },
+      { q: 'My sister and I ___ at home.',   a: 'are' }
+    ]
+  },
+
+  /* ---------------- E: yazma ---------------- */
+  {
+    type: 'type', tag: 'E',
+    title: 'Rewrite the sentences with short forms.',
+    tr: 'Cümleleri kısa yazılışla tekrar yaz. Örnek: I am a student. → I\'m a student.',
+    size: 'xl',
+    items: [
+      { q: 'She is my sister.',    a: ["She's my sister.", "She's my sister"] },
+      { q: 'It is a big dog.',     a: ["It's a big dog.", "It's a big dog"] },
+      { q: 'We are happy.',        a: ["We're happy.", "We're happy"] },
+      { q: 'They are in the park.',a: ["They're in the park.", "They're in the park"] },
+      { q: 'He is eleven.',        a: ["He's eleven.", "He's eleven"] },
+      { q: 'You are late.',        a: ["You're late.", "You're late"] }
+    ]
+  },
+
+  /* ---------------- F: serbest ---------------- */
+  {
+    type: 'free', tag: 'F',
+    title: 'Choose a word from the box and write true sentences.',
+    tr: 'Kutudan kelime seç ve kendin hakkında doğru cümleler yaz.',
+    rows: 5,
+    placeholder: 'I am …\nMy best friend is …\nMrs Yılmaz is …\nMy classmates and I are …',
+    note: 'word box: a student · ten · tall · my teacher · in the classroom · friends'
+  },
+
+  /* ---------------- kural: olumsuz ---------------- */
+  {
+    type: 'rule',
+    title: 'Negative: add not (Olumsuz: not ekle)',
+    html: `
+      <div class="scroller">
+        <table class="grammar">
+          <tr><th>Long form</th><th>Short form</th><th>Example</th></tr>
+          <tr><td>I am not</td><td class="short">I'm not</td><td class="ex">I'm not tired.</td></tr>
+          <tr><td>he / she / it is not</td><td class="short">isn't</td><td class="ex">She isn't at school.</td></tr>
+          <tr><td>you / we / they are not</td><td class="short">aren't</td><td class="ex">They aren't my friends.</td></tr>
+        </table>
+      </div>
+      <p class="tip">Careful! There is no “amn't”. We always say <b>I'm not</b>.<br><i>Dikkat: “amn't” yoktur, her zaman I'm not deriz.</i></p>`
+  },
+
+  /* ---------------- G: yazma (olumsuz) ---------------- */
+  {
+    type: 'type', tag: 'G',
+    title: 'Make the sentences negative.',
+    tr: 'Cümleleri olumsuz yap. Örnek: She is happy. → She isn\'t happy.',
+    size: 'xl',
+    items: [
+      { q: 'I am tired.',               a: ["I'm not tired.", "I am not tired.", "I'm not tired"] },
+      { q: 'She is at school.',         a: ["She isn't at school.", "She is not at school.", "She isn't at school"] },
+      { q: 'They are my friends.',      a: ["They aren't my friends.", "They are not my friends.", "They aren't my friends"] },
+      { q: 'It is cold today.',         a: ["It isn't cold today.", "It is not cold today.", "It isn't cold today"] },
+      { q: 'We are hungry.',            a: ["We aren't hungry.", "We are not hungry.", "We aren't hungry"] },
+      { q: 'He is a doctor.',           a: ["He isn't a doctor.", "He is not a doctor.", "He isn't a doctor"] },
+      { q: 'My room is tidy.',          a: ["My room isn't tidy.", "My room is not tidy.", "My room isn't tidy"] },
+      { q: 'The cats are on the sofa.', a: ["The cats aren't on the sofa.", "The cats are not on the sofa.", "The cats aren't on the sofa"] }
+    ]
+  },
+
+  /* ---------------- H: blok sürükleme (olumsuz) ---------------- */
+  {
+    type: 'drag', tag: 'H',
+    title: "Drag <i>'m not</i>, <i>isn't</i> or <i>aren't</i> into the gaps.",
+    tr: "Boşluklara 'm not, isn't ya da aren't bloklarını sürükle.",
+    bank: ["'m not", "isn't", "aren't"],
+    cols: 2, wide: true,
+    items: [
+      { q: "I ___ at school. It's Sunday.",           a: "'m not"  },
+      { q: 'The milk ___ in the fridge.',             a: "isn't"   },
+      { q: "These apples ___ red. They're green.",    a: "aren't"  },
+      { q: "My father ___ a teacher. He's a driver.", a: "isn't"   },
+      { q: "We ___ late. We're early!",               a: "aren't"  },
+      { q: 'It ___ my birthday today.',               a: "isn't"   },
+      { q: "You ___ alone. I'm here!",                a: "aren't"  },
+      { q: 'Lions ___ small animals.',                a: "aren't"  }
+    ]
+  },
+
+  /* ---------------- I: serbest (düzelt) ---------------- */
+  {
+    type: 'free', tag: 'I',
+    title: 'These sentences are wrong! Write a negative sentence and then a true one.',
+    tr: 'Bu cümleler yanlış. Önce olumsuz, sonra doğru cümleyi yaz. Örnek: Snow is hot. → Snow isn\'t hot. It is cold.',
+    rows: 6,
+    placeholder: '1) Elephants are small. → …\n2) The sun is blue. → …\n3) Fish are in the sky. → …\n4) A banana is square. → …',
+    note: 'Örnek cevap: Elephants aren\'t small. They are big.'
+  },
+
+  /* ---------------- kural: soru ---------------- */
+  {
+    type: 'rule',
+    title: 'Questions: change the order (Soru: sırayı değiştir)',
+    html: `
+      <p>He <b>is</b> your brother. <span class="arrow">→</span> <b>Is</b> he your brother?</p>
+      <p>You <b>are</b> ready. <span class="arrow">→</span> <b>Are</b> you ready?</p>
+      <div class="scroller">
+        <table class="grammar">
+          <tr><th>Question</th><th>Yes …</th><th>No …</th></tr>
+          <tr><td>Am I late?</td><td class="short">Yes, you are.</td><td class="short">No, you aren't.</td></tr>
+          <tr><td>Is she your sister?</td><td class="short">Yes, she is.</td><td class="short">No, she isn't.</td></tr>
+          <tr><td>Are they at home?</td><td class="short">Yes, they are.</td><td class="short">No, they aren't.</td></tr>
+        </table>
+      </div>
+      <p class="tip">In short answers we never say “Yes, I'm.” — we say <b>Yes, I am.</b><br><i>Kısa cevaplarda olumlu cevabı kısaltmayız.</i></p>`
+  },
+
+  /* ---------------- J: yazma (soru) ---------------- */
+  {
+    type: 'type', tag: 'J',
+    title: 'Make questions.',
+    tr: 'Cümleleri soru yap. Örnek: You are from Turkey. → Are you from Turkey?',
+    size: 'xl',
+    items: [
+      { q: 'She is your teacher.',      a: ['Is she your teacher?', 'Is she your teacher'] },
+      { q: 'They are in the kitchen.',  a: ['Are they in the kitchen?', 'Are they in the kitchen'] },
+      { q: 'He is eleven years old.',   a: ['Is he eleven years old?', 'Is he eleven years old'] },
+      { q: 'It is a good film.',        a: ['Is it a good film?', 'Is it a good film'] },
+      { q: 'The shop is open.',         a: ['Is the shop open?', 'Is the shop open'] },
+      { q: 'Your shoes are new.',       a: ['Are your shoes new?', 'Are your shoes new'] },
+      { q: 'I am right.',               a: ['Am I right?', 'Am I right'] },
+      { q: 'Deniz is at home.',         a: ['Is Deniz at home?', 'Is Deniz at home'] }
+    ]
+  },
+
+  /* ---------------- K: blok sürükleme (kısa cevap) ---------------- */
+  {
+    type: 'drag', tag: 'K',
+    title: 'Drag the short answers.',
+    tr: 'Kısa cevap bloklarını doğru yere sürükle. Bloklar bitmez, tekrar kullanabilirsin.',
+    bank: ['I am', 'you are', 'he is', 'they are', "she isn't", "it isn't", "we aren't", "they aren't"],
+    cols: 2, wide: true,
+    items: [
+      { q: 'Are you a student? — Yes, ___.',              a: 'I am'       },
+      { q: 'Is your mother a nurse? — No, ___.',          a: "she isn't"  },
+      { q: 'Are the children in the garden? — Yes, ___.', a: 'they are'   },
+      { q: 'Is it cold outside? — No, ___.',              a: "it isn't"   },
+      { q: 'Am I in your team? — Yes, ___.',              a: 'you are'    },
+      { q: 'Are we ready? — No, ___.',                    a: "we aren't"  },
+      { q: 'Is Murat your brother? — Yes, ___.',          a: 'he is'      },
+      { q: 'Are these your books? — No, ___.',            a: "they aren't"}
+    ]
+  },
+
+  /* ---------------- L: blok sürükleme (soru kelimeleri) ---------------- */
+  {
+    type: 'drag', tag: 'L',
+    title: 'Drag a question word into each gap.',
+    tr: 'Soru kelimesi bloklarını boşluklara sürükle. (Bazı bloklar iki kez kullanılır.)',
+    bank: ['What', 'Where', 'Who', 'How'],
+    cols: 2, wide: true,
+    items: [
+      { q: '___ is your name? — My name is Zeynep.',     a: 'What'  },
+      { q: '___ are you from? — I\'m from Ankara.',       a: 'Where' },
+      { q: '___ old is your sister? — She\'s six.',       a: 'How'   },
+      { q: '___ is that boy? — He\'s my cousin.',         a: 'Who'   },
+      { q: '___ are my keys? — They\'re on the table.',   a: 'Where' },
+      { q: '___ is your favourite animal? — A dolphin!',  a: 'What'  }
+    ]
+  },
+
+  /* ---------------- M: cümle sıralama (taşınabilir kutular) ---------------- */
+  {
+    type: 'order', tag: 'M',
+    title: 'Put the word boxes in the correct order.',
+    tr: 'Kelime kutularını taşıyarak doğru cümleyi kur. Noktalama kutusunu da yerleştir!',
+    items: [
+      { words: ['am', 'I', 'student', 'a', '.'],                  a: ['I', 'am', 'a', 'student', '.'] },
+      { words: ['is', 'sister', 'my', 'nine', '.'],               a: ['My', 'sister', 'is', 'nine', '.'] },
+      { words: ['are', 'they', 'garden', 'the', 'in', '.'],       a: ['They', 'are', 'in', 'the', 'garden', '.'] },
+      { words: ['not', 'is', 'cold', 'it', 'today', '.'],         a: ['It', 'is', 'not', 'cold', 'today', '.'] },
+      { words: ['you', 'are', 'tired', '?'],                      a: ['Are', 'you', 'tired', '?'] },
+      { words: ["aren't", 'we', 'late', '.'],                     a: ['We', "aren't", 'late', '.'] },
+      { words: ['is', 'where', 'cat', 'the', '?'],                a: ['Where', 'is', 'the', 'cat', '?'] },
+      { words: ['teacher', 'is', 'your', 'from', 'İzmir', '?'],   a: ['Is', 'your', 'teacher', 'from', 'İzmir', '?'] },
+      { words: ['and', 'Ali', 'friends', 'are', 'I', '.'],        a: ['Ali', 'and', 'I', 'are', 'friends', '.'] },
+      { words: ["isn't", 'brother', 'my', 'home', 'at', '.'],     a: ['My', 'brother', "isn't", 'at', 'home', '.'] }
+    ]
+  },
+
+  /* ---------------- N: yazma (hatayı düzelt) ---------------- */
+  {
+    type: 'type', tag: 'N',
+    title: 'There is one mistake in each sentence. Correct it.',
+    tr: 'Her cümlede bir hata var. Doğrusunu yaz.',
+    size: 'xl',
+    items: [
+      { q: 'I is ten years old.',        a: ['I am ten years old.', "I'm ten years old.", 'I am ten years old'] },
+      { q: 'We is in the same class.',   a: ['We are in the same class.', "We're in the same class.", 'We are in the same class'] },
+      { q: 'My cats is black.',          a: ['My cats are black.', 'My cats are black'] },
+      { q: 'You is my best friend.',     a: ['You are my best friend.', "You're my best friend.", 'You are my best friend'] },
+      { q: "He amn't at school.",        a: ["He isn't at school.", 'He is not at school.', "He isn't at school"] },
+      { q: 'Are she your sister?',       a: ['Is she your sister?', 'Is she your sister'] },
+      { q: 'Is they happy?',             a: ['Are they happy?', 'Are they happy'] },
+      { q: "Are you hungry? — Yes, I'm.",a: ['Yes, I am.', 'Are you hungry? — Yes, I am.', 'Yes, I am'] }
+    ]
+  },
+
+  /* ---------------- O: okuma + blok sürükleme ---------------- */
+  {
+    type: 'cloze', tag: 'O',
+    title: 'Read and complete with <i>am</i>, <i>is</i> or <i>are</i>.',
+    tr: 'Metni am, is ya da are bloklarıyla tamamla.',
+    bank: ['am', 'is', 'are'],
+    text: 'Hello! My name ___ Defne. I ___ ten years old and I ___ from Bursa. ' +
+          'My family ___ big. My parents ___ teachers and my little brother ___ a baby. ' +
+          'He ___ two. Our cat ___ Pamuk. She ___ white and very lazy! ' +
+          'Today ___ Saturday, so we ___ not at school. My cousins ___ here, too. ' +
+          'We ___ all in the garden and we ___ very happy.',
+    answers: ['is', 'am', 'am', 'is', 'are', 'is', 'is', 'is', 'is', 'is', 'are', 'are', 'are', 'are']
+  },
+
+  /* ---------------- P: True / False ---------------- */
+  {
+    type: 'choice', tag: 'P',
+    title: 'True or False? (O metnine göre)',
+    tr: 'Yukarıdaki metne göre doğru mu, yanlış mı?',
+    cols: 2,
+    items: [
+      { q: 'Defne is from Ankara.',    opts: ['True', 'False'], a: 'False' },
+      { q: 'Her brother is two.',      opts: ['True', 'False'], a: 'True'  },
+      { q: 'Pamuk is a dog.',          opts: ['True', 'False'], a: 'False' },
+      { q: 'They are at school today.',opts: ['True', 'False'], a: 'False' }
+    ]
+  },
+
+  /* ---------------- Q: serbest yazma ---------------- */
+  {
+    type: 'free', tag: 'Q', challenge: true,
+    title: 'Now write about YOU! (Şimdi kendin hakkında yaz!)',
+    tr: '5 cümle yaz: adın, yaşın, şehrin, ailen ve bugün nasıl olduğun. En az bir olumsuz cümle ve bir soru ekle.',
+    rows: 8,
+    placeholder: "My name is …\nI am …\nI'm from …\nMy family …\nToday I …",
+    note: 'Kontrol: “I” ile am, tek kişi/şey ile is, çoğul ile are. Bir olumsuz + bir soru cümlesi var mı?'
+  }
+
+  ]
+});
+</script>
+</body>
+</html>

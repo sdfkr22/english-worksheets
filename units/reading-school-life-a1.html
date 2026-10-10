@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reading: My School Day — İnteraktif Ünite (A1) · English Worksheets</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../index.html">English <em>Worksheets</em></a>
+    <nav class="site-nav">
+      <a href="../index.html">Ana sayfa</a>
+      <a href="reading-school-life-a1.html" aria-current="page">My School Day</a>
+      <a href="../reading-school-life-a1.html">Yazdırılabilir</a>
+    </nav>
+    <button class="theme-btn" type="button" title="Açık / koyu tema" aria-label="Temayı değiştir">☾</button>
+  </div>
+</header>
+
+<div class="unit-head">
+  <div class="wrap">
+    <p class="eyebrow">English · Reading · Unit 1 · A1</p>
+    <h1>Reading: <em>My School Day</em></h1>
+    <p class="lede">Okul, sınıf, dersler, öğretmen ve arkadaşlar — <i>am / is / are</i> ile. 6 aktivite + serbest yazma.</p>
+    <div class="howto">
+      <b>Nasıl oynanır?</b>
+      Önce metni oku, sonra aktiviteleri yap — metne istediğin zaman geri dönebilirsin.
+      Mavi blokları boşluklara <b>sürükle</b> (bloklar <b>bitmez</b>) ya da bloğa tıkla, sonra boşluğa tıkla.
+      Yerleştirdiğin bloğu <b>silmek</b> için üstüne tıkla. Yazma alıştırmalarında büyük/küçük harf önemli değil.
+    </div>
+  </div>
+</div>
+
+<div class="progress-bar">
+  <div class="wrap">
+    <span class="count">Doğru: <b>0</b> / 0</span>
+    <span class="track"><i></i></span>
+    <button class="btn sm" type="button" data-act="check-all">Hepsini kontrol et</button>
+    <button class="btn ghost sm" type="button" data-act="reset-all">Sıfırla</button>
+  </div>
+</div>
+
+<main class="wrap" id="activities"></main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>English Worksheets · Reading: My School Day (A1)</span>
+    <span>Cevaplarınız yalnızca bu tarayıcıya kaydedilir.</span>
+  </div>
+</footer>
+
+<script src="../assets/engine.js"></script>
+<script>
+UZ.mount({
+  unit: 'reading-school-life-a1',
+  container: '#activities',
+  activities: [
+
+  /* ---------------- okuma metni ---------------- */
+  {
+    type: 'rule',
+    title: 'Read the text (Metni oku)',
+    html: `
+      <div class="story">
+        <h3>My School Day</h3>
+        <p class="byline">by Zeynep, 4-B</p>
+        <p>Hello! My name is Zeynep and I am ten years old. I am a student at Atatürk Primary School in Eskişehir.</p>
+        <p>My school is big and old. There are twenty-four classrooms, a library and a small garden. My classroom is on the first floor. It is bright and clean. There are twelve desks and a big board in it. My class is 4-B. We are twenty-two students.</p>
+        <p>My favourite subject is science because it is fun. Maths is difficult for me, but my teacher is very patient. Her name is Mrs Aydın. She is young and friendly.</p>
+        <p>School starts at eight o'clock. We have a long break at eleven. At break time my best friend Melis and I are always in the garden. We are happy at school!</p>
+      </div>
+      <div class="gloss">
+        <span class="gloss-h">new words · yeni kelimeler</span>
+        <span><b>bright</b> — aydınlık</span>
+        <span><b>clean</b> — temiz</span>
+        <span><b>desk</b> — sıra</span>
+        <span><b>board</b> — tahta</span>
+        <span><b>floor</b> — kat</span>
+        <span><b>subject</b> — ders</span>
+        <span><b>break</b> — teneffüs</span>
+        <span><b>patient</b> — sabırlı</span>
+        <span><b>friendly</b> — cana yakın</span>
+      </div>`
+  },
+
+  /* ---------------- A: True / False ---------------- */
+  {
+    type: 'choice', tag: 'A',
+    title: 'True or False?',
+    tr: 'Metne göre doğru mu, yanlış mı? Doğru seçeneğe tıkla.',
+    cols: 2,
+    items: [
+      { q: 'Zeynep is eleven years old.',         opts: ['True', 'False'], a: 'False' },
+      { q: 'Her school is in Eskişehir.',         opts: ['True', 'False'], a: 'True'  },
+      { q: 'There is a library at her school.',   opts: ['True', 'False'], a: 'True'  },
+      { q: 'Her classroom is on the first floor.',opts: ['True', 'False'], a: 'True'  },
+      { q: 'There are thirty students in her class.', opts: ['True', 'False'], a: 'False' },
+      { q: 'Maths is her favourite subject.',     opts: ['True', 'False'], a: 'False' },
+      { q: 'Mrs Aydın is young and friendly.',    opts: ['True', 'False'], a: 'True'  },
+      { q: "School starts at nine o'clock.",      opts: ['True', 'False'], a: 'False' }
+    ]
+  },
+
+  /* ---------------- B: metin soruları ---------------- */
+  {
+    type: 'type', tag: 'B',
+    title: 'Answer the questions about the text.',
+    tr: 'Metinle ilgili soruları cevapla. Tam cümle yaz.',
+    size: 'xl',
+    items: [
+      { q: 'How old is Zeynep?',
+        a: ['She is ten years old.', "She's ten years old.", 'She is ten.', "She's ten.", 'She is ten years old'] },
+      { q: 'What is the name of her school?',
+        a: ['It is Atatürk Primary School.', "It's Atatürk Primary School.", 'Atatürk Primary School', 'It is Atatürk Primary School'] },
+      { q: 'How many classrooms are there in her school?',
+        a: ['There are twenty-four classrooms.', 'There are 24 classrooms.', 'Twenty-four.', 'There are twenty-four classrooms'] },
+      { q: 'Where is her classroom?',
+        a: ['It is on the first floor.', "It's on the first floor.", 'On the first floor.', 'It is on the first floor'] },
+      { q: 'Who is her teacher?',
+        a: ['Her teacher is Mrs Aydın.', 'It is Mrs Aydın.', 'Mrs Aydın', 'Her teacher is Mrs Aydın'] },
+      { q: 'Where are Zeynep and Melis at break time?',
+        a: ['They are in the garden.', "They're in the garden.", 'In the garden.', 'They are in the garden'] }
+    ]
+  },
+
+  /* ---------------- C: am / is / are ---------------- */
+  {
+    type: 'drag', tag: 'C',
+    title: 'Complete the sentences about the text with <i>am</i>, <i>is</i> or <i>are</i>.',
+    tr: 'Metne göre boşluklara am, is ya da are bloklarını sürükle.',
+    bank: ['am', 'is', 'are'],
+    cols: 2,
+    items: [
+      { q: 'Zeynep ___ ten years old.',              a: 'is'  },
+      { q: 'Her school ___ big and old.',            a: 'is'  },
+      { q: 'There ___ twenty-four classrooms.',      a: 'are' },
+      { q: 'The classroom ___ bright and clean.',    a: 'is'  },
+      { q: 'There ___ a big board in the classroom.',a: 'is'  },
+      { q: 'Science ___ her favourite subject.',     a: 'is'  },
+      { q: 'Maths ___ difficult for Zeynep.',        a: 'is'  },
+      { q: 'Mrs Aydın ___ young and friendly.',      a: 'is'  },
+      { q: 'Melis and Zeynep ___ best friends.',     a: 'are' },
+      { q: 'I ___ a student, too.',                  a: 'am'  }
+    ]
+  },
+
+  /* ---------------- D: eşleştirme ---------------- */
+  {
+    type: 'drag', tag: 'D',
+    title: 'Match the two halves of the sentences.',
+    tr: 'Cümlelerin ikinci yarısını doğru yere sürükle.',
+    bank: ['is Zeynep.', 'twenty-four classrooms.', 'is on the first floor.', 'is science.', "starts at eight o'clock.", "at eleven o'clock."],
+    sticky: false, wide: true,
+    items: [
+      { q: 'My name ___',              a: 'is Zeynep.' },
+      { q: 'There are ___',            a: 'twenty-four classrooms.' },
+      { q: 'My classroom ___',         a: 'is on the first floor.' },
+      { q: 'My favourite subject ___', a: 'is science.' },
+      { q: 'School ___',               a: "starts at eight o'clock." },
+      { q: 'We have a long break ___', a: "at eleven o'clock." }
+    ]
+  },
+
+  /* ---------------- E: zıt anlam ---------------- */
+  {
+    type: 'type', tag: 'E',
+    title: 'Find a word in the text with the opposite meaning.',
+    tr: 'Metinde zıt anlamlı kelimeyi bul ve yaz. Örnek: small → big',
+    cols: 3, size: '',
+    items: [
+      { q: 'small',          a: ['big'] },
+      { q: 'new',           a: ['old'] },
+      { q: 'easy',          a: ['difficult'] },
+      { q: 'sad',           a: ['happy'] },
+      { q: 'dark',          a: ['bright'] },
+      { q: 'old (a person)',a: ['young'] }
+    ]
+  },
+
+  /* ---------------- F: Is / Are + kısa cevap ---------------- */
+  {
+    type: 'drag', tag: 'F',
+    title: 'Ask Zeynep questions with <i>Is</i> or <i>Are</i> — then give the short answer.',
+    tr: 'İlk boşluğa Is ya da Are, ikinci boşluğa kısa cevabı sürükle. (Büyük harf önemsenmez.)',
+    bank: ['Is', 'Are', 'I am', 'it is', "it isn't", 'there is', 'they are'],
+    sticky: false, wide: true,
+    items: [
+      { q: '___ you ten years old? — Yes, ___.',                a: ['Are', 'I am'] },
+      { q: '___ your school new? — No, ___.',                   a: ['Is', "it isn't"] },
+      { q: '___ there a library at your school? — Yes, ___.',   a: ['Is', 'there is'] },
+      { q: '___ maths easy for you? — No, ___.',                a: ['Is', "it isn't"] },
+      { q: '___ your classmates friendly? — Yes, ___.',         a: ['Are', 'they are'] },
+      { q: '___ you happy at school? — Yes, ___.',              a: ['Are', 'I am'] }
+    ]
+  },
+
+  /* ---------------- G: serbest yazma ---------------- */
+  {
+    type: 'free', tag: 'G', challenge: true,
+    title: 'Now write about YOUR school.',
+    tr: 'Şimdi kendi okulun hakkında yaz. Cümleleri tamamla.',
+    rows: 10,
+    placeholder: 'My name is … and I am … years old.\n' +
+                 'I am a student at ….\n' +
+                 'My school is ….\n' +
+                 'There are … in my school.\n' +
+                 'My classroom is ….\n' +
+                 'My favourite subject is … because ….\n' +
+                 'My teacher is …. She / He is ….\n' +
+                 'My best friend is …. We are ….',
+    note: 'Kontrol: “I” ile am · tek kişi/şey ile is · çoğul ve there are ile are. Büyük harf ve nokta var mı?'
+  }
+
+  ]
+});
+</script>
+</body>
+</html>

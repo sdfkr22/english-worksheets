@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>am / is / are &amp; there is / there are — İnteraktif Ünite (A2) · English Worksheets</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../index.html">English <em>Worksheets</em></a>
+    <nav class="site-nav">
+      <a href="../index.html">Ana sayfa</a>
+      <a href="am-is-are-a1.html">A1 ünitesi</a>
+      <a href="am-is-are-a2.html" aria-current="page">am / is / are · A2</a>
+      <a href="../am-is-are-worksheet-a2.html">Yazdırılabilir</a>
+    </nav>
+    <button class="theme-btn" type="button" title="Açık / koyu tema" aria-label="Temayı değiştir">☾</button>
+  </div>
+</header>
+
+<div class="unit-head">
+  <div class="wrap">
+    <p class="eyebrow">English · Grammar · Unit 2 · A2</p>
+    <h1>The Verb <em>“to be”</em>: am / is / are &amp; there is / there are</h1>
+    <p class="lede">Tekil mi çoğul mu · <i>be</i> kalıpları · olumsuz · soru · yerleri anlatmak. 16 aktivite, hepsi anında kontrol edilir.</p>
+    <div class="howto">
+      <b>Nasıl oynanır?</b>
+      Mavi blokları boşluklara <b>sürükle</b> — bloklar <b>bitmez</b>, istediğin kadar kullan.
+      Sürüklemek istemiyorsan: bloğa tıkla, sonra boşluğa tıkla. Yerleştirdiğin bloğu <b>silmek</b> için üstüne tıkla.
+      Cümle sıralamada kelime kutularını <b>taşı</b> ya da iki kutuya sırayla tıklayarak <b>yerlerini değiştir</b>.
+      Yazma alıştırmalarında büyük/küçük harf önemli değil, ama noktalama işaretlerini yazmayı unutma.
+    </div>
+  </div>
+</div>
+
+<div class="progress-bar">
+  <div class="wrap">
+    <span class="count">Doğru: <b>0</b> / 0</span>
+    <span class="track"><i></i></span>
+    <button class="btn sm" type="button" data-act="check-all">Hepsini kontrol et</button>
+    <button class="btn ghost sm" type="button" data-act="reset-all">Sıfırla</button>
+  </div>
+</div>
+
+<main class="wrap" id="activities"></main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>English Worksheets · am / is / are &amp; there is / there are (A2)</span>
+    <span>Cevaplarınız yalnızca bu tarayıcıya kaydedilir.</span>
+  </div>
+</footer>
+
+<script src="../assets/engine.js"></script>
+<script>
+UZ.mount({
+  unit: 'am-is-are-a2',
+  container: '#activities',
+  activities: [
+
+  /* ---------------- kural: tekil mi çoğul mu ---------------- */
+  {
+    type: 'rule',
+    title: 'Watch out! Singular or plural? (Dikkat: tekil mi, çoğul mu?)',
+    html: `
+      <div class="scroller">
+        <table class="grammar">
+          <tr><th>to be</th><th>Words</th><th>Example</th></tr>
+          <tr><td class="be">is</td><td>news, maths, money, hair, information, advice, water, bread, everybody, nobody, everything</td><td class="ex">The news is on at seven.</td></tr>
+          <tr><td class="be">are</td><td>trousers, jeans, glasses, scissors, clothes, people, children, men, women</td><td class="ex">The people are friendly.</td></tr>
+        </table>
+      </div>
+      <p class="tip">Çoğul <b>görünen</b> bazı kelimeler tekildir (<i>news → is</i>), tekil görünen bazıları çoğuldur (<i>trousers → are</i>).<br>
+      Türkçede tek kelime olanlar İngilizcede çoğul olabilir: <i>pantolon = trousers <b>are</b></i>.</p>`
+  },
+
+  /* ---------------- A: drag is / are ---------------- */
+  {
+    type: 'drag', tag: 'A',
+    title: 'Complete with <i>is</i> or <i>are</i>.',
+    tr: 'is ya da are bloklarını boşluklara sürükle. Dikkat: hepsi kolay değil!',
+    bank: ['is', 'are'],
+    cols: 2,
+    items: [
+      { q: 'My new trousers ___ too long.',                 a: 'are' },
+      { q: "The news ___ on TV at seven o'clock.",          a: 'is'  },
+      { q: 'Everybody in my class ___ excited about the trip.', a: 'is' },
+      { q: 'Maths ___ my favourite subject.',               a: 'is'  },
+      { q: 'These scissors ___ very sharp. Be careful!',    a: 'are' },
+      { q: 'A lot of people ___ in the park today.',        a: 'are' },
+      { q: "My cousin's children ___ at primary school.",   a: 'are' },
+      { q: 'The weather in İzmir ___ usually hot in August.', a: 'is' },
+      { q: 'Where ___ your glasses?',                       a: 'are' },
+      { q: 'My hair ___ short and curly.',                  a: 'is'  },
+      { q: 'Nobody ___ at home in the afternoon.',          a: 'is'  },
+      { q: 'Physics and chemistry ___ difficult for me.',   a: 'are' }
+    ]
+  },
+
+  /* ---------------- kural: there is / there are ---------------- */
+  {
+    type: 'rule',
+    title: 'there is / there are (bir şeyin var olduğunu söylerken)',
+    html: `
+      <div class="scroller">
+        <table class="grammar">
+          <tr><th></th><th>singular</th><th>plural</th></tr>
+          <tr><td class="be">+</td><td>There is (There's) a park.</td><td>There are two parks.</td></tr>
+          <tr><td class="be">−</td><td>There isn't a park. / … any milk.</td><td>There aren't any parks.</td></tr>
+          <tr><td class="be">?</td><td>Is there a park? — Yes, there is.</td><td>Are there any parks? — No, there aren't.</td></tr>
+        </table>
+      </div>
+      <p class="tip">Olumsuz ve soru cümlelerinde <b>any</b> kullan: <i>There aren't any shops. Are there any shops?</i></p>`
+  },
+
+  /* ---------------- B: drag there is / there are ---------------- */
+  {
+    type: 'drag', tag: 'B',
+    title: 'Complete with a form of <i>there is / there are</i>.',
+    tr: 'Uygun bloğu boşluğa sürükle. Soru cümlelerini de düşün!',
+    bank: ['There is', 'There are', "There isn't", "There aren't", 'Is there', 'Are there'],
+    cols: 1, wide: true,
+    items: [
+      { q: '___ a big park near our house.',                                a: 'There is'    },
+      { q: '___ two cinemas in my town.',                                   a: 'There are'   },
+      { q: "___ any sugar in my tea. I don't like it.",                     a: "There isn't" },
+      { q: "___ any students in the corridor. They're all in class.",       a: "There aren't"},
+      { q: '___ a problem with my bike.',                                   a: 'There is'    },
+      { q: '___ a swimming pool at your school? — Yes, there is.',          a: 'Is there'    },
+      { q: "___ many tourists in Antalya in winter? — No, there aren't.",   a: 'Are there'   },
+      { q: '___ 28 days in February.',                                      a: 'There are'   },
+      { q: '___ a lot of homework today. Only one exercise!',               a: "There isn't" },
+      { q: '___ some beautiful photos on the wall.',                        a: 'There are'   }
+    ]
+  },
+
+  /* ---------------- C: diyalog ---------------- */
+  {
+    type: 'drag', tag: 'C',
+    title: 'Complete the dialogue with <i>am</i>, <i>is</i>, <i>are</i> or <i>isn\'t</i>.',
+    tr: 'Diyaloğu uygun biçimle tamamla. (Büyük harf önemsenmez.)',
+    bank: ['am', 'is', 'are', "isn't"],
+    cols: 1,
+    items: [
+      { q: 'Lara: Hi! My name ___ Lara.',                                        a: 'is' },
+      { q: 'Mert: Hello, I ___ Mert. I ___ new here.',                           a: ['am', 'am'] },
+      { q: 'Lara: Where ___ you from?',                                          a: 'are' },
+      { q: 'Mert: I ___ from Trabzon, but my parents ___ from Sinop.',           a: ['am', 'are'] },
+      { q: 'Lara: ___ your sister in this school, too?',                         a: 'is' },
+      { q: 'Mert: No, she ___. She ___ only four years old.',                    a: ["isn't", 'is'] },
+      { q: 'Lara: ___ you good at football? There ___ a match on Friday.',       a: ['are', 'is'] },
+      { q: 'Mert: Yes, I ___! But my football shoes ___ at home.',               a: ['am', 'are'] }
+    ]
+  },
+
+  /* ---------------- D: uzun ↔ kısa biçim ---------------- */
+  {
+    type: 'type', tag: 'D',
+    title: 'Write the other form (long <span class="arrow">↔</span> short).',
+    tr: 'Uzun biçimi kısa, kısa biçimi uzun yaz. Örnek: she is not → she isn\'t',
+    cols: 2, size: '',
+    items: [
+      { q: 'he is not',   a: ["he isn't", "he's not"] },
+      { q: "they aren't", a: ['they are not'] },
+      { q: 'we are not',  a: ["we aren't", "we're not"] },
+      { q: "it isn't",    a: ['it is not'] },
+      { q: "I'm not",     a: ['I am not'] },
+      { q: 'that is',     a: ["that's"] },
+      { q: 'you are not', a: ["you aren't", "you're not"] },
+      { q: 'there is not',a: ["there isn't", "there's not"] }
+    ]
+  },
+
+  /* ---------------- kural: be kalıpları ---------------- */
+  {
+    type: 'rule',
+    title: 'Expressions with <i>be</i> (be ile kullanılan kalıplar)',
+    html: `
+      <p>be <b>hungry / thirsty / tired / cold</b> &nbsp;·&nbsp; be <b>late (for)</b> &nbsp;·&nbsp; be <b>ready</b> &nbsp;·&nbsp; be <b>the same</b></p>
+      <p>be <b>good at</b> &nbsp;·&nbsp; be <b>afraid of</b> &nbsp;·&nbsp; be <b>interested in</b> &nbsp;·&nbsp; be <b>full of</b> &nbsp;·&nbsp; be <b>right / wrong</b></p>
+      <p class="tip">İngilizcede yaş söylerken <b>be</b> kullanılır: <b>I am 12 years old</b> — “I have 12 years” <b>yanlıştır</b>.</p>`
+  },
+
+  /* ---------------- E: be + kalıp ---------------- */
+  {
+    type: 'drag', tag: 'E',
+    title: 'Complete with the correct form of <i>be</i> + an expression.',
+    tr: 'İlk boşluğa be biçimini (am / is / are), ikinci boşluğa kalıbı sürükle.',
+    bank: ['am', 'is', 'are', 'late', 'ready', 'hungry', 'right', 'wrong', 'the same', 'good at', 'afraid of', 'interested in', 'full of'],
+    sticky: false,
+    items: [
+      { q: 'Hurry up! We ___ ___ for the bus.',                 a: ['are', 'late'] },
+      { q: 'My little brother ___ ___ spiders.',                a: ['is', 'afraid of'] },
+      { q: "I ___ ___ drawing, but I can't sing.",              a: ['am', 'good at'] },
+      { q: 'Your answer ___ ___. Well done!',                   a: ['is', 'right'] },
+      { q: 'These two bags ___ ___.',                           a: ['are', 'the same'] },
+      { q: 'I ___ ___! Is there any food?',                     a: ['am', 'hungry'] },
+      { q: '___ you ___? The bus is leaving!',                  a: ['are', 'ready'] },
+      { q: 'The old box ___ ___ photos.',                       a: ['is', 'full of'] },
+      { q: 'My sister ___ ___ science.',                        a: ['is', 'interested in'] },
+      { q: 'Sorry, I ___ ___. The answer is 24, not 42.',       a: ['am', 'wrong'] }
+    ]
+  },
+
+  /* ---------------- kural: olumsuz ---------------- */
+  {
+    type: 'rule',
+    title: 'Negatives (Olumsuz cümleler)',
+    html: `
+      <div class="scroller">
+        <table class="grammar">
+          <tr><th>Long form</th><th>Short form(s)</th><th>Example</th></tr>
+          <tr><td>I am not</td><td class="short">I'm not</td><td class="ex">I'm not interested in cars.</td></tr>
+          <tr><td>he / she / it is not</td><td class="short">isn't · he's not</td><td class="ex">The shop isn't open on Sundays.</td></tr>
+          <tr><td>you / we / they are not</td><td class="short">aren't · we're not</td><td class="ex">We aren't ready yet.</td></tr>
+          <tr><td>there is / are not</td><td class="short">there isn't · there aren't</td><td class="ex">There aren't any eggs.</td></tr>
+        </table>
+      </div>
+      <p class="tip">“amn't” yoktur. Bir olumsuzluk yeter: <b>There isn't any bread</b>, “There isn't no bread” <b>değil</b>.</p>`
+  },
+
+  /* ---------------- F: olumsuz yapma ---------------- */
+  {
+    type: 'type', tag: 'F',
+    title: 'Rewrite the sentences in the negative. Use short forms.',
+    tr: 'Cümleleri kısa biçim kullanarak olumsuz yap.',
+    size: 'xl',
+    items: [
+      { q: 'My grandparents are at home in the evening.',
+        a: ["My grandparents aren't at home in the evening.", "My grandparents aren't at home in the evening", "My grandparents are not at home in the evening."] },
+      { q: 'This exercise is very difficult.',
+        a: ["This exercise isn't very difficult.", "This exercise isn't very difficult", 'This exercise is not very difficult.'] },
+      { q: 'I am good at remembering names.',
+        a: ["I'm not good at remembering names.", "I'm not good at remembering names", 'I am not good at remembering names.'] },
+      { q: 'There are a lot of shops in our street.',
+        a: ["There aren't a lot of shops in our street.", "There aren't a lot of shops in our street", "There aren't many shops in our street.", 'There are not a lot of shops in our street.'] },
+      { q: 'The twins are in the same class.',
+        a: ["The twins aren't in the same class.", "The twins aren't in the same class", 'The twins are not in the same class.'] },
+      { q: 'We are ready for the test.',
+        a: ["We aren't ready for the test.", "We aren't ready for the test", "We're not ready for the test.", 'We are not ready for the test.'] },
+      { q: 'Her house is near the station.',
+        a: ["Her house isn't near the station.", "Her house isn't near the station", 'Her house is not near the station.'] }
+    ]
+  },
+
+  /* ---------------- G: olumsuz metin ---------------- */
+  {
+    type: 'cloze', tag: 'G',
+    title: "Complete the text with <i>'m not</i>, <i>isn't</i> or <i>aren't</i>.",
+    tr: 'Metni olumsuz biçim bloklarıyla tamamla.',
+    bank: ["'m not", "isn't", "aren't"],
+    text: "It's Sunday morning and I ___ very happy. My best friend Ece ___ in town this weekend — " +
+          "she's at her grandmother's house. My brothers ___ interested in my games, and my parents ___ " +
+          "at home either; they're at the market. The weather ___ good, so the park ___ a good idea. " +
+          "There ___ any interesting films on TV and my tablet ___ charged. What a boring day!",
+    answers: ["'m not", "isn't", "aren't", "aren't", "isn't", "isn't", "aren't", "isn't"]
+  },
+
+  /* ---------------- H: yanlış bilgileri düzelt ---------------- */
+  {
+    type: 'free', tag: 'H',
+    title: 'These sentences are false. Write a negative sentence and then the true one.',
+    tr: 'Yanlış bilgileri düzelt: önce olumsuz cümle, sonra doğrusu. Örnek: Istanbul is the capital of Turkey. → Istanbul isn\'t the capital of Turkey. Ankara is.',
+    rows: 7,
+    placeholder: '1) Elephants are the fastest animals in the world. → …\n' +
+                 '2) The Nile is in South America. → …\n' +
+                 '3) February and March are the hottest months in Turkey. → …\n' +
+                 '4) Penguins are from the North Pole. → …\n' +
+                 '5) English and Spanish are the same language. → …',
+    note: 'Örnek cevap: Elephants aren\'t the fastest animals in the world. Cheetahs are.'
+  },
+
+  /* ---------------- kural: soru ---------------- */
+  {
+    type: 'rule',
+    title: 'Questions with <i>be</i> (be ile soru)',
+    html: `
+      <p><b>be + subject?</b> &nbsp; <i>Are your parents at work? · Is there a bank near here?</i></p>
+      <p><b>question word + be + subject?</b> &nbsp; <i>Why aren't you at school? · How many students are there in your class? · What is your new school like?</i></p>
+      <div class="scroller">
+        <table class="grammar">
+          <tr><th>Question word</th><th>You ask about …</th><th>Example answer</th></tr>
+          <tr><td class="short">Where</td><td>a place</td><td class="ex">In the library.</td></tr>
+          <tr><td class="short">How old</td><td>age</td><td class="ex">She's thirteen.</td></tr>
+          <tr><td class="short">How much</td><td>price</td><td class="ex">Ten liras.</td></tr>
+          <tr><td class="short">What … like</td><td>a description</td><td class="ex">He's friendly and funny.</td></tr>
+          <tr><td class="short">Why</td><td>a reason</td><td class="ex">Because she's ill.</td></tr>
+        </table>
+      </div>
+      <p class="tip">Kısa cevaplar: <b>Yes, I am. / No, I'm not.</b> Olumlu kısa cevabı kısaltmayız (“Yes, I'm.” <b>✗</b>).</p>`
+  },
+
+  /* ---------------- I: soru yazma ---------------- */
+  {
+    type: 'type', tag: 'I',
+    title: 'Write a question for the part in “quotes”.',
+    tr: 'Tırnak içindeki bölümü soran soruyu yaz. Soru kelimeleri: How old · Where · How much · What colour · Who · Why · When · What … like',
+    size: 'xl',
+    items: [
+      { q: 'She\'s “thirteen” years old.',          a: ['How old is she?', 'How old is she'] },
+      { q: 'They\'re “in the library”.',            a: ['Where are they?', 'Where are they'] },
+      { q: 'The tickets are “ten liras”.',          a: ['How much are the tickets?', 'How much are the tickets'] },
+      { q: 'My new bag is “dark blue”.',            a: ['What colour is your new bag?', 'What color is your new bag?', 'What colour is your bag?', 'What colour is your new bag'] },
+      { q: 'The boy at the door is “my cousin”.',   a: ['Who is the boy at the door?', "Who's the boy at the door?", 'Who is the boy at the door'] },
+      { q: 'Selin is at home “because she\'s ill”.',a: ['Why is Selin at home?', 'Why is Selin at home'] },
+      { q: 'The school party is “on Saturday”.',    a: ['When is the school party?', 'When is the school party'] },
+      { q: 'My new teacher is “very friendly”.',    a: ['What is your new teacher like?', "What's your new teacher like?", 'What is your new teacher like'] }
+    ]
+  },
+
+  /* ---------------- J: soru sıralama ---------------- */
+  {
+    type: 'order', tag: 'J',
+    title: 'Put the word boxes in the correct order to make questions.',
+    tr: 'Kelime kutularını taşıyarak soru cümlesini kur. Soru işareti kutusunu da yerleştir!',
+    items: [
+      { words: ["aren't", 'why', 'you', 'class', 'in', '?'],
+        a: ['Why', "aren't", 'you', 'in', 'class', '?'] },
+      { words: ['near', 'is', 'a', 'here', 'chemist', 'there', '?'],
+        a: ['Is', 'there', 'a', 'chemist', 'near', 'here', '?'] },
+      { words: ['the', 'are', 'how much', 'trainers', '?'],
+        a: ['How much', 'are', 'the', 'trainers', '?'] },
+      { words: ['your', 'is', 'like', 'what', 'new', 'school', '?'],
+        a: ['What', 'is', 'your', 'new', 'school', 'like', '?'] },
+      { words: ['in', 'students', 'are', 'there', 'how many', 'class', 'your', '?'],
+        a: ['How many', 'students', 'are', 'there', 'in', 'your', 'class', '?'] },
+      { words: ['the', "isn't", 'why', 'open', 'museum', '?'],
+        a: ['Why', "isn't", 'the', 'museum', 'open', '?'] }
+    ]
+  },
+
+  /* ---------------- K: kendin hakkında ---------------- */
+  {
+    type: 'free', tag: 'K',
+    title: 'Answer about yourself: a short answer + one more piece of information.',
+    tr: 'Kendin hakkında cevap ver: kısa cevap + bir bilgi daha. Örnek: Are you from a big city? → No, I\'m not. I\'m from a small town near Konya.',
+    rows: 6,
+    placeholder: '1) Are you good at maths? → …\n2) Is your school far from your house? → …\n3) Are there any shops in your street? → …\n4) Are you afraid of the dark? → …',
+    note: 'Kontrol: kısa cevap biçimi doğru mu? İkinci cümlede be biçimi doğru mu?'
+  },
+
+  /* ---------------- L: cümle sıralama ---------------- */
+  {
+    type: 'order', tag: 'L',
+    title: 'Put the word boxes in the correct order.',
+    tr: 'Kelime kutularını doğru sıraya koy. Noktalama kutusunu da yerleştir!',
+    items: [
+      { words: ['good', 'I', 'at', 'am', 'not', 'swimming', '.'],
+        a: ['I', 'am', 'not', 'good', 'at', 'swimming', '.'] },
+      { words: ['there', 'in', 'are', 'my', 'two', 'bathrooms', 'house', '.'],
+        a: ['There', 'are', 'two', 'bathrooms', 'in', 'my', 'house', '.'] },
+      { words: ['is', 'the', 'full', 'box', 'of', 'toys', 'old', '.'],
+        a: ['The', 'old', 'box', 'is', 'full', 'of', 'toys', '.'] },
+      { words: ["aren't", 'brothers', 'my', 'interested', 'football', 'in', '.'],
+        a: ['My', 'brothers', "aren't", 'interested', 'in', 'football', '.'] },
+      { words: ["isn't", 'there', 'milk', 'any', 'fridge', 'the', 'in', '.'],
+        a: ['There', "isn't", 'any', 'milk', 'in', 'the', 'fridge', '.'] },
+      { words: ['late', "I'm", 'for', 'lesson', 'the', '.'],
+        a: ["I'm", 'late', 'for', 'the', 'lesson', '.'] },
+      { words: ['afraid', 'are', 'of', 'you', 'dogs', '?'],
+        a: ['Are', 'you', 'afraid', 'of', 'dogs', '?'] },
+      { words: ['my', 'are', 'where', 'glasses', '?'],
+        a: ['Where', 'are', 'my', 'glasses', '?'] }
+    ]
+  },
+
+  /* ---------------- M: hatayı düzelt ---------------- */
+  {
+    type: 'type', tag: 'M',
+    title: 'There is one mistake in each sentence. Write it correctly.',
+    tr: 'Her cümlede bir hata var. Doğru biçimini yaz.',
+    size: 'xl',
+    items: [
+      { q: 'My trousers is new.',
+        a: ['My trousers are new.', 'My trousers are new'] },
+      { q: 'There is three people in the room.',
+        a: ['There are three people in the room.', 'There are three people in the room'] },
+      { q: 'I have 12 years old.',
+        a: ['I am 12 years old.', "I'm 12 years old.", 'I am 12 years old'] },
+      { q: 'Where is your cousins?',
+        a: ['Where are your cousins?', 'Where are your cousins'] },
+      { q: "There aren't no bread.",
+        a: ["There isn't any bread.", "There isn't any bread", 'There is no bread.'] },
+      { q: 'Everybody are happy today.',
+        a: ['Everybody is happy today.', 'Everybody is happy today'] },
+      { q: 'Why you are sad?',
+        a: ['Why are you sad?', 'Why are you sad'] },
+      { q: 'The news are very interesting.',
+        a: ['The news is very interesting.', 'The news is very interesting'] },
+      { q: "Is your sister at home? — Yes, she's.",
+        a: ['Yes, she is.', 'Yes, she is', "Is your sister at home? — Yes, she is."] },
+      { q: 'My hairs are very long.',
+        a: ['My hair is very long.', 'My hair is very long'] }
+    ]
+  },
+
+  /* ---------------- N: okuma metni ---------------- */
+  {
+    type: 'cloze', tag: 'N',
+    title: 'Read and complete with <i>am, is, are, isn\'t, aren\'t, There is</i> or <i>There are</i>.',
+    tr: 'Metni uygun bloklarla tamamla. (Büyük harf önemsenmez.)',
+    bank: ['am', 'is', 'are', "isn't", "aren't", 'There is', 'There are', "There aren't"],
+    sticky: false,
+    text: 'My name ___ Kerem and I ___ from Safranbolu, a small town in the north of Turkey. ' +
+          'It ___ a big city, but it ___ famous all over the world because of its old houses. ' +
+          '___ a lot of tourists here in summer. In the town centre ___ an old bazaar. ' +
+          'The streets ___ narrow and the shops ___ full of sweets, scarves and copper pots. ' +
+          "My uncle's shop ___ there, too. ___ any big shopping malls in the centre, so people usually walk. " +
+          'My school ___ near the bazaar. ___ 28 students in my class and we ___ all good friends. ' +
+          "The teachers ___ strict, but they're fair. I love my town!",
+    answers: ['is', 'am', "isn't", 'is', 'There are', 'There is', 'are', 'are', 'is', "There aren't", 'is', 'There are', 'are', 'are']
+  },
+
+  /* ---------------- O: metin soruları ---------------- */
+  {
+    type: 'type', tag: 'O',
+    title: 'Answer the questions about the text in <b>N</b>.',
+    tr: 'Yukarıdaki N metnine göre soruları cevapla. Tam cümle yaz.',
+    size: 'xl',
+    items: [
+      { q: 'Where is Safranbolu?',
+        a: ['It is in the north of Turkey.', "It's in the north of Turkey.", 'In the north of Turkey.', 'It is in the north of Turkey'] },
+      { q: 'Why is the town famous?',
+        a: ['Because of its old houses.', 'Because of the old houses.', 'Because of its old houses'] },
+      { q: 'Are there any shopping malls in the centre?',
+        a: ["No, there aren't.", "No, there aren't"] },
+      { q: "How many students are there in Kerem's class?",
+        a: ['There are 28 students.', 'There are 28 students in his class.', 'There are twenty-eight students.', 'There are 28 students'] }
+    ]
+  },
+
+  /* ---------------- P: serbest yazma ---------------- */
+  {
+    type: 'free', tag: 'P', challenge: true,
+    title: 'Write about your town or your street (6–8 sentences).',
+    tr: 'Kendi şehrin ya da sokağın hakkında 6–8 cümle yaz. Şunları kullan: en az iki <i>there is / there are</i>, bir olumsuz cümle ve okuyucuya bir soru.',
+    rows: 9,
+    placeholder: 'I am from …\nMy town is …\nThere is …\nThere are …\nThere aren\'t …\nAre there … in your town?',
+    note: 'Kontrol: 2× there is/there are · 1 olumsuz cümle · 1 soru · doğru be biçimleri · büyük harf ve nokta.'
+  },
+
+  /* ---------------- Q: bonus was / were ---------------- */
+  {
+    type: 'drag', tag: 'Q',
+    title: 'Bonus: the past of <i>be</i> — <i>was / were</i>',
+    tr: 'Geçmiş zaman: I, he, she, it → was · you, we, they → were. Blokları boşluklara sürükle.',
+    bank: ['was', 'were'],
+    cols: 2,
+    items: [
+      { q: 'Yesterday I ___ at home all day.',          a: 'was'  },
+      { q: 'My friends ___ at the cinema.',             a: 'were' },
+      { q: 'The film ___ really exciting.',             a: 'was'  },
+      { q: 'We ___ very tired last night.',             a: 'were' },
+      { q: '___ you at school yesterday?',              a: 'were' },
+      { q: 'It ___ not cold, so we played outside.',    a: 'was'  }
+    ]
+  }
+
+  ]
+});
+</script>
+</body>
+</html>
