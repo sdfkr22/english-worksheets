@@ -249,7 +249,7 @@
   .starters { display: grid; gap: 4mm; }
   .starters p { margin: 0; }
 
-  .selfcheck { margin-top: auto; border-top: 1px solid var(--rule); padding-top: 3mm; font-size: 10pt; color: var(--ink-soft); }
+  .selfcheck { margin-top: 6mm; border-top: 1px solid var(--rule); padding-top: 3mm; font-size: 10pt; color: var(--ink-soft); }
   .selfcheck ul { list-style: none; margin: 2mm 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5mm 8mm; }
   .selfcheck li::before { content: "☐  "; color: var(--teal); }
 
@@ -279,6 +279,7 @@
   .keyblock b { color: var(--teal); }
 
   .footer {
+    margin-top: auto;
     font-size: 9pt;
     color: var(--ink-soft);
     border-top: 1px solid var(--rule-soft);
@@ -322,7 +323,7 @@
   .theme-btn:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
 
   @media print {
-    @page { size: A4; margin: 12mm 13mm; }
+    @page { size: A4; margin: 0; }
     :root,
     :root[data-theme="dark"],
     :root[data-theme="light"] {
@@ -332,7 +333,7 @@
     }
     body { background: #fff; padding: 0; font-size: 11pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     .toolbar, .ws-bar { display: none; }
-    .page { width: auto; min-height: 0; box-shadow: none; margin: 0; padding: 0; break-after: page; }
+    .page { width: auto; min-height: 296mm; box-shadow: none; margin: 0; padding: 13mm 15mm 10mm; gap: 5.5mm; break-after: page; }
     .page:last-child { break-after: auto; }
     .ex, .text, .glossary { break-inside: avoid; }
   }
@@ -351,7 +352,7 @@
 </div>
 
 <div class="toolbar">
-  <p>A1 okuma kağıdı · 2 sayfa alıştırma + 1 sayfa cevap anahtarı. “Am / Is / Are” kağıdının devamı olarak kullanılabilir.</p>
+  <p>A1 okuma kağıdı · 5 sayfa alıştırma + 2 sayfa cevap anahtarı. “Am / Is / Are” kağıdının devamı olarak kullanılabilir.</p>
   <button class="print-btn" onclick="window.print()">Yazdır</button>
 </div>
 
@@ -372,7 +373,6 @@
     <p>My favourite subject is science because it is fun. Maths is difficult for me, but my teacher is very patient. Her name is Mrs Aydın. She is young and friendly.</p>
     <p>School starts at eight o'clock. We have a long break at eleven. At break time my best friend Melis and I are always in the garden. We are happy at school!</p>
   </article>
-
   <div class="glossary">
     <span class="gl-head">new words · yeni kelimeler</span>
     <span><b>bright</b> — aydınlık</span>
@@ -386,6 +386,12 @@
     <span><b>friendly</b> — cana yakın</span>
   </div>
 
+  <div class="footer"><span>English Worksheets · Reading: My School Day · A1</span><span>Page 1 of 5</span></div>
+</section>
+
+<!-- ============ PAGE 2 ============ -->
+<section class="page">
+  <div class="runhead"><span>Reading: My School Day · A1</span><b>Exercises A – B</b></div>
   <div class="ex">
     <h2><span class="tag">A</span> True or False? Circle the correct answer.</h2>
     <span class="tr">Doğru mu, yanlış mı? Doğru olanı yuvarlak içine al.</span>
@@ -400,7 +406,6 @@
       <li>School starts at nine o'clock. <span class="pick">True / False</span></li>
     </ol>
   </div>
-
   <div class="ex">
     <h2><span class="tag">B</span> Answer the questions about the text.</h2>
     <span class="tr">Metinle ilgili soruları cevapla. Tam cümle yaz.</span>
@@ -414,13 +419,12 @@
     </ol>
   </div>
 
-  <div class="footer"><span>Reading: My School Day · A1</span><span>Page 1 of 2</span></div>
+  <div class="footer"><span>English Worksheets · Reading: My School Day · A1</span><span>Page 2 of 5</span></div>
 </section>
 
-<!-- ============ PAGE 2 ============ -->
+<!-- ============ PAGE 3 ============ -->
 <section class="page">
-  <div class="runhead"><span>Reading: My School Day · A1</span><b>Exercises C–G</b></div>
-
+  <div class="runhead"><span>Reading: My School Day · A1</span><b>Exercises C – D</b></div>
   <div class="ex">
     <h2><span class="tag">C</span> Complete the sentences about the text with <i>am</i>, <i>is</i> or <i>are</i>.</h2>
     <span class="tr">Metne göre boşlukları am, is ya da are ile doldur.</span>
@@ -437,7 +441,6 @@
       <li>I <span class="blank sm"></span> a student, too.</li>
     </ol>
   </div>
-
   <div class="ex">
     <h2><span class="tag">D</span> Match the two halves of the sentences.</h2>
     <span class="tr">Cümlelerin yarılarını eşleştir. Harfi kutuya yaz.</span>
@@ -461,6 +464,12 @@
     </div>
   </div>
 
+  <div class="footer"><span>English Worksheets · Reading: My School Day · A1</span><span>Page 3 of 5</span></div>
+</section>
+
+<!-- ============ PAGE 4 ============ -->
+<section class="page">
+  <div class="runhead"><span>Reading: My School Day · A1</span><b>Exercises E – G</b></div>
   <div class="ex">
     <h2><span class="tag">E</span> Find a word in the text with the opposite meaning.</h2>
     <span class="tr">Metinde zıt anlamlı kelimeyi bul ve yaz.</span>
@@ -473,7 +482,6 @@
       <li>old (a person) <span class="arrow">↔</span> <span class="blank"></span></li>
     </ol>
   </div>
-
   <div class="ex">
     <h2><span class="tag">F</span> Write <i>Is</i> or <i>Are</i> to ask Zeynep questions.</h2>
     <span class="tr">Zeynep'e sormak için boşluklara Is ya da Are yaz. Sonra kısa cevabı da yaz.</span>
@@ -486,7 +494,6 @@
       <li><span class="blank sm"></span> you happy at school? — Yes, <span class="blank sm"></span>.</li>
     </ol>
   </div>
-
   <div class="ex">
     <h2><span class="tag">G</span> Now write about YOUR school.</h2>
     <span class="tr">Şimdi kendi okulun hakkında yaz. Cümleleri tamamla.</span>
@@ -502,6 +509,12 @@
     </div>
   </div>
 
+  <div class="footer"><span>English Worksheets · Reading: My School Day · A1</span><span>Page 4 of 5</span></div>
+</section>
+
+<!-- ============ PAGE 5 ============ -->
+<section class="page">
+  <div class="runhead"><span>Reading: My School Day · A1</span><b>Grammar</b></div>
   <div class="selfcheck">
     <b>Self-check — I can …</b>
     <ul>
@@ -512,17 +525,16 @@
     </ul>
   </div>
 
-  <div class="footer"><span>Reading: My School Day · A1</span><span>Page 2 of 2</span></div>
+  <div class="footer"><span>English Worksheets · Reading: My School Day · A1</span><span>Page 5 of 5</span></div>
 </section>
 
-<!-- ============ ANSWER KEY ============ -->
+<!-- ============ ANSWER KEY 1 ============ -->
 <section class="page key">
   <header class="masthead">
     <p class="eyebrow"><span class="level">CEFR A1</span><span>For the teacher</span></p>
     <h1>Answer <em>Key</em></h1>
     <p class="sub">Exercise G has free answers — check the <i>be</i> forms, capital letters and full stops.</p>
   </header>
-
   <div class="keygrid">
     <div class="keyblock">
       <h3>A — true / false</h3>
@@ -548,6 +560,15 @@
       <h3>F — Is / Are + short answers</h3>
       <ol><li>Are … Yes, I am.</li><li>Is … No, it isn't.</li><li>Is … Yes, there is.</li><li>Is … No, it isn't.</li><li>Are … Yes, they are.</li><li>Are … Yes, I am.</li></ol>
     </div>
+  </div>
+
+  <div class="footer"><span>English Worksheets · Reading: My School Day — Answer Key · A1</span><span>Key page 1 of 2</span></div>
+</section>
+
+<!-- ============ ANSWER KEY 2 ============ -->
+<section class="page key">
+  <div class="runhead"><span>Reading: My School Day · A1</span><b>Answer Key · continued</b></div>
+  <div class="keygrid">
     <div class="keyblock">
       <h3>G — free writing</h3>
       <ol><li>Students' own answers. Check: <b>am</b> with “I”, <b>is</b> for one person/thing, <b>are</b> for plurals and <i>there are</i>.</li></ol>
@@ -558,7 +579,7 @@
     </div>
   </div>
 
-  <div class="footer"><span>Reading: My School Day — Answer Key · A1</span><span>Page 3</span></div>
+  <div class="footer"><span>English Worksheets · Reading: My School Day — Answer Key · A1</span><span>Key page 2 of 2</span></div>
 </section>
 
 <script src="../assets/engine.js"></script>

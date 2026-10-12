@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Have got / Has got — Worksheet (Level A1–A2) · English Worksheets</title>
+<style>
+  :root {
+    --paper: #ffffff;
+    --ground: #e9e8ef;
+    --ink: #1a1c28;
+    --ink-soft: #6c6f80;
+    --rule: #cbcad8;
+    --rule-soft: #e3e2ec;
+    --violet: #4b4a8f;
+    --violet-tint: #eeeef7;
+    --amber: #a8700f;
+    --amber-tint: #faf3e6;
+    --shadow: 0 2px 10px rgba(26, 28, 40, .14);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #171822;
+      --ground: #0e0f16;
+      --ink: #e8e8f0;
+      --ink-soft: #a0a1b4;
+      --rule: #3c3d52;
+      --rule-soft: #272833;
+      --violet: #a3a1e8;
+      --violet-tint: #20203a;
+      --amber: #e0a94a;
+      --amber-tint: #2a2318;
+      --shadow: 0 2px 10px rgba(0, 0, 0, .55);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #171822;
+    --ground: #0e0f16;
+    --ink: #e8e8f0;
+    --ink-soft: #a0a1b4;
+    --rule: #3c3d52;
+    --rule-soft: #272833;
+    --violet: #a3a1e8;
+    --violet-tint: #20203a;
+    --amber: #e0a94a;
+    --amber-tint: #2a2318;
+    --shadow: 0 2px 10px rgba(0, 0, 0, .55);
+  }
+  :root[data-theme="light"] {
+    --paper: #ffffff;
+    --ground: #e9e8ef;
+    --ink: #1a1c28;
+    --ink-soft: #6c6f80;
+    --rule: #cbcad8;
+    --rule-soft: #e3e2ec;
+    --violet: #4b4a8f;
+    --violet-tint: #eeeef7;
+    --amber: #a8700f;
+    --amber-tint: #faf3e6;
+    --shadow: 0 2px 10px rgba(26, 28, 40, .14);
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Segoe UI", -apple-system, system-ui, sans-serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    margin: 0;
+    padding: 18px 12px 48px;
+  }
+
+  /* ---------- toolbar (screen only) ---------- */
+  .toolbar {
+    max-width: 210mm;
+    margin: 0 auto 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 10px 16px;
+  }
+  .toolbar p { margin: 0; color: var(--ink-soft); font-size: 10pt; flex: 1 1 240px; }
+  .print-btn {
+    font: inherit;
+    font-weight: 600;
+    color: #fff;
+    background: var(--violet);
+    border: 0;
+    border-radius: 3px;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+  .print-btn:hover { filter: brightness(1.12); }
+  .print-btn:focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
+
+  /* ---------- page shell ---------- */
+  .page {
+    background: var(--paper);
+    box-shadow: var(--shadow);
+    width: 210mm;
+    min-height: 297mm;
+    box-sizing: border-box;
+    padding: 15mm 16mm 12mm;
+    margin: 0 auto 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6.5mm;
+  }
+
+  /* ---------- masthead ---------- */
+  .masthead { border-bottom: 2.5px solid var(--violet); padding-bottom: 4mm; }
+  .eyebrow {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 8.5pt;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--violet);
+    margin: 0 0 2mm;
+    display: flex;
+    gap: 3mm;
+    align-items: center;
+  }
+  .level {
+    border: 1.2px solid var(--violet);
+    border-radius: 2px;
+    padding: .3mm 1.8mm;
+    letter-spacing: .1em;
+  }
+  h1 {
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    font-size: 25pt;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    text-wrap: balance;
+    margin: 0;
+  }
+  h1 em { font-style: normal; color: var(--amber); }
+  .sub { margin: 2mm 0 0; color: var(--ink-soft); font-size: 10.5pt; }
+  .idline { display: flex; gap: 6mm; margin-top: 4mm; font-size: 10pt; color: var(--ink-soft); }
+  .idline span { flex: 1; border-bottom: 1px dotted var(--rule); padding-bottom: 1mm; }
+
+  .runhead {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 2mm;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 8.5pt;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .runhead b { color: var(--violet); letter-spacing: .14em; }
+
+  /* ---------- rule box ---------- */
+  .rulebox {
+    border-left: 3px solid var(--violet);
+    background: var(--violet-tint);
+    padding: 4mm 5mm;
+  }
+  .rulebox h3 {
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    font-size: 12.5pt;
+    margin: 0 0 3mm;
+    color: var(--violet);
+  }
+  .rulebox p { margin: 0 0 2mm; }
+  .rulebox p:last-child { margin-bottom: 0; }
+  .tip { font-size: 10pt; color: var(--ink-soft); }
+  .tip b { color: var(--amber); }
+  .cols2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2mm 7mm; }
+
+  table { border-collapse: collapse; width: 100%; font-size: 10.5pt; }
+  .grammar th, .grammar td {
+    text-align: left;
+    padding: 1.5mm 3mm 1.5mm 0;
+    border-bottom: 1px solid var(--rule-soft);
+    vertical-align: baseline;
+  }
+  .grammar th {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 8.5pt;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    font-weight: 400;
+  }
+  .grammar td.be { font-weight: 700; color: var(--amber); white-space: nowrap; }
+  .grammar td.short { font-family: Consolas, "Courier New", monospace; white-space: nowrap; }
+  .grammar td.ex { color: var(--ink-soft); font-style: italic; }
+  .scroller { overflow-x: auto; }
+
+  /* ---------- exercises ---------- */
+  .ex { display: flow-root; }
+  .ex h2 {
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    font-size: 12.5pt;
+    font-weight: 700;
+    margin: 0 0 1mm;
+    display: flex;
+    align-items: baseline;
+    gap: 2.5mm;
+  }
+  .tag {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 10pt;
+    font-weight: 700;
+    color: var(--amber);
+    background: var(--amber-tint);
+    border: 1.2px solid var(--amber);
+    border-radius: 2px;
+    padding: .4mm 1.8mm;
+    flex: none;
+  }
+  .tr {
+    display: block;
+    font-size: 9.5pt;
+    font-style: italic;
+    color: var(--ink-soft);
+    margin: 0 0 3mm;
+  }
+
+  ol.items { margin: 0; padding-left: 7mm; display: grid; gap: 2.4mm 8mm; }
+  ol.items.two { grid-template-columns: 1fr 1fr; }
+  ol.items li { padding-left: 1mm; }
+  ol.items.roomy { gap: 5.5mm 8mm; }
+
+  .blank { display: inline-block; min-width: 22mm; border-bottom: 1px dotted var(--ink-soft); }
+  .blank.sm { min-width: 13mm; }
+  .blank.md { min-width: 30mm; }
+  .blank.lg { min-width: 40mm; }
+  .line { display: block; border-bottom: 1px dotted var(--rule); height: 6.5mm; }
+  .arrow { color: var(--amber); font-weight: 700; }
+  .scram { font-family: Consolas, "Courier New", monospace; font-size: 10pt; }
+  .u { border-bottom: 1.6px solid var(--amber); font-weight: 600; }
+  .given { color: var(--ink-soft); }
+
+  .wordbank {
+    border: 1.5px dashed var(--rule);
+    padding: 3mm 4mm;
+    margin: 0 0 4mm;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2mm 5mm;
+    align-items: baseline;
+  }
+  .wordbank b {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 8.5pt;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    font-weight: 400;
+  }
+  .wordbank span { font-weight: 600; color: var(--violet); }
+
+  .dialogue { display: grid; grid-template-columns: auto 1fr; gap: 2.2mm 3mm; margin: 0; line-height: 1.9; }
+  .dialogue dt {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: var(--violet);
+    white-space: nowrap;
+  }
+  .dialogue dd { margin: 0; }
+
+  .reading {
+    background: var(--violet-tint);
+    padding: 4mm 5mm;
+    line-height: 2.15;
+    font-size: 11pt;
+  }
+  .reading p { margin: 0 0 2.5mm; }
+  .reading p:last-child { margin-bottom: 0; }
+  .reading .blank { border-bottom-color: var(--violet); }
+  .n {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 8.5pt;
+    color: var(--amber);
+    vertical-align: super;
+  }
+
+  /* ---------- model box (be <-> have got) ---------- */
+  .model {
+    border: 1.5px solid var(--amber);
+    background: var(--amber-tint);
+    padding: 3.5mm 4.5mm;
+    margin: 0 0 4mm;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.5mm 4mm;
+    font-size: 10.5pt;
+    align-items: baseline;
+  }
+  .model b {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 8.5pt;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  .model i { font-style: normal; }
+  .model .hit { font-weight: 700; color: var(--amber); }
+
+  .bonus { border: 2px solid var(--amber); background: var(--amber-tint); padding: 4mm 5mm; }
+  .bonus h2 { color: var(--amber); }
+  .bonus .tag { color: var(--violet); border-color: var(--violet); background: var(--violet-tint); }
+
+  .selfcheck { margin-top: 6mm; border-top: 1px solid var(--rule); padding-top: 3mm; font-size: 10pt; color: var(--ink-soft); }
+  .selfcheck ul { list-style: none; margin: 2mm 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5mm 8mm; }
+  .selfcheck li::before { content: "☐  "; color: var(--violet); }
+
+  /* ---------- answer key ---------- */
+  .key h1 { color: var(--violet); }
+  .keygrid { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm 8mm; }
+  .keyblock h3 {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 9pt;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--amber);
+    border-bottom: 1px solid var(--rule-soft);
+    padding-bottom: 1mm;
+    margin: 0 0 2mm;
+  }
+  .keyblock ol {
+    margin: 0;
+    padding-left: 6mm;
+    font-size: 9.5pt;
+    line-height: 1.45;
+    font-variant-numeric: tabular-nums;
+  }
+  .keyblock ol.inline { padding-left: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 0 4mm; }
+  .keyblock ol.inline li { font-family: Consolas, "Courier New", monospace; counter-increment: list-item; }
+  .keyblock ol.inline li::before { content: counter(list-item) ". "; color: var(--ink-soft); }
+  .keyblock b { color: var(--violet); }
+  .keyblock p.tip { margin: 1.5mm 0 0; }
+  .keyblock.wide { grid-column: 1 / -1; }
+
+  .footer {
+    margin-top: auto;
+    font-size: 9pt;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--rule-soft);
+    padding-top: 2mm;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 230mm) {
+    .page { width: 100%; min-height: 0; padding: 7mm 6mm; }
+    ol.items.two, .keygrid, .selfcheck ul, .cols2 { grid-template-columns: 1fr; }
+    .model { grid-template-columns: 1fr; gap: .5mm; }
+    .model b { margin-top: 2mm; }
+  }
+
+  /* ---------- site bar (screen only) ---------- */
+  .ws-bar {
+    max-width: 210mm;
+    margin: 0 auto 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 16px;
+    font-size: 10pt;
+    color: var(--ink-soft);
+  }
+  .ws-bar a { color: var(--violet); font-weight: 600; text-decoration: none; }
+  .ws-bar a:hover { text-decoration: underline; }
+  .ws-bar .home { font-family: "Trebuchet MS", "Segoe UI", sans-serif; font-size: 12pt; }
+  .ws-bar .sep { color: var(--rule); }
+  .ws-bar .grow { flex: 1 1 auto; }
+  .theme-btn {
+    font: inherit;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 1.2px solid var(--rule);
+    border-radius: 3px;
+    padding: 3px 10px;
+    cursor: pointer;
+  }
+  .theme-btn:hover { color: var(--violet); border-color: var(--violet); }
+  .theme-btn:focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
+
+  @media print {
+    @page { size: A4; margin: 0; }
+    :root,
+    :root[data-theme="dark"],
+    :root[data-theme="light"] {
+      --paper: #ffffff; --ground: #ffffff; --ink: #1a1c28; --ink-soft: #6c6f80;
+      --rule: #cbcad8; --rule-soft: #e3e2ec; --violet: #4b4a8f; --violet-tint: #eeeef7;
+      --amber: #a8700f; --amber-tint: #faf3e6; --shadow: none;
+    }
+    body { background: #fff; padding: 0; font-size: 10.5pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .toolbar, .ws-bar { display: none; }
+    .page { width: auto; min-height: 296mm; box-shadow: none; margin: 0; padding: 13mm 15mm 10mm; gap: 5.5mm; break-after: page; }
+    .page:last-child { break-after: auto; }
+    .ex, .rulebox, .reading, .bonus, .model { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div class="ws-bar">
+  <a class="home" href="../index.html">← English Worksheets</a>
+  <span class="sep">·</span>
+  <a href="../units/have-got-a1.html">İnteraktif sürüm</a>
+  <span class="sep">·</span>
+  <a href="am-is-are-worksheet.html">am / is / are çalışma kağıdı</a>
+  <span class="grow"></span>
+  <button class="theme-btn" type="button" title="Açık / koyu tema" aria-label="Temayı değiştir">☾</button>
+</div>
+
+<div class="toolbar">
+  <p>A1–A2 seviyesi · 12 sayfa çalışma kağıdı + 3 sayfa cevap anahtarı. A4, dikey. Baskı her zaman beyaz zemin + koyu mürekkep çıkar.</p>
+  <button class="print-btn" onclick="window.print()">Yazdır</button>
+</div>
+
+<!-- ============ PAGE 1 ============ -->
+<section class="page">
+  <header class="masthead">
+    <p class="eyebrow"><span class="level">CEFR A1–A2</span><span>English · Grammar</span></p>
+    <h1><em>have got</em> / <em>has got</em></h1>
+    <p class="sub">Sahiplik · aile · görünüş · olumsuz &amp; soru · <i>be</i> ile anlatımı <i>have got</i>'a çevirme</p>
+    <div class="idline"><span>Name:</span><span>Class:</span><span>Date:</span></div>
+  </header>
+  <div class="rulebox">
+    <h3>have got / has got — bir şeye sahip olmak</h3>
+    <div class="scroller">
+      <table class="grammar">
+        <tr><th>Subject</th><th>Form</th><th>Short form</th><th>Example</th></tr>
+        <tr><td>I / you / we / they</td><td class="be">have got</td><td class="short">I've got · they've got</td><td class="ex">I've got a new bike.</td></tr>
+        <tr><td>he / she / it</td><td class="be">has got</td><td class="short">he's got · she's got · it's got</td><td class="ex">She's got two cats.</td></tr>
+        <tr><td>I / you / we / they</td><td class="be">haven't got</td><td class="short">haven't = have not</td><td class="ex">We haven't got a car.</td></tr>
+        <tr><td>he / she / it</td><td class="be">hasn't got</td><td class="short">hasn't = has not</td><td class="ex">He hasn't got a sister.</td></tr>
+        <tr><td class="be">?</td><td>Have / Has + subject + got …?</td><td class="short">Yes, I have. / No, she hasn't.</td><td class="ex">Have you got a pencil?</td></tr>
+      </table>
+    </div>
+    <p class="tip">Tek bir kişi ya da şey (he, she, it, my brother, the dog, our school) → <b>has got</b>. Diğer herkes → <b>have got</b>.<br>
+    İsimler de özne olabilir: <i>My brother has got …</i> (= he) · <i>My parents have got …</i> (= they)</p>
+  </div>
+
+  <div class="footer"><span>English Worksheets · have got / has got — Worksheet · A1–A2</span><span>Page 1 of 12</span></div>
+</section>
+
+<!-- ============ PAGE 2 ============ -->
+<section class="page">
+  <div class="runhead"><span>have got / has got</span><b>Exercises A – B</b></div>
+  <div class="ex">
+    <h2><span class="tag">A</span> Complete with <i>have got</i> or <i>has got</i>.</h2>
+    <span class="tr">Boşlukları have got ya da has got ile tamamla.</span>
+    <ol class="items two">
+      <li>I <span class="blank md"></span> a big family.</li>
+      <li>My sister <span class="blank md"></span> long hair.</li>
+      <li>We <span class="blank md"></span> a new English teacher.</li>
+      <li>Our school <span class="blank md"></span> a big library.</li>
+      <li>They <span class="blank md"></span> three dogs and a cat.</li>
+      <li>You <span class="blank md"></span> a very nice bag.</li>
+      <li>My parents <span class="blank md"></span> an old car.</li>
+      <li>Ali <span class="blank md"></span> two brothers.</li>
+      <li>The cat <span class="blank md"></span> green eyes.</li>
+      <li>My friends and I <span class="blank md"></span> the same phone.</li>
+      <li>Mrs Aydın <span class="blank md"></span> a lot of books.</li>
+      <li>This house <span class="blank md"></span> a small garden.</li>
+    </ol>
+  </div>
+  <div class="ex">
+    <h2><span class="tag">B</span> Write the short form.</h2>
+    <span class="tr">Kısa biçimini yaz. Örnek: I have got → I've got</span>
+    <ol class="items two">
+      <li>she has got <span class="arrow">→</span> <span class="blank"></span></li>
+      <li>we have got <span class="arrow">→</span> <span class="blank"></span></li>
+      <li>it has got <span class="arrow">→</span> <span class="blank"></span></li>
+      <li>they have not got <span class="arrow">→</span> <span class="blank"></span></li>
+      <li>he has not got <span class="arrow">→</span> <span class="blank"></span></li>
+      <li>you have got <span class="arrow">→</span> <span class="blank"></span></li>
+      <li>I have not got <span class="arrow">→</span> <span class="blank"></span></li>
+      <li>my dog has got <span class="arrow">→</span> <span class="blank"></span></li>
+    </ol>
+  </div>
+
+  <div class="footer"><span>English Worksheets · have got / has got — Worksheet · A1–A2</span><span>Page 2 of 12</span></div>
+</section>
+
+<!-- ============ PAGE 3 ============ -->
+<section class="page">
+  <div class="runhead"><span>have got / has got</span><b>Grammar</b></div>
+  <div class="rulebox">
+    <h3>Aynı şeyi iki şekilde söylemek: <i>be</i> ↔ <i>have got</i></h3>
+    <div class="model">
+      <b>be ile</b><div>My eyes <span class="hit">are blue</span>.</div>
+      <b>have got ile</b><div>I <span class="hit">have got blue eyes</span>. (= I've got blue eyes.)</div>
+    </div>
+    <p>Üç şey değişir:</p>
+    <p class="tip">
+      <b>1.</b> Özne değişir: <i>My eyes</i> → <i>I</i> &nbsp;·&nbsp; <i>Her hair</i> → <i>She</i> &nbsp;·&nbsp; <i>His nose</i> → <i>He</i><br>
+      <b>2.</b> Sıfat ismin <b>önüne</b> gelir: <i>are blue</i> → <i>blue eyes</i> (✗ <i>eyes blue</i>)<br>
+      <b>3.</b> Tekil sayılabilir isimde <b>a / an</b> gerekir: <i>His nose is big.</i> → <i>He's got <b>a</b> big nose.</i><br>
+      Çoğul isimlerde (<i>eyes, ears, shoes</i>) ve sayılamayanlarda (<i>hair</i>) <b>a</b> kullanılmaz.
+    </p>
+  </div>
+
+  <div class="footer"><span>English Worksheets · have got / has got — Worksheet · A1–A2</span><span>Page 3 of 12</span></div>
+</section>
+
+<!-- ============ PAGE 4 ============ -->
+<section class="page">
+  <div class="runhead"><span>have got / has got</span><b>Exercise C</b></div>
+  <div class="ex">
+    <h2><span class="tag">C</span> Say it again with <i>have got</i> / <i>has got</i>.</h2>
+    <span class="tr">Cümleleri have got / has got ile yeniden yaz.<br>Örnek: My eyes are blue. → I have got blue eyes. (= I've got blue eyes.)</span>
+    <ol class="items roomy">
+      <li>My eyes are green. <span class="arrow">→</span> <span class="given">I</span> <span class="line"></span></li>
+      <li>Her hair is long. <span class="arrow">→</span> <span class="given">She</span> <span class="line"></span></li>
+      <li>His nose is big. <span class="arrow">→</span> <span class="given">He</span> <span class="line"></span></li>
+      <li>My bike is new. <span class="arrow">→</span> <span class="line"></span></li>
+      <li>Their house is very old. <span class="arrow">→</span> <span class="line"></span></li>
+      <li>Our classroom is big. <span class="arrow">→</span> <span class="line"></span></li>
+      <li>Your shoes are white. <span class="arrow">→</span> <span class="line"></span></li>
+      <li>My brother's hair is curly. <span class="arrow">→</span> <span class="line"></span></li>
+      <li>The dog's ears are small. <span class="arrow">→</span> <span class="line"></span></li>
+      <li>My schoolbag is heavy. <span class="arrow">→</span> <span class="line"></span></li>
+    </ol>
+  </div>
+
+  <div class="footer"><span>English Worksheets · have got / has got — Worksheet · A1–A2</span><span>Page 4 of 12</span></div>
+</section>
+
+<!-- ============ PAGE 5 ============ -->
+<section class="page">
+  <div class="runhead"><span>have got / has got</span><b>Exercise D</b></div>
+  <div class="ex">
+    <h2><span class="tag">D</span> Now the other way round: say it with <i>am / is / are</i>.</h2>
+    <span class="tr">Şimdi tersini yap: have got cümlelerini be ile yaz.<br>Örnek: I've got blue eyes. → My eyes are blue.</span>
+    <ol class="items roomy">
+      <li>I've got short hair. <span class="arrow">→</span> <span class="given">My hair</span> <span class="line"></span></li>
+      <li>She's got brown eyes. <span class="arrow">→</span> <span class="given">Her eyes</span> <span class="line"></span></li>
+      <li>We've got a big garden. <span class="arrow">→</span> <span class="line"></span></li>
+      <li>He's got a red car. <span class="arrow">→</span> <span class="line"></span></li>
+      <li>They've got an old house. <span class="arrow">→</span> <span class="line"></span></li>
+      <li>My cat has got white fur. <span class="arrow">→</span> <span class="line"></span></li>
+    </ol>
+  </div>
+  <div class="rulebox">
+    <h3>Negatives (Olumsuz) — haven't got / hasn't got</h3>
+    <div class="cols2">
+      <p><b>I / you / we / they</b> &nbsp;haven't got &nbsp;<i>(= have not got)</i></p>
+      <p><b>he / she / it</b> &nbsp;hasn't got &nbsp;<i>(= has not got)</i></p>
+    </div>
+    <p class="tip">Olumsuzda <b>any</b> kullanılır: <i>I haven't got <b>any</b> brothers or sisters.</i><br>
+    ✗ <i>I don't have got …</i> &nbsp;·&nbsp; ✓ <i>I haven't got …</i> / <i>I don't have …</i></p>
+  </div>
+
+  <div class="footer"><span>English Worksheets · have got / has got — Worksheet · A1–A2</span><span>Page 5 of 12</span></div>
+</section>
+
+<!-- ============ PAGE 6 ============ -->
+<section class="page">
+  <div class="runhead"><span>have got / has got</span><b>Exercises E – F</b></div>
+  <div class="ex">
+    <h2><span class="tag">E</span> Complete with <i>haven't got</i> or <i>hasn't got</i>.</h2>
+    <span class="tr">Boşlukları haven't got ya da hasn't got ile tamamla.</span>
+    <ol class="items two">
+      <li>I <span class="blank md"></span> any brothers.</li>
+      <li>My little sister <span class="blank md"></span> a phone.</li>
+      <li>We <span class="blank md"></span> a swimming pool at school.</li>
+      <li>Kerem <span class="blank md"></span> his book today.</li>
+      <li>Our flat <span class="blank md"></span> a balcony.</li>
+      <li>My grandparents <span class="blank md"></span> a computer.</li>
+      <li>You <span class="blank md"></span> any homework tonight.</li>
+      <li>This pen <span class="blank md"></span> any ink.</li>
+    </ol>
+  </div>
+  <div class="ex">
+    <h2><span class="tag">F</span> Rewrite the sentences in the negative. Use short forms.</h2>
+    <span class="tr">Cümleleri kısa biçim kullanarak olumsuz yap.</span>
+    <ol class="items roomy">
+      <li>I've got a bike. <span class="arrow">→</span> <span class="line"></span></li>
+      <li>She's got blonde hair. <span class="arrow">→</span> <span class="line"></span></li>
+      <li>They've got a big dog. <span class="arrow">→</span> <span class="line"></span></li>
+      <li>Our school has got a garden. <span class="arrow">→</span> <span class="line"></span></li>
+      <li>My friends have got tickets for the match. <span class="arrow">→</span> <span class="line"></span></li>
+      <li>He's got a lot of free time. <span class="arrow">→</span> <span class="line"></span></li>
+    </ol>
+  </div>
+
+  <div class="footer"><span>English Worksheets · have got / has got — Worksheet · A1–A2</span><span>Page 6 of 12</span></div>
+</section>
+
+<!-- ============ PAGE 7 ============ -->
+<section class="page">
+  <div class="runhead"><span>have got / has got</span><b>Exercise G</b></div>
+  <div class="rulebox">
+    <h3>Questions (Soru) — Have / Has + özne + got …?</h3>
+    <div class="scroller">
+      <table class="grammar">
+        <tr><th>Question</th><th>Yes</th><th>No</th></tr>
+        <tr><td>Have you got a pencil?</td><td class="short">Yes, I have.</td><td class="short">No, I haven't.</td></tr>
+        <tr><td>Has she got a sister?</td><td class="short">Yes, she has.</td><td class="short">No, she hasn't.</td></tr>
+        <tr><td>Have they got any pets?</td><td class="short">Yes, they have.</td><td class="short">No, they haven't.</td></tr>
+      </table>
+    </div>
+    <p class="tip">Kısa cevapta <b>got</b> yoktur: ✓ <i>Yes, I have.</i> ✗ <i>Yes, I have got.</i><br>
+    Soru kelimesiyle: <i><b>What</b> have you got in your bag? · <b>How many</b> cousins has she got?</i></p>
+  </div>
+  <div class="ex">
+    <h2><span class="tag">G</span> Write the question, then a short answer.</h2>
+    <span class="tr">Soruyu yaz, sonra parantezdeki işarete göre kısa cevap ver.<br>Örnek: you / a pet (✓) → Have you got a pet? — Yes, I have.</span>
+    <ol class="items roomy">
+      <li>she / a bike &nbsp;(✓) <span class="line"></span></li>
+      <li>they / any children &nbsp;(✗) <span class="line"></span></li>
+      <li>your school / a music room &nbsp;(✓) <span class="line"></span></li>
+      <li>you / a brother &nbsp;(✗) <span class="line"></span></li>
+      <li>your parents / a garden &nbsp;(✗) <span class="line"></span></li>
+      <li>your flat / a balcony &nbsp;(✗) <span class="line"></span></li>
+    </ol>
+  </div>
+
+  <div class="footer"><span>English Worksheets · have got / has got — Worksheet · A1–A2</span><span>Page 7 of 12</span></div>
+</section>
+
+<!-- ============ PAGE 8 ============ -->
+<section class="page">
+  <div class="runhead"><span>have got / has got</span><b>Exercises H – I</b></div>
+  <div class="ex">
+    <h2><span class="tag">H</span> Complete the dialogue.</h2>
+    <span class="tr">Diyaloğu şu biçimlerle tamamla: 've got · 's got · haven't got · hasn't got · Have · Has · have · hasn't</span>
+    <dl class="dialogue">
+      <dt>Elif:</dt><dd><span class="n">1</span><span class="blank sm"></span> you got any pets, Can?</dd>
+      <dt>Can:</dt><dd>Yes, I <span class="n">2</span><span class="blank sm"></span>. I <span class="n">3</span><span class="blank md"></span> a rabbit.</dd>
+      <dt>Elif:</dt><dd>Lucky you! I <span class="n">4</span><span class="blank md"></span> any pets. My mum says our flat is too small.</dd>
+      <dt>Can:</dt><dd><span class="n">5</span><span class="blank sm"></span> your flat got a balcony?</dd>
+      <dt>Elif:</dt><dd>No, it <span class="n">6</span><span class="blank sm"></span>. But my grandmother <span class="n">7</span><span class="blank md"></span> a big garden in the village.</dd>
+      <dt>Can:</dt><dd>Nice! <span class="n">8</span><span class="blank sm"></span> she got any animals there?</dd>
+      <dt>Elif:</dt><dd>Yes! She <span class="n">9</span><span class="blank md"></span> six chickens and two cats. The cats <span class="n">10</span><span class="blank md"></span> names — we just call them “cat one” and “cat two”!</dd>
+    </dl>
+  </div>
+  <div class="ex">
+    <h2><span class="tag">I</span> Put the words in the correct order.</h2>
+    <span class="tr">Karışık kelimeleri doğru sıraya koy. Noktalama işaretlerini de yaz.</span>
+    <ol class="items roomy">
+      <li><span class="scram">got / I / brown / have / eyes</span> <span class="line"></span></li>
+      <li><span class="scram">has / my / long / sister / hair / got</span> <span class="line"></span></li>
+      <li><span class="scram">haven't / we / car / a / got</span> <span class="line"></span></li>
+      <li><span class="scram">got / you / have / pen / a / ?</span> <span class="line"></span></li>
+      <li><span class="scram">got / has / cousins / how many / she / ?</span> <span class="line"></span></li>
+      <li><span class="scram">big / our / got / a / school / library / has</span> <span class="line"></span></li>
+      <li><span class="scram">hasn't / my / phone / brother / a / got</span> <span class="line"></span></li>
+      <li><span class="scram">in / what / got / bag / have / your / you / ?</span> <span class="line"></span></li>
+    </ol>
+  </div>
+
+  <div class="footer"><span>English Worksheets · have got / has got — Worksheet · A1–A2</span><span>Page 8 of 12</span></div>
+</section>
+
+<!-- ============ PAGE 9 ============ -->
+<section class="page">
+  <div class="runhead"><span>have got / has got</span><b>Exercise J</b></div>
+  <div class="ex">
+    <h2><span class="tag">J</span> There is one mistake in each sentence. Write it correctly.</h2>
+    <span class="tr">Her cümlede bir hata var. Doğru biçimini yaz.</span>
+    <ol class="items two roomy">
+      <li>My sister have got a bike. <span class="line"></span></li>
+      <li>I has got two cats. <span class="line"></span></li>
+      <li>He don't have got a sister. <span class="line"></span></li>
+      <li>Have you got a pen? — Yes, I have got. <span class="line"></span></li>
+      <li>She has got eyes blue. <span class="line"></span></li>
+      <li>We have got not any milk. <span class="line"></span></li>
+      <li>Has she got a long hair? <span class="line"></span></li>
+      <li>My parents has got an old car. <span class="line"></span></li>
+      <li>You have got a pencil? <span class="line"></span></li>
+      <li>He's got big a nose. <span class="line"></span></li>
+    </ol>
+  </div>
+
+  <div class="footer"><span>English Worksheets · have got / has got — Worksheet · A1–A2</span><span>Page 9 of 12</span></div>
+</section>
+
+<!-- ============ PAGE 10 ============ -->
+<section class="page">
+  <div class="runhead"><span>have got / has got</span><b>Exercise K</b></div>
+  <div class="ex">
+    <h2><span class="tag">K</span> Read and complete with <i>'ve got, 's got, haven't got, hasn't got</i> or <i>Have</i>.</h2>
+    <span class="tr">Metni uygun biçimlerle tamamla.</span>
+    <p class="reading">
+      Hi! My name is Deniz and I <span class="n">1</span><span class="blank md"></span> a big family.
+      I <span class="n">2</span><span class="blank md"></span> two brothers and one sister.
+      My brothers are twins and they <span class="n">3</span><span class="blank md"></span> the same curly hair.
+      My sister Ada <span class="n">4</span><span class="blank md"></span> green eyes and a lovely smile.
+      She <span class="n">5</span><span class="blank md"></span> a bike, but she wants one for her birthday.
+      We <span class="n">6</span><span class="blank md"></span> a small flat in Bursa. It <span class="n">7</span><span class="blank md"></span> a big balcony,
+      but we <span class="n">8</span><span class="blank md"></span> a garden, so our cat Pamuk sleeps on the balcony.
+      Pamuk <span class="n">9</span><span class="blank md"></span> white fur and one black ear.
+      My grandmother <span class="n">10</span><span class="blank md"></span> a house in a village. It <span class="n">11</span><span class="blank md"></span> apple trees
+      and six chickens! <span class="n">12</span><span class="blank sm"></span> you got any pets?
+    </p>
+    <ol class="items roomy">
+      <li>How many brothers and sisters has Deniz got? <span class="line"></span></li>
+      <li>Has Ada got a bike? <span class="line"></span></li>
+      <li>Has their flat got a garden? <span class="line"></span></li>
+      <li>What has Deniz's grandmother got in the village? <span class="line"></span></li>
+      <li>What colour is Pamuk's fur? <span class="line"></span></li>
+    </ol>
+  </div>
+
+  <div class="footer"><span>English Worksheets · have got / has got — Worksheet · A1–A2</span><span>Page 10 of 12</span></div>
+</section>
+
+<!-- ============ PAGE 11 ============ -->
+<section class="page">
+  <div class="runhead"><span>have got / has got</span><b>Exercises L – M</b></div>
+  <div class="ex">
+    <h2><span class="tag">L</span> Look at the picture words and write true sentences about yourself.</h2>
+    <span class="tr">Kutudaki kelimeleri kullanarak kendin hakkında doğru cümleler yaz. Olumlu için have got, olumsuz için haven't got kullan.</span>
+    <div class="wordbank">
+      <b>word box</b>
+      <span>a bike</span><span>a pet</span><span>brown eyes</span><span>curly hair</span><span>a big family</span><span>a smartphone</span><span>a best friend</span><span>a lot of books</span>
+    </div>
+    <ol class="items roomy two">
+      <li><span class="line"></span></li>
+      <li><span class="line"></span></li>
+      <li><span class="line"></span></li>
+      <li><span class="line"></span></li>
+      <li><span class="line"></span></li>
+      <li><span class="line"></span></li>
+    </ol>
+  </div>
+  <div class="ex">
+    <h2><span class="tag">M</span> Describe a person in your family (6–8 sentences).</h2>
+    <span class="tr">Ailenden biri hakkında 6–8 cümle yaz. Şunları kullan: en az üç <i>have got / has got</i>, bir olumsuz cümle ve bir <i>be</i> cümlesi (örn. <i>She is tall.</i>).</span>
+    <span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span>
+  </div>
+
+  <div class="footer"><span>English Worksheets · have got / has got — Worksheet · A1–A2</span><span>Page 11 of 12</span></div>
+</section>
+
+<!-- ============ PAGE 12 ============ -->
+<section class="page">
+  <div class="runhead"><span>have got / has got</span><b>Exercise N</b></div>
+  <div class="ex bonus">
+    <h2><span class="tag">N</span> Bonus: <i>have got</i> for problems and illnesses</h2>
+    <span class="tr">Ek alıştırma: have got hastalık ve sorunlar için de kullanılır. Kutudan uygun olanı seç.</span>
+    <div class="wordbank">
+      <b>word box</b><span>a headache</span><span>a cold</span><span>a problem</span><span>a temperature</span><span>toothache</span>
+    </div>
+    <ol class="items two">
+      <li>I can't go to school today. I <span class="blank md"></span>.</li>
+      <li>My tooth really hurts. I <span class="blank md"></span>.</li>
+      <li>Can you help me? I <span class="blank md"></span> with this exercise.</li>
+      <li>Please be quiet — my mum <span class="blank md"></span>.</li>
+      <li>He's very hot. He <span class="blank md"></span>.</li>
+    </ol>
+    <p class="tip"><b>Dikkat:</b> <i>have got</i> eylemler için kullanılmaz: ✓ <i>I have breakfast at seven.</i> ✗ <i>I've got breakfast at seven.</i></p>
+  </div>
+  <div class="selfcheck">
+    <b>Self-check — I can …</b>
+    <ul>
+      <li>choose <i>have got</i> or <i>has got</i> for every subject</li>
+      <li>use the short forms <i>'ve got / 's got / haven't got / hasn't got</i></li>
+      <li>say the same thing with <i>be</i> and with <i>have got</i></li>
+      <li>ask <i>Have you got …?</i> and answer <i>Yes, I have. / No, I haven't.</i></li>
+    </ul>
+  </div>
+
+  <div class="footer"><span>English Worksheets · have got / has got — Worksheet · A1–A2</span><span>Page 12 of 12</span></div>
+</section>
+
+<!-- ============ ANSWER KEY 1 ============ -->
+<section class="page key">
+  <header class="masthead">
+    <p class="eyebrow"><span class="level">CEFR A1–A2</span><span>For the teacher</span></p>
+    <h1>Answer <em>Key</em></h1>
+    <p class="sub">C, D, F, G, L, M ve serbest yazma görevlerinde başka doğru cevaplar da olabilir. Uzun biçim (<i>have got</i>) ile kısa biçim (<i>'ve got</i>) ikisi de kabul edilir.</p>
+  </header>
+  <div class="keygrid">
+    <div class="keyblock">
+      <h3>A — have got / has got</h3>
+      <ol class="inline"><li>have got</li><li>has got</li><li>have got</li><li>has got</li><li>have got</li><li>have got</li><li>have got</li><li>has got</li><li>has got</li><li>have got</li><li>has got</li><li>has got</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>B — short forms</h3>
+      <ol class="inline"><li>she's got</li><li>we've got</li><li>it's got</li><li>they haven't got</li><li>he hasn't got</li><li>you've got</li><li>I haven't got</li><li>my dog's got</li></ol>
+      <p class="tip">8'de <i>my dog has got</i> da kabul edilir.</p>
+    </div>
+    <div class="keyblock wide">
+      <h3>C — be → have got</h3>
+      <ol>
+        <li>I've got green eyes.</li>
+        <li>She's got long hair.</li>
+        <li>He's got a big nose.</li>
+        <li>I've got a new bike.</li>
+        <li>They've got a very old house.</li>
+        <li>We've got a big classroom.</li>
+        <li>You've got white shoes.</li>
+        <li>My brother's got curly hair. <i>(= My brother has got curly hair.)</i></li>
+        <li>The dog's got small ears. <i>(= The dog has got small ears.)</i></li>
+        <li>I've got a heavy schoolbag.</li>
+      </ol>
+      <p class="tip">Kontrol noktaları: doğru özne · sıfat ismin önünde · tekil sayılabilir isimde <b>a</b> (3, 4, 5, 6, 10) · çoğul ve <i>hair</i> ile <b>a</b> yok (1, 2, 7, 8, 9).</p>
+    </div>
+    <div class="keyblock">
+      <h3>D — have got → be</h3>
+      <ol><li>My hair is short.</li><li>Her eyes are brown.</li><li>Our garden is big.</li><li>His car is red.</li><li>Their house is old.</li><li>My cat's fur is white.</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>E — negatives</h3>
+      <ol class="inline"><li>haven't got</li><li>hasn't got</li><li>haven't got</li><li>hasn't got</li><li>hasn't got</li><li>haven't got</li><li>haven't got</li><li>hasn't got</li></ol>
+    </div>
+  </div>
+
+  <div class="footer"><span>English Worksheets · have got / has got — Answer Key · A1–A2</span><span>Key page 1 of 3</span></div>
+</section>
+
+<!-- ============ ANSWER KEY 2 ============ -->
+<section class="page key">
+  <div class="runhead"><span>have got / has got</span><b>Answer Key · continued</b></div>
+  <div class="keygrid">
+    <div class="keyblock">
+      <h3>F — make it negative</h3>
+      <ol><li>I haven't got a bike.</li><li>She hasn't got blonde hair.</li><li>They haven't got a big dog.</li><li>Our school hasn't got a garden.</li><li>My friends haven't got tickets for the match.</li><li>He hasn't got a lot of free time. / He hasn't got much free time.</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>G — questions + short answers</h3>
+      <ol><li>Has she got a bike? — Yes, she has.</li><li>Have they got any children? — No, they haven't.</li><li>Has your school got a music room? — Yes, it has.</li><li>Have you got a brother? — No, I haven't.</li><li>Have your parents got a garden? — No, they haven't.</li><li>Has your flat got a balcony? — No, it hasn't.</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>H — dialogue</h3>
+      <ol class="inline"><li>Have</li><li>have</li><li>'ve got</li><li>haven't got</li><li>Has</li><li>hasn't</li><li>'s got</li><li>Has</li><li>'s got</li><li>haven't got</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>I — word order</h3>
+      <ol><li>I have got brown eyes.</li><li>My sister has got long hair.</li><li>We haven't got a car.</li><li>Have you got a pen?</li><li>How many cousins has she got?</li><li>Our school has got a big library.</li><li>My brother hasn't got a phone.</li><li>What have you got in your bag?</li></ol>
+    </div>
+  </div>
+
+  <div class="footer"><span>English Worksheets · have got / has got — Answer Key · A1–A2</span><span>Key page 2 of 3</span></div>
+</section>
+
+<!-- ============ ANSWER KEY 3 ============ -->
+<section class="page key">
+  <div class="runhead"><span>have got / has got</span><b>Answer Key · continued</b></div>
+  <div class="keygrid">
+    <div class="keyblock">
+      <h3>J — correct the mistake</h3>
+      <ol><li>My sister <b>has</b> got a bike.</li><li>I <b>have</b> got two cats.</li><li>He <b>hasn't</b> got a sister. <i>(/ He doesn't have a sister.)</i></li><li>Yes, I <b>have</b>.</li><li>She has got <b>blue eyes</b>.</li><li>We <b>haven't</b> got any milk.</li><li>Has she got <b>long hair</b>?</li><li>My parents <b>have</b> got an old car.</li><li><b>Have</b> you got a pencil?</li><li>He's got <b>a big</b> nose.</li></ol>
+    </div>
+    <div class="keyblock">
+      <h3>K — reading</h3>
+      <ol class="inline"><li>'ve got</li><li>'ve got</li><li>'ve got</li><li>'s got</li><li>hasn't got</li><li>'ve got</li><li>'s got</li><li>haven't got</li><li>'s got</li><li>'s got</li><li>'s got</li><li>Have</li></ol>
+      <p class="tip">1 He's got two brothers and one sister. · 2 No, she hasn't. · 3 No, it hasn't. It's got a balcony. · 4 She's got a house with apple trees and six chickens. · 5 It's white (with one black ear).</p>
+    </div>
+    <div class="keyblock">
+      <h3>L / M — own answers</h3>
+      <ol>
+        <li>L: Her cümlede doğru biçim (<i>I've got … / I haven't got …</i>), tekil sayılabilir isimde <b>a</b>, olumsuzda <b>any</b> olmalı.</li>
+        <li>M: En az üç <i>have got / has got</i>, bir olumsuz, bir <i>be</i> cümlesi. Büyük harf ve nokta kontrolü.</li>
+      </ol>
+    </div>
+    <div class="keyblock">
+      <h3>N — bonus: illnesses</h3>
+      <ol><li>'ve got a cold</li><li>'ve got toothache</li><li>'ve got a problem</li><li>'s got a headache</li><li>'s got a temperature</li></ol>
+      <p class="tip">1 ve 4 yer değiştirebilir (<i>I've got a headache</i> / <i>my mum's got a cold</i>) — anlam uyuyorsa kabul edin.</p>
+    </div>
+  </div>
+
+  <div class="footer"><span>English Worksheets · have got / has got — Answer Key · A1–A2</span><span>Key page 3 of 3</span></div>
+</section>
+
+<script src="../assets/engine.js"></script>
+</body>
+</html>

@@ -11,23 +11,41 @@ assets/style.css                    ortak tema (açık/koyu) + aktivite stilleri
 assets/engine.js                    aktivite motoru (sürükle-bırak, kontrol, kayıt)
 units/am-is-are-a1.html             interaktif ünite · A1 (17 aktivite)
 units/am-is-are-a2.html             interaktif ünite · A2 (17 aktivite, there is/there are + was/were)
+units/have-got-a1.html              interaktif ünite · A1–A2 (14 aktivite, have got/has got + be dönüşümü)
 units/reading-school-life-a1.html   interaktif ünite · A1 okuma (7 aktivite)
 worksheets/                         yazdırılabilir A4 kağıtları (hepsi cevap anahtarlı)
   am-is-are-worksheet.html
   am-is-are-worksheet-a2.html
+  have-got-worksheet.html
   reading-school-life-a1.html
 ```
 
 Her yazdırılabilir kağıdın bir interaktif eşi var; ikisi de aynı alıştırmaları içerir:
 
-| yazdırılabilir | interaktif |
-|---|---|
-| `worksheets/am-is-are-worksheet.html` | `units/am-is-are-a1.html` |
-| `worksheets/am-is-are-worksheet-a2.html` | `units/am-is-are-a2.html` |
-| `worksheets/reading-school-life-a1.html` | `units/reading-school-life-a1.html` |
+| yazdırılabilir | interaktif | baskı |
+|---|---|---|
+| `worksheets/am-is-are-worksheet.html` | `units/am-is-are-a1.html` | 11 + 3 sayfa |
+| `worksheets/am-is-are-worksheet-a2.html` | `units/am-is-are-a2.html` | 11 + 4 sayfa |
+| `worksheets/have-got-worksheet.html` | `units/have-got-a1.html` | 12 + 3 sayfa |
+| `worksheets/reading-school-life-a1.html` | `units/reading-school-life-a1.html` | 5 + 2 sayfa |
 
 Çalışma kağıtlarının üstündeki ince şerit (ana sayfa · interaktif sürüm · tema düğmesi)
 yalnızca ekranda görünür, yazdırmada çıkmaz.
+
+## Baskı düzeni
+
+Her `<section class="page">` tam olarak bir A4 sayfasına karşılık gelir ve bu, Chrome ile
+gerçek PDF çıktısı alınarak doğrulanmıştır (bölüm sayısı = PDF sayfa sayısı).
+
+- `@page { margin: 0 }` kullanılır, kenar boşlukları `.page` dolgusuna (`13mm 15mm 10mm`)
+  taşınmıştır. Böylece tarayıcının kendi üstbilgi/altbilgisine (tarih, sayfa adresi) yer
+  kalmaz ve baskıda görünmez. Yine de çıkıyorsa yazdırma ekranındaki
+  "Üstbilgi ve altbilgi" kutucuğunu kapatmak kesin çözümdür.
+- `.footer`'daki `margin-top: auto` altbilgiyi her sayfanın en altına sabitler.
+- **Bir bölüme alıştırma eklerken dikkat:** içerik bir sayfayı aşarsa bölüm ikiye bölünür
+  ve altbilgi sayfa ortasında kalır. Bir A4'e yaklaşık **255 mm** içerik sığar; daha fazlası
+  için yeni bir `<section class="page">` açın ve altbilgilerdeki `Page n of N` değerlerini
+  güncelleyin.
 
 ## Öğrenci nasıl kullanır?
 

@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>have got / has got — İnteraktif Ünite (A1–A2) · English Worksheets</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../index.html">English <em>Worksheets</em></a>
+    <nav class="site-nav">
+      <a href="../index.html">Ana sayfa</a>
+      <a href="have-got-a1.html" aria-current="page">have got / has got</a>
+      <a href="../worksheets/have-got-worksheet.html">Yazdırılabilir</a>
+    </nav>
+    <button class="theme-btn" type="button" title="Açık / koyu tema" aria-label="Temayı değiştir">☾</button>
+  </div>
+</header>
+
+<div class="unit-head">
+  <div class="wrap">
+    <p class="eyebrow">English · Grammar · Unit 3 · A1–A2</p>
+    <h1><em>have got</em> / <em>has got</em></h1>
+    <p class="lede">Sahiplik, aile ve görünüş anlatma. Olumlu, olumsuz, soru ve kısa cevaplar — ayrıca <i>“My eyes are blue.” → “I've got blue eyes.”</i> dönüşümü.</p>
+  </div>
+</div>
+
+<div class="progress-bar">
+  <div class="wrap">
+    <span class="count">Doğru: <b>0</b> / 0</span>
+    <span class="track"><i></i></span>
+    <button class="btn sm" type="button" data-act="check-all">Hepsini kontrol et</button>
+    <button class="btn ghost sm" type="button" data-act="reset-all">Sıfırla</button>
+  </div>
+</div>
+
+<main class="wrap" id="activities"></main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>English Worksheets · have got / has got (A1–A2)</span>
+    <span>Cevaplarınız yalnızca bu tarayıcıya kaydedilir.</span>
+  </div>
+</footer>
+
+<script src="../assets/engine.js"></script>
+<script>
+UZ.mount({
+  unit: 'have-got-a1',
+  container: '#activities',
+  activities: [
+
+  /* ---------------- kural ---------------- */
+  {
+    type: 'rule',
+    title: 'Remember! (Hatırla!)',
+    html: `
+      <div class="scroller">
+        <table class="grammar">
+          <tr><th>Subject</th><th>Form</th><th>Short form</th><th>Example</th></tr>
+          <tr><td>I / you / we / they</td><td class="be">have got</td><td class="short">I've got · they've got</td><td class="ex">I've got a new bike.</td></tr>
+          <tr><td>he / she / it</td><td class="be">has got</td><td class="short">he's got · she's got · it's got</td><td class="ex">She's got two cats.</td></tr>
+          <tr><td>I / you / we / they</td><td class="be">haven't got</td><td class="short">have not got</td><td class="ex">We haven't got a car.</td></tr>
+          <tr><td>he / she / it</td><td class="be">hasn't got</td><td class="short">has not got</td><td class="ex">He hasn't got a sister.</td></tr>
+          <tr><td class="be">?</td><td>Have / Has + özne + got …?</td><td class="short">Yes, I have. / No, she hasn't.</td><td class="ex">Have you got a pencil?</td></tr>
+        </table>
+      </div>
+      <p class="tip">One person or thing <b>→ has got</b> &nbsp;·&nbsp; two or more, and <i>I / you / we / they</i> <b>→ have got</b>.<br>
+      <i>Tek kişi/şey (he, she, it, my brother, the dog, our school) → has got. Diğer herkes → have got.</i><br>
+      Kısa cevapta <b>got</b> yoktur: ✓ <i>Yes, I have.</i> ✗ <i>Yes, I have got.</i></p>`
+  },
+
+  /* ---------------- A: have got / has got ---------------- */
+  {
+    type: 'drag', tag: 'A',
+    title: 'Drag <i>have got</i> or <i>has got</i> into the gaps.',
+    tr: 'have got ya da has got bloklarını boşluklara sürükle. Bloklar bitmez!',
+    bank: ['have got', 'has got'],
+    cols: 2,
+    items: [
+      { q: 'I ___ a big family.',              a: 'have got' },
+      { q: 'My sister ___ long hair.',         a: 'has got'  },
+      { q: 'We ___ a new English teacher.',    a: 'have got' },
+      { q: 'Our school ___ a big library.',    a: 'has got'  },
+      { q: 'They ___ three dogs and a cat.',   a: 'have got' },
+      { q: 'You ___ a very nice bag.',         a: 'have got' },
+      { q: 'My parents ___ an old car.',       a: 'have got' },
+      { q: 'Ali ___ two brothers.',            a: 'has got'  },
+      { q: 'The cat ___ green eyes.',          a: 'has got'  },
+      { q: 'My friends and I ___ the same phone.', a: 'have got' },
+      { q: 'Mrs Aydın ___ a lot of books.',    a: 'has got'  },
+      { q: 'This house ___ a small garden.',   a: 'has got'  }
+    ]
+  },
+
+  /* ---------------- B: kısa biçimler ---------------- */
+  {
+    type: 'type', tag: 'B',
+    title: 'Write the short form.',
+    tr: 'Kısa biçimini yaz. Örnek: I have got → I\'ve got',
+    cols: 2, size: '',
+    items: [
+      { q: 'she has got',      a: ["she's got"] },
+      { q: 'we have got',      a: ["we've got"] },
+      { q: 'it has got',       a: ["it's got"] },
+      { q: 'they have not got',a: ["they haven't got"] },
+      { q: 'he has not got',   a: ["he hasn't got"] },
+      { q: 'you have got',     a: ["you've got"] },
+      { q: 'I have not got',   a: ["I haven't got"] },
+      { q: 'my dog has got',   a: ["my dog's got", "my dog has got"] }
+    ]
+  },
+
+  /* ---------------- kural: be ↔ have got ---------------- */
+  {
+    type: 'rule',
+    title: 'Aynı şeyi iki şekilde söylemek: <i>be</i> ↔ <i>have got</i>',
+    html: `
+      <div class="scroller">
+        <table class="grammar">
+          <tr><th>be ile</th><th>have got ile</th></tr>
+          <tr><td>My eyes <b>are blue</b>.</td><td class="ex">I've got <b>blue eyes</b>.</td></tr>
+          <tr><td>Her hair <b>is long</b>.</td><td class="ex">She's got <b>long hair</b>.</td></tr>
+          <tr><td>His nose <b>is big</b>.</td><td class="ex">He's got <b>a big nose</b>.</td></tr>
+        </table>
+      </div>
+      <p class="tip">Üç şey değişir:<br>
+      <b>1.</b> Özne değişir: <i>My eyes → I</i> &nbsp;·&nbsp; <i>Her hair → She</i> &nbsp;·&nbsp; <i>His nose → He</i><br>
+      <b>2.</b> Sıfat ismin <b>önüne</b> gelir: <i>are blue → blue eyes</i> (✗ <i>eyes blue</i>)<br>
+      <b>3.</b> Tekil sayılabilir isimde <b>a / an</b> gerekir: <i>a big nose</i>. Çoğul isimlerde (<i>eyes, ears, shoes</i>)
+      ve sayılamayanlarda (<i>hair</i>) <b>a</b> kullanılmaz.</p>`
+  },
+
+  /* ---------------- C: be → have got (ana alıştırma) ---------------- */
+  {
+    type: 'type', tag: 'C', challenge: true,
+    title: 'Say it again with <i>have got</i> / <i>has got</i>.',
+    tr: 'Cümleyi have got / has got ile yeniden yaz. Örnek: My eyes are blue. → I\'ve got blue eyes.',
+    size: 'xl',
+    items: [
+      { q: 'My eyes are green.',
+        a: ["I've got green eyes.", "I've got green eyes", 'I have got green eyes.', 'I have got green eyes'] },
+      { q: 'Her hair is long.',
+        a: ["She's got long hair.", "She's got long hair", 'She has got long hair.', 'She has got long hair'] },
+      { q: 'His nose is big.',
+        a: ["He's got a big nose.", "He's got a big nose", 'He has got a big nose.', 'He has got a big nose'] },
+      { q: 'My bike is new.',
+        a: ["I've got a new bike.", "I've got a new bike", 'I have got a new bike.', 'I have got a new bike'] },
+      { q: 'Their house is very old.',
+        a: ["They've got a very old house.", "They've got a very old house", 'They have got a very old house.', 'They have got a very old house'] },
+      { q: 'Our classroom is big.',
+        a: ["We've got a big classroom.", "We've got a big classroom", 'We have got a big classroom.', 'We have got a big classroom'] },
+      { q: 'Your shoes are white.',
+        a: ["You've got white shoes.", "You've got white shoes", 'You have got white shoes.', 'You have got white shoes'] },
+      { q: "My brother's hair is curly.",
+        a: ["My brother's got curly hair.", "My brother's got curly hair", 'My brother has got curly hair.', 'My brother has got curly hair'] },
+      { q: "The dog's ears are small.",
+        a: ["The dog's got small ears.", "The dog's got small ears", 'The dog has got small ears.', 'The dog has got small ears'] },
+      { q: 'My schoolbag is heavy.',
+        a: ["I've got a heavy schoolbag.", "I've got a heavy schoolbag", 'I have got a heavy schoolbag.', 'I have got a heavy schoolbag'] }
+    ]
+  },
+
+  /* ---------------- D: have got → be ---------------- */
+  {
+    type: 'type', tag: 'D',
+    title: 'Now the other way round: say it with <i>am / is / are</i>.',
+    tr: 'Şimdi tersini yap: have got cümlelerini be ile yaz. Örnek: I\'ve got blue eyes. → My eyes are blue.',
+    size: 'xl',
+    items: [
+      { q: "I've got short hair.",     a: ['My hair is short.', 'My hair is short'] },
+      { q: "She's got brown eyes.",    a: ['Her eyes are brown.', 'Her eyes are brown'] },
+      { q: "We've got a big garden.",  a: ['Our garden is big.', 'Our garden is big'] },
+      { q: "He's got a red car.",      a: ['His car is red.', 'His car is red'] },
+      { q: "They've got an old house.",a: ['Their house is old.', 'Their house is old'] },
+      { q: 'My cat has got white fur.',a: ["My cat's fur is white.", "My cat's fur is white", 'My cats fur is white'] }
+    ]
+  },
+
+  /* ---------------- E: olumsuz ---------------- */
+  {
+    type: 'drag', tag: 'E',
+    title: 'Complete with <i>haven\'t got</i> or <i>hasn\'t got</i>.',
+    tr: 'Boşluklara haven\'t got ya da hasn\'t got sürükle.',
+    bank: ["haven't got", "hasn't got"],
+    cols: 2, wide: true,
+    items: [
+      { q: 'I ___ any brothers.',                     a: "haven't got" },
+      { q: 'My little sister ___ a phone.',           a: "hasn't got"  },
+      { q: 'We ___ a swimming pool at school.',       a: "haven't got" },
+      { q: 'Kerem ___ his book today.',               a: "hasn't got"  },
+      { q: 'Our flat ___ a balcony.',                 a: "hasn't got"  },
+      { q: 'My grandparents ___ a computer.',         a: "haven't got" },
+      { q: 'You ___ any homework tonight.',           a: "haven't got" },
+      { q: 'This pen ___ any ink.',                   a: "hasn't got"  }
+    ]
+  },
+
+  /* ---------------- F: olumsuza çevir ---------------- */
+  {
+    type: 'type', tag: 'F',
+    title: 'Rewrite the sentences in the negative. Use short forms.',
+    tr: 'Cümleleri kısa biçim kullanarak olumsuz yap. Örnek: I\'ve got a bike. → I haven\'t got a bike.',
+    size: 'xl',
+    items: [
+      { q: "I've got a bike.",
+        a: ["I haven't got a bike.", "I haven't got a bike"] },
+      { q: "She's got blonde hair.",
+        a: ["She hasn't got blonde hair.", "She hasn't got blonde hair"] },
+      { q: "They've got a big dog.",
+        a: ["They haven't got a big dog.", "They haven't got a big dog"] },
+      { q: 'Our school has got a garden.',
+        a: ["Our school hasn't got a garden.", "Our school hasn't got a garden"] },
+      { q: 'My friends have got tickets for the match.',
+        a: ["My friends haven't got tickets for the match.", "My friends haven't got tickets for the match"] },
+      { q: "He's got a lot of free time.",
+        a: ["He hasn't got a lot of free time.", "He hasn't got a lot of free time", "He hasn't got much free time.", "He hasn't got much free time"] }
+    ]
+  },
+
+  /* ---------------- G: soru + kısa cevap ---------------- */
+  {
+    type: 'drag', tag: 'G',
+    title: 'Complete the questions with <i>Have</i> or <i>Has</i> — then drag the short answer.',
+    tr: 'İlk boşluğa Have ya da Has, ikinci boşluğa kısa cevabı sürükle. (Büyük harf önemsenmez.)',
+    bank: ['Have', 'Has', 'I have', "I haven't", 'she has', "she hasn't", 'it has', "it hasn't", 'they have', "they haven't"],
+    sticky: false, wide: true,
+    items: [
+      { q: '___ she got a bike? — Yes, ___.',                 a: ['Has', 'she has'] },
+      { q: '___ they got any children? — No, ___.',           a: ['Have', "they haven't"] },
+      { q: '___ your school got a music room? — Yes, ___.',   a: ['Has', 'it has'] },
+      { q: '___ you got a brother? — No, ___.',               a: ['Have', "I haven't"] },
+      { q: '___ your parents got a garden? — No, ___.',       a: ['Have', "they haven't"] },
+      { q: '___ your flat got a balcony? — No, ___.',         a: ['Has', "it hasn't"] }
+    ]
+  },
+
+  /* ---------------- H: diyalog ---------------- */
+  {
+    type: 'cloze', tag: 'H',
+    title: 'Complete the dialogue.',
+    tr: 'Diyaloğu uygun bloklarla tamamla.',
+    bank: ['Have', 'Has', 'have', "hasn't", "'ve got", "'s got", "haven't got"],
+    sticky: false,
+    text: 'Elif: ___ you got any pets, Can? — ' +
+          'Can: Yes, I ___. I ___ a rabbit. — ' +
+          'Elif: Lucky you! I ___ any pets. My mum says our flat is too small. — ' +
+          'Can: ___ your flat got a balcony? — ' +
+          "Elif: No, it ___. But my grandmother ___ a big garden in the village. — " +
+          'Can: Nice! ___ she got any animals there? — ' +
+          'Elif: Yes! She ___ six chickens and two cats. The cats ___ names — we just call them “cat one” and “cat two”!',
+    answers: ['Have', 'have', "'ve got", "haven't got", 'Has', "hasn't", "'s got", 'Has', "'s got", "haven't got"]
+  },
+
+  /* ---------------- I: cümle sıralama ---------------- */
+  {
+    type: 'order', tag: 'I',
+    title: 'Put the word boxes in the correct order.',
+    tr: 'Kelime kutularını sürükleyerek doğru sıraya koy. (İki kutuya sırayla tıklayarak da yer değiştirebilirsin.)',
+    items: [
+      { words: ['got', 'I', 'brown', 'have', 'eyes', '.'],
+        a: ['I', 'have', 'got', 'brown', 'eyes', '.'] },
+      { words: ['has', 'My', 'long', 'sister', 'hair', 'got', '.'],
+        a: ['My', 'sister', 'has', 'got', 'long', 'hair', '.'] },
+      { words: ["haven't", 'We', 'car', 'a', 'got', '.'],
+        a: ['We', "haven't", 'got', 'a', 'car', '.'] },
+      { words: ['got', 'you', 'Have', 'pen', 'a', '?'],
+        a: ['Have', 'you', 'got', 'a', 'pen', '?'] },
+      { words: ['got', 'has', 'cousins', 'How many', 'she', '?'],
+        a: ['How many', 'cousins', 'has', 'she', 'got', '?'] },
+      { words: ['big', 'Our', 'got', 'a', 'school', 'library', 'has', '.'],
+        a: ['Our', 'school', 'has', 'got', 'a', 'big', 'library', '.'] },
+      { words: ["hasn't", 'My', 'phone', 'brother', 'a', 'got', '.'],
+        a: ['My', 'brother', "hasn't", 'got', 'a', 'phone', '.'] },
+      { words: ['in', 'What', 'got', 'bag', 'have', 'your', 'you', '?'],
+        a: ['What', 'have', 'you', 'got', 'in', 'your', 'bag', '?'] }
+    ]
+  },
+
+  /* ---------------- J: hatayı bul ---------------- */
+  {
+    type: 'choice', tag: 'J',
+    title: 'Which sentence is correct?',
+    tr: 'Doğru cümleye tıkla.',
+    items: [
+      { q: '1.', opts: ['My sister have got a bike.', 'My sister has got a bike.'], a: 'My sister has got a bike.' },
+      { q: '2.', opts: ['I has got two cats.', 'I have got two cats.'], a: 'I have got two cats.' },
+      { q: '3.', opts: ["He don't have got a sister.", "He hasn't got a sister."], a: "He hasn't got a sister." },
+      { q: '4.', opts: ['Have you got a pen? — Yes, I have got.', 'Have you got a pen? — Yes, I have.'], a: 'Have you got a pen? — Yes, I have.' },
+      { q: '5.', opts: ['She has got eyes blue.', 'She has got blue eyes.'], a: 'She has got blue eyes.' },
+      { q: '6.', opts: ['We have got not any milk.', "We haven't got any milk."], a: "We haven't got any milk." },
+      { q: '7.', opts: ['Has she got a long hair?', 'Has she got long hair?'], a: 'Has she got long hair?' },
+      { q: '8.', opts: ['My parents has got an old car.', 'My parents have got an old car.'], a: 'My parents have got an old car.' },
+      { q: '9.', opts: ['You have got a pencil?', 'Have you got a pencil?'], a: 'Have you got a pencil?' },
+      { q: '10.', opts: ["He's got big a nose.", "He's got a big nose."], a: "He's got a big nose." }
+    ]
+  },
+
+  /* ---------------- K: okuma metni ---------------- */
+  {
+    type: 'cloze', tag: 'K',
+    title: 'Read and complete the text.',
+    tr: 'Metni uygun bloklarla tamamla.',
+    bank: ["'ve got", "'s got", "haven't got", "hasn't got", 'Have'],
+    sticky: false,
+    text: 'Hi! My name is Deniz and I ___ a big family. I ___ two brothers and one sister. ' +
+          'My brothers are twins and they ___ the same curly hair. ' +
+          'My sister Ada ___ green eyes and a lovely smile. ' +
+          'She ___ a bike, but she wants one for her birthday. ' +
+          'We ___ a small flat in Bursa. It ___ a big balcony, but we ___ a garden, ' +
+          'so our cat Pamuk sleeps on the balcony. Pamuk ___ white fur and one black ear. ' +
+          'My grandmother ___ a house in a village. It ___ apple trees and six chickens! ___ you got any pets?',
+    answers: ["'ve got", "'ve got", "'ve got", "'s got", "hasn't got", "'ve got", "'s got", "haven't got", "'s got", "'s got", "'s got", 'Have']
+  },
+
+  /* ---------------- L: metin soruları ---------------- */
+  {
+    type: 'type', tag: 'L',
+    title: 'Answer the questions about the text.',
+    tr: 'Metinle ilgili soruları cevapla. Kısa cevap sorularında Yes, … / No, … biçimini kullan.',
+    size: 'xl',
+    items: [
+      { q: 'How many brothers has Deniz got?',
+        a: ["He's got two brothers.", "He's got two brothers", 'He has got two brothers.', 'Two.', 'Two'] },
+      { q: 'Has Ada got a bike?',
+        a: ["No, she hasn't.", "No, she hasn't", "she hasn't"] },
+      { q: 'Has their flat got a balcony?',
+        a: ['Yes, it has.', 'Yes, it has', 'it has'] },
+      { q: 'Has their flat got a garden?',
+        a: ["No, it hasn't.", "No, it hasn't", "it hasn't", "No, they haven't."] },
+      { q: "What colour is Pamuk's fur?",
+        a: ['It is white.', "It's white.", "It's white", 'White.', 'White'] }
+    ]
+  },
+
+  /* ---------------- M: bonus — hastalıklar ---------------- */
+  {
+    type: 'drag', tag: 'M',
+    title: 'Bonus: <i>have got</i> for problems and illnesses.',
+    tr: 'have got hastalık ve sorunlar için de kullanılır. Uygun bloğu sürükle.',
+    bank: ["'ve got a cold", "'ve got toothache", "'ve got a problem", "'s got a headache", "'s got a temperature"],
+    sticky: false, wide: true,
+    items: [
+      { q: "I can't go to school today. I ___.",          a: "'ve got a cold" },
+      { q: 'My tooth really hurts. I ___.',               a: "'ve got toothache" },
+      { q: 'Can you help me? I ___ with this exercise.',  a: "'ve got a problem" },
+      { q: 'Please be quiet — my mum ___.',               a: "'s got a headache" },
+      { q: "He's very hot. He ___.",                      a: "'s got a temperature" }
+    ]
+  },
+
+  /* ---------------- N: serbest yazma ---------------- */
+  {
+    type: 'free', tag: 'N', challenge: true,
+    title: 'Now write about YOUR family.',
+    tr: 'Şimdi kendi ailen hakkında yaz. Cümleleri tamamla.',
+    rows: 10,
+    placeholder: "I've got … brother(s) and … sister(s).\n" +
+                 "I've got … eyes and … hair.\n" +
+                 "My mother has got ….\n" +
+                 "My best friend has got ….\n" +
+                 "We haven't got ….\n" +
+                 'Our house / flat has got ….\n' +
+                 'My favourite animal has got ….',
+    note: 'Kontrol: he / she / it ile has got · diğerleriyle have got · tekil sayılabilir isimde a/an · sıfat ismin önünde (blue eyes, a big nose) · olumsuzda any.'
+  }
+
+  ]
+});
+</script>
+</body>
+</html>

@@ -285,7 +285,7 @@
   .bonus h2 { color: var(--amber); }
   .bonus .tag { color: var(--violet); border-color: var(--violet); background: var(--violet-tint); }
 
-  .selfcheck { margin-top: auto; border-top: 1px solid var(--rule); padding-top: 3mm; font-size: 10pt; color: var(--ink-soft); }
+  .selfcheck { margin-top: 6mm; border-top: 1px solid var(--rule); padding-top: 3mm; font-size: 10pt; color: var(--ink-soft); }
   .selfcheck ul { list-style: none; margin: 2mm 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5mm 8mm; }
   .selfcheck li::before { content: "☐  "; color: var(--violet); }
 
@@ -316,6 +316,7 @@
   .keyblock p.tip { margin: 1.5mm 0 0; }
 
   .footer {
+    margin-top: auto;
     font-size: 9pt;
     color: var(--ink-soft);
     border-top: 1px solid var(--rule-soft);
@@ -358,7 +359,7 @@
   .theme-btn:focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
 
   @media print {
-    @page { size: A4; margin: 12mm 13mm; }
+    @page { size: A4; margin: 0; }
     :root,
     :root[data-theme="dark"],
     :root[data-theme="light"] {
@@ -368,7 +369,7 @@
     }
     body { background: #fff; padding: 0; font-size: 10.5pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     .toolbar, .ws-bar { display: none; }
-    .page { width: auto; min-height: 0; box-shadow: none; margin: 0; padding: 0; break-after: page; }
+    .page { width: auto; min-height: 296mm; box-shadow: none; margin: 0; padding: 13mm 15mm 10mm; gap: 5.5mm; break-after: page; }
     .page:last-child { break-after: auto; }
     .ex, .rulebox, .reading, .bonus { break-inside: avoid; }
   }
@@ -387,7 +388,7 @@
 </div>
 
 <div class="toolbar">
-  <p>A2 seviyesi · 5 sayfa çalışma kağıdı + 1 sayfa cevap anahtarı. A4, dikey. Baskı her zaman beyaz zemin + koyu mürekkep çıkar.</p>
+  <p>A2 seviyesi · 11 sayfa çalışma kağıdı + 4 sayfa cevap anahtarı. A4, dikey. Baskı her zaman beyaz zemin + koyu mürekkep çıkar.</p>
   <button class="print-btn" onclick="window.print()">Yazdır</button>
 </div>
 
@@ -399,7 +400,6 @@
     <p class="sub">Singular or plural? · expressions with <i>be</i> · negatives · questions · describing places</p>
     <div class="idline"><span>Name:</span><span>Class:</span><span>Date:</span></div>
   </header>
-
   <div class="rulebox">
     <h3>Watch out! Singular or plural? (Dikkat: tekil mi, çoğul mu?)</h3>
     <div class="cols2">
@@ -409,7 +409,6 @@
     <p class="tip">These words look plural but take <b>is</b>: <i>The news is on at seven.</i> · These words look singular but take <b>are</b>: <i>The people are friendly.</i><br>
     <i>Türkçede tek kelime olanlar İngilizcede çoğul olabilir (trousers = pantolon → are), çoğul görünenler tekil olabilir (news → is).</i></p>
   </div>
-
   <div class="ex">
     <h2><span class="tag">A</span> Complete with <i>is</i> or <i>are</i>.</h2>
     <span class="tr">Boşlukları is ya da are ile tamamla. Dikkat: hepsi kolay değil!</span>
@@ -429,6 +428,12 @@
     </ol>
   </div>
 
+  <div class="footer"><span>English Worksheets · Am / Is / Are — Worksheet · A2</span><span>Page 1 of 11</span></div>
+</section>
+
+<!-- ============ PAGE 2 ============ -->
+<section class="page">
+  <div class="runhead"><span>Am / Is / Are</span><b>Exercise B</b></div>
   <div class="rulebox">
     <h3>there is / there are (bir şeyin var olduğunu söylerken)</h3>
     <div class="scroller">
@@ -441,7 +446,6 @@
     </div>
     <p class="tip">Use <b>any</b> in negatives and questions: <i>There aren't any shops. Are there any shops?</i></p>
   </div>
-
   <div class="ex">
     <h2><span class="tag">B</span> Complete with a form of <i>there is / there are</i>.</h2>
     <span class="tr">there is / there are / there isn't / there aren't / Is there / Are there kalıplarından uygun olanı yaz.</span>
@@ -459,13 +463,12 @@
     </ol>
   </div>
 
-  <div class="footer"><span>Am / Is / Are — Worksheet · A2</span><span>Page 1 of 5</span></div>
+  <div class="footer"><span>English Worksheets · Am / Is / Are — Worksheet · A2</span><span>Page 2 of 11</span></div>
 </section>
 
-<!-- ============ PAGE 2 ============ -->
+<!-- ============ PAGE 3 ============ -->
 <section class="page">
-  <div class="runhead"><span>Am / Is / Are · A2</span><b>Dialogue · forms · expressions</b></div>
-
+  <div class="runhead"><span>Am / Is / Are</span><b>Exercises C – D</b></div>
   <div class="ex">
     <h2><span class="tag">C</span> Complete the dialogue with <i>am</i>, <i>is</i>, <i>are</i>, <i>isn't</i> or <i>Is / Are</i>.</h2>
     <span class="tr">Diyaloğu uygun biçimle tamamla. Soru cümlelerinde büyük harfle başla.</span>
@@ -480,7 +483,6 @@
       <dt>Mert:</dt><dd>Yes, I <span class="n">12</span><span class="blank sm"></span>! But my football shoes <span class="n">13</span><span class="blank sm"></span> at home.</dd>
     </dl>
   </div>
-
   <div class="ex">
     <h2><span class="tag">D</span> Write the other form (long <span class="arrow">↔</span> short).</h2>
     <span class="tr">Uzun biçimi kısa, kısa biçimi uzun yaz. Örnek: she is not → she isn't</span>
@@ -495,7 +497,6 @@
       <li>there is not <span class="arrow">→</span> <span class="blank"></span></li>
     </ol>
   </div>
-
   <div class="rulebox">
     <h3>Expressions with <i>be</i> (be ile kullanılan kalıplar)</h3>
     <div class="cols2">
@@ -505,6 +506,12 @@
     <p class="tip">In English we say <b>I am 12 years old</b> — never “I have 12 years”. <i>(Yaş söylerken be kullanılır.)</i></p>
   </div>
 
+  <div class="footer"><span>English Worksheets · Am / Is / Are — Worksheet · A2</span><span>Page 3 of 11</span></div>
+</section>
+
+<!-- ============ PAGE 4 ============ -->
+<section class="page">
+  <div class="runhead"><span>Am / Is / Are</span><b>Exercise E</b></div>
   <div class="ex">
     <h2><span class="tag">E</span> Complete with the correct form of <i>be</i> + a word or phrase from the box.</h2>
     <span class="tr">Doğru be biçimi + kutudan uygun kelime/kalıp ile tamamla.</span>
@@ -525,14 +532,6 @@
       <li>Sorry, I <span class="blank md"></span>. The answer is 24, not 42.</li>
     </ol>
   </div>
-
-  <div class="footer"><span>Am / Is / Are — Worksheet · A2</span><span>Page 2 of 5</span></div>
-</section>
-
-<!-- ============ PAGE 3 ============ -->
-<section class="page">
-  <div class="runhead"><span>Am / Is / Are · A2</span><b>Negative sentences</b></div>
-
   <div class="rulebox">
     <h3>Negatives (Olumsuz cümleler)</h3>
     <div class="scroller">
@@ -547,6 +546,12 @@
     <p class="tip">There is no “amn't”. One negative is enough: <b>There isn't any bread</b>, not “There isn't no bread”.</p>
   </div>
 
+  <div class="footer"><span>English Worksheets · Am / Is / Are — Worksheet · A2</span><span>Page 4 of 11</span></div>
+</section>
+
+<!-- ============ PAGE 5 ============ -->
+<section class="page">
+  <div class="runhead"><span>Am / Is / Are</span><b>Exercises F – G</b></div>
   <div class="ex">
     <h2><span class="tag">F</span> Rewrite the sentences in the negative. Use short forms.</h2>
     <span class="tr">Cümleleri kısa biçim kullanarak olumsuz yap.</span>
@@ -560,7 +565,6 @@
       <li>Her house is near the station. <span class="arrow">→</span> <span class="blank lg"></span></li>
     </ol>
   </div>
-
   <div class="ex">
     <h2><span class="tag">G</span> Complete the text with <i>'m not</i>, <i>isn't</i> or <i>aren't</i>.</h2>
     <span class="tr">Metni olumsuz biçimlerle tamamla.</span>
@@ -574,6 +578,12 @@
     </p>
   </div>
 
+  <div class="footer"><span>English Worksheets · Am / Is / Are — Worksheet · A2</span><span>Page 5 of 11</span></div>
+</section>
+
+<!-- ============ PAGE 6 ============ -->
+<section class="page">
+  <div class="runhead"><span>Am / Is / Are</span><b>Exercise H</b></div>
   <div class="ex">
     <h2><span class="tag">H</span> These sentences are false. Write a negative sentence and then the true one.</h2>
     <span class="tr">Yanlış bilgileri düzelt: önce olumsuz cümle, sonra doğrusu.<br>Örnek: Istanbul is the capital of Turkey. → Istanbul isn't the capital of Turkey. Ankara is.</span>
@@ -585,14 +595,6 @@
       <li>English and Spanish are the same language. <span class="line"></span></li>
     </ol>
   </div>
-
-  <div class="footer"><span>Am / Is / Are — Worksheet · A2</span><span>Page 3 of 5</span></div>
-</section>
-
-<!-- ============ PAGE 4 ============ -->
-<section class="page">
-  <div class="runhead"><span>Am / Is / Are · A2</span><b>Questions &amp; answers</b></div>
-
   <div class="rulebox">
     <h3>Questions with <i>be</i> (be ile soru)</h3>
     <p><b>be + subject?</b> &nbsp; <i>Are your parents at work? · Is there a bank near here?</i></p>
@@ -610,6 +612,12 @@
     <p class="tip">Short answers: <b>Yes, I am. / No, I'm not.</b> We never shorten the <i>yes</i> answer (“Yes, I'm.” ✗).</p>
   </div>
 
+  <div class="footer"><span>English Worksheets · Am / Is / Are — Worksheet · A2</span><span>Page 6 of 11</span></div>
+</section>
+
+<!-- ============ PAGE 7 ============ -->
+<section class="page">
+  <div class="runhead"><span>Am / Is / Are</span><b>Exercises I – J</b></div>
   <div class="ex">
     <h2><span class="tag">I</span> Write a question for the <span class="u">underlined</span> part.</h2>
     <span class="tr">Altı çizili bölümü sormak için soru yaz. Kutudaki soru kelimelerini kullan.</span>
@@ -627,7 +635,6 @@
       <li>My new teacher is <span class="u">very friendly</span>. <span class="arrow">→</span> <span class="blank lg"></span></li>
     </ol>
   </div>
-
   <div class="ex">
     <h2><span class="tag">J</span> Put the words in the correct order to make questions.</h2>
     <span class="tr">Kelimeleri doğru sıraya koyarak soru cümlesi yaz.</span>
@@ -641,6 +648,12 @@
     </ol>
   </div>
 
+  <div class="footer"><span>English Worksheets · Am / Is / Are — Worksheet · A2</span><span>Page 7 of 11</span></div>
+</section>
+
+<!-- ============ PAGE 8 ============ -->
+<section class="page">
+  <div class="runhead"><span>Am / Is / Are</span><b>Exercises K – L</b></div>
   <div class="ex">
     <h2><span class="tag">K</span> Answer about yourself: a short answer + one more piece of information.</h2>
     <span class="tr">Kendin hakkında cevap ver: kısa cevap + bir bilgi daha.<br>Örnek: Are you from a big city? → No, I'm not. I'm from a small town near Konya.</span>
@@ -651,14 +664,6 @@
       <li>Are you afraid of the dark? <span class="line"></span></li>
     </ol>
   </div>
-
-  <div class="footer"><span>Am / Is / Are — Worksheet · A2</span><span>Page 4 of 5</span></div>
-</section>
-
-<!-- ============ PAGE 5 ============ -->
-<section class="page">
-  <div class="runhead"><span>Am / Is / Are · A2</span><b>Mixed practice · reading · writing</b></div>
-
   <div class="ex">
     <h2><span class="tag">L</span> Put the words in the correct order.</h2>
     <span class="tr">Karışık kelimeleri doğru sıraya koy. Noktalama işaretlerini de yaz.</span>
@@ -674,6 +679,12 @@
     </ol>
   </div>
 
+  <div class="footer"><span>English Worksheets · Am / Is / Are — Worksheet · A2</span><span>Page 8 of 11</span></div>
+</section>
+
+<!-- ============ PAGE 9 ============ -->
+<section class="page">
+  <div class="runhead"><span>Am / Is / Are</span><b>Exercise M</b></div>
   <div class="ex">
     <h2><span class="tag">M</span> There is one mistake in each sentence. Write it correctly.</h2>
     <span class="tr">Her cümlede bir hata var. Doğru biçimini yaz.</span>
@@ -691,6 +702,12 @@
     </ol>
   </div>
 
+  <div class="footer"><span>English Worksheets · Am / Is / Are — Worksheet · A2</span><span>Page 9 of 11</span></div>
+</section>
+
+<!-- ============ PAGE 10 ============ -->
+<section class="page">
+  <div class="runhead"><span>Am / Is / Are</span><b>Exercise N</b></div>
   <div class="ex">
     <h2><span class="tag">N</span> Read and complete with <i>am, is, are, isn't, aren't, There is</i> or <i>There are</i>.</h2>
     <span class="tr">Metni uygun biçimlerle tamamla.</span>
@@ -715,12 +732,17 @@
     </ol>
   </div>
 
+  <div class="footer"><span>English Worksheets · Am / Is / Are — Worksheet · A2</span><span>Page 10 of 11</span></div>
+</section>
+
+<!-- ============ PAGE 11 ============ -->
+<section class="page">
+  <div class="runhead"><span>Am / Is / Are</span><b>Exercises O – P</b></div>
   <div class="ex">
     <h2><span class="tag">O</span> Write about your town or your street (6–8 sentences).</h2>
     <span class="tr">Kendi şehrin ya da sokağın hakkında 6–8 cümle yaz. Şunları kullan: en az iki <i>there is / there are</i>, bir olumsuz cümle ve okuyucuya bir soru.</span>
     <span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span>
   </div>
-
   <div class="ex bonus">
     <h2><span class="tag">P</span> Bonus: the past of <i>be</i> — <i>was / were</i></h2>
     <span class="tr">Ek alıştırma: geçmiş zamanda was / were. (I, he, she, it → was · you, we, they → were)</span>
@@ -733,7 +755,6 @@
       <li>It <span class="blank sm"></span> not cold, so we played outside.</li>
     </ol>
   </div>
-
   <div class="selfcheck">
     <b>Self-check — I can …</b>
     <ul>
@@ -744,17 +765,16 @@
     </ul>
   </div>
 
-  <div class="footer"><span>Am / Is / Are — Worksheet · A2</span><span>Page 5 of 5</span></div>
+  <div class="footer"><span>English Worksheets · Am / Is / Are — Worksheet · A2</span><span>Page 11 of 11</span></div>
 </section>
 
-<!-- ============ ANSWER KEY ============ -->
+<!-- ============ ANSWER KEY 1 ============ -->
 <section class="page key">
   <header class="masthead">
     <p class="eyebrow"><span class="level">CEFR A2</span><span>For the teacher</span></p>
     <h1>Answer <em>Key</em></h1>
     <p class="sub">Other correct answers are possible in F, H, I, K, O and in all free-writing tasks.</p>
   </header>
-
   <div class="keygrid">
     <div class="keyblock">
       <h3>A — is / are</h3>
@@ -772,6 +792,15 @@
       <h3>D — long ↔ short</h3>
       <ol><li>he isn't / he's not</li><li>they are not</li><li>we aren't / we're not</li><li>it is not</li><li>I am not</li><li>that's</li><li>you aren't / you're not</li><li>there isn't</li></ol>
     </div>
+  </div>
+
+  <div class="footer"><span>English Worksheets · Am / Is / Are — Answer Key · A2</span><span>Key page 1 of 4</span></div>
+</section>
+
+<!-- ============ ANSWER KEY 2 ============ -->
+<section class="page key">
+  <div class="runhead"><span>Am / Is / Are</span><b>Answer Key · continued</b></div>
+  <div class="keygrid">
     <div class="keyblock">
       <h3>E — expressions with be</h3>
       <ol><li>are late</li><li>is afraid of</li><li>am good at</li><li>is right</li><li>are the same</li><li>am hungry</li><li>Are … ready</li><li>is full of</li><li>is interested in</li><li>am wrong</li></ol>
@@ -788,6 +817,15 @@
       <h3>H — correct the facts</h3>
       <ol><li>Elephants aren't the fastest animals. Cheetahs are.</li><li>The Nile isn't in South America. It's in Africa.</li><li>February and March aren't the hottest months. July and August are.</li><li>Penguins aren't from the North Pole. They're from Antarctica / the South Pole.</li><li>English and Spanish aren't the same language. They're different.</li></ol>
     </div>
+  </div>
+
+  <div class="footer"><span>English Worksheets · Am / Is / Are — Answer Key · A2</span><span>Key page 2 of 4</span></div>
+</section>
+
+<!-- ============ ANSWER KEY 3 ============ -->
+<section class="page key">
+  <div class="runhead"><span>Am / Is / Are</span><b>Answer Key · continued</b></div>
+  <div class="keygrid">
     <div class="keyblock">
       <h3>I — write the question</h3>
       <ol><li>How old is she?</li><li>Where are they?</li><li>How much are the tickets?</li><li>What colour is your new bag?</li><li>Who is the boy at the door?</li><li>Why is Selin at home?</li><li>When is the school party?</li><li>What is your new teacher like?</li></ol>
@@ -804,6 +842,15 @@
       <h3>L — word order</h3>
       <ol><li>I am not good at swimming.</li><li>There are two bathrooms in my house.</li><li>The old box is full of toys.</li><li>My brothers aren't interested in football.</li><li>There isn't any milk in the fridge.</li><li>Sorry, I'm late for the lesson.</li><li>Are you afraid of dogs?</li><li>Where are my glasses?</li></ol>
     </div>
+  </div>
+
+  <div class="footer"><span>English Worksheets · Am / Is / Are — Answer Key · A2</span><span>Key page 3 of 4</span></div>
+</section>
+
+<!-- ============ ANSWER KEY 4 ============ -->
+<section class="page key">
+  <div class="runhead"><span>Am / Is / Are</span><b>Answer Key · continued</b></div>
+  <div class="keygrid">
     <div class="keyblock">
       <h3>M — correct the mistake</h3>
       <ol><li>My trousers <b>are</b> new.</li><li>There <b>are</b> three people in the room.</li><li>I <b>am</b> 12 years old.</li><li>Where <b>are</b> your cousins?</li><li>There <b>isn't any</b> bread.</li><li>Everybody <b>is</b> happy today.</li><li>Why <b>are you</b> sad?</li><li>The news <b>is</b> very interesting.</li><li>Yes, <b>she is</b>.</li><li>My <b>hair is</b> very long.</li></ol>
@@ -823,7 +870,7 @@
     </div>
   </div>
 
-  <div class="footer"><span>Am / Is / Are — Answer Key · A2</span><span>Page 6</span></div>
+  <div class="footer"><span>English Worksheets · Am / Is / Are — Answer Key · A2</span><span>Key page 4 of 4</span></div>
 </section>
 
 <script src="../assets/engine.js"></script>

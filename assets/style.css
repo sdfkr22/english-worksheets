@@ -278,15 +278,6 @@ main, main.wrap { padding-bottom: 72px; }
   border-bottom: 1px solid var(--rule);
   padding: 26px 0 18px;
 }
-.howto {
-  margin: 16px 0 0;
-  border-left: 3px solid var(--orange);
-  background: var(--orange-tint);
-  padding: 10px 14px;
-  font-size: .9rem;
-}
-.howto b { color: var(--orange); }
-
 /* progress bar */
 .progress-bar {
   position: sticky;
